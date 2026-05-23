@@ -1,0 +1,342 @@
+{
+  "protocol": "Official HURDAT2 strict-6h lead-specific clean 12->1 attribution ablation, safe target-free validation/test negatives, seed 42.",
+  "leads": [
+    12,
+    24
+  ],
+  "seed": 42,
+  "variants": {
+    "b3_leakfree_eval": {
+      "label": "B3 leak-free TyphoFormer",
+      "lead12": 103.54718894421215,
+      "lead24": 266.44800967261904,
+      "runs": [
+        {
+          "variant": "b3_leakfree_eval",
+          "label": "B3 leak-free TyphoFormer",
+          "lead": 2,
+          "lead_hours": 12,
+          "seed": 42,
+          "delta_r_km": 103.54718894421215,
+          "mae": 0.6880536267455195,
+          "ade": 103.54718894421215,
+          "fde": 103.54718894421215,
+          "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_leakfree_eval_lead2_s42"
+        },
+        {
+          "variant": "b3_leakfree_eval",
+          "label": "B3 leak-free TyphoFormer",
+          "lead": 4,
+          "lead_hours": 24,
+          "seed": 42,
+          "delta_r_km": 266.44800967261904,
+          "mae": 1.718768310546875,
+          "ade": 266.44800967261904,
+          "fde": 266.44800967261904,
+          "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_leakfree_eval_lead4_s42"
+        }
+      ]
+    },
+    "b3_dual_head_only": {
+      "label": "B3 + dual CV-residual head",
+      "lead12": 86.48825361224966,
+      "lead24": 239.97827923487102,
+      "runs": [
+        {
+          "variant": "b3_dual_head_only",
+          "label": "B3 + dual CV-residual head",
+          "lead": 2,
+          "lead_hours": 12,
+          "seed": 42,
+          "delta_r_km": 86.48825361224966,
+          "mae": 0.5724906881090621,
+          "ade": 86.48825361224966,
+          "fde": 86.48825361224966,
+          "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_dual_head_only_lead2_s42"
+        },
+        {
+          "variant": "b3_dual_head_only",
+          "label": "B3 + dual CV-residual head",
+          "lead": 4,
+          "lead_hours": 24,
+          "seed": 42,
+          "delta_r_km": 239.97827923487102,
+          "mae": 1.6020840357220363,
+          "ade": 239.97827923487102,
+          "fde": 239.97827923487102,
+          "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_dual_head_only_lead4_s42"
+        }
+      ]
+    },
+    "b3_positive_analog_only": {
+      "label": "B3 + positive analog only",
+      "lead12": 92.97735780527894,
+      "lead24": 249.36540333581348,
+      "runs": [
+        {
+          "variant": "b3_positive_analog_only",
+          "label": "B3 + positive analog only",
+          "lead": 2,
+          "lead_hours": 12,
+          "seed": 42,
+          "delta_r_km": 92.97735780527894,
+          "mae": 0.6080640443613832,
+          "ade": 92.97735780527894,
+          "fde": 92.97735780527894,
+          "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_positive_analog_only_lead2_s42"
+        },
+        {
+          "variant": "b3_positive_analog_only",
+          "label": "B3 + positive analog only",
+          "lead": 4,
+          "lead_hours": 24,
+          "seed": 42,
+          "delta_r_km": 249.36540333581348,
+          "mae": 1.6411428724016461,
+          "ade": 249.36540333581348,
+          "fde": 249.36540333581348,
+          "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_positive_analog_only_lead4_s42"
+        }
+      ]
+    },
+    "b3_alignment_rank_only": {
+      "label": "B3 + alignment/rank only",
+      "lead12": 104.1036210181008,
+      "lead24": 283.2389353918651,
+      "runs": [
+        {
+          "variant": "b3_alignment_rank_only",
+          "label": "B3 + alignment/rank only",
+          "lead": 2,
+          "lead_hours": 12,
+          "seed": 42,
+          "delta_r_km": 104.1036210181008,
+          "mae": 0.6830265730199679,
+          "ade": 104.1036210181008,
+          "fde": 104.1036210181008,
+          "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_alignment_rank_only_lead2_s42"
+        },
+        {
+          "variant": "b3_alignment_rank_only",
+          "label": "B3 + alignment/rank only",
+          "lead": 4,
+          "lead_hours": 24,
+          "seed": 42,
+          "delta_r_km": 283.2389353918651,
+          "mae": 1.8370470561678447,
+          "ade": 283.2389353918651,
+          "fde": 283.2389353918651,
+          "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_alignment_rank_only_lead4_s42"
+        }
+      ]
+    },
+    "b3_analog_rank_align": {
+      "label": "B3 + analog + alignment/rank",
+      "lead12": 109.54939231335277,
+      "lead24": 265.9976089719742,
+      "runs": [
+        {
+          "variant": "b3_analog_rank_align",
+          "label": "B3 + analog + alignment/rank",
+          "lead": 2,
+          "lead_hours": 12,
+          "seed": 42,
+          "delta_r_km": 109.54939231335277,
+          "mae": 0.7081980020227566,
+          "ade": 109.54939231335277,
+          "fde": 109.54939231335277,
+          "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_analog_rank_align_lead2_s42"
+        },
+        {
+          "variant": "b3_analog_rank_align",
+          "label": "B3 + analog + alignment/rank",
+          "lead": 4,
+          "lead_hours": 24,
+          "seed": 42,
+          "delta_r_km": 265.9976089719742,
+          "mae": 1.7475926596020894,
+          "ade": 265.9976089719742,
+          "fde": 265.9976089719742,
+          "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_analog_rank_align_lead4_s42"
+        }
+      ]
+    },
+    "b4_full": {
+      "label": "B4 full TyphoFormer++",
+      "lead12": 91.63984065525969,
+      "lead24": 230.79697963169642,
+      "runs": [
+        {
+          "variant": "b4_full",
+          "label": "B4 full TyphoFormer++",
+          "lead": 2,
+          "lead_hours": 12,
+          "seed": 42,
+          "delta_r_km": 91.63984065525969,
+          "mae": 0.6096446426821427,
+          "ade": 91.63984065525969,
+          "fde": 91.63984065525969,
+          "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b4_full_lead2_s42"
+        },
+        {
+          "variant": "b4_full",
+          "label": "B4 full TyphoFormer++",
+          "lead": 4,
+          "lead_hours": 24,
+          "seed": 42,
+          "delta_r_km": 230.79697963169642,
+          "mae": 1.5389191158234128,
+          "ade": 230.79697963169642,
+          "fde": 230.79697963169642,
+          "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b4_full_lead4_s42"
+        }
+      ]
+    }
+  },
+  "rows": [
+    {
+      "variant": "b3_alignment_rank_only",
+      "label": "B3 + alignment/rank only",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 42,
+      "delta_r_km": 104.1036210181008,
+      "mae": 0.6830265730199679,
+      "ade": 104.1036210181008,
+      "fde": 104.1036210181008,
+      "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_alignment_rank_only_lead2_s42"
+    },
+    {
+      "variant": "b3_alignment_rank_only",
+      "label": "B3 + alignment/rank only",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 42,
+      "delta_r_km": 283.2389353918651,
+      "mae": 1.8370470561678447,
+      "ade": 283.2389353918651,
+      "fde": 283.2389353918651,
+      "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_alignment_rank_only_lead4_s42"
+    },
+    {
+      "variant": "b3_analog_rank_align",
+      "label": "B3 + analog + alignment/rank",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 42,
+      "delta_r_km": 109.54939231335277,
+      "mae": 0.7081980020227566,
+      "ade": 109.54939231335277,
+      "fde": 109.54939231335277,
+      "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_analog_rank_align_lead2_s42"
+    },
+    {
+      "variant": "b3_analog_rank_align",
+      "label": "B3 + analog + alignment/rank",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 42,
+      "delta_r_km": 265.9976089719742,
+      "mae": 1.7475926596020894,
+      "ade": 265.9976089719742,
+      "fde": 265.9976089719742,
+      "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_analog_rank_align_lead4_s42"
+    },
+    {
+      "variant": "b3_dual_head_only",
+      "label": "B3 + dual CV-residual head",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 42,
+      "delta_r_km": 86.48825361224966,
+      "mae": 0.5724906881090621,
+      "ade": 86.48825361224966,
+      "fde": 86.48825361224966,
+      "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_dual_head_only_lead2_s42"
+    },
+    {
+      "variant": "b3_dual_head_only",
+      "label": "B3 + dual CV-residual head",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 42,
+      "delta_r_km": 239.97827923487102,
+      "mae": 1.6020840357220363,
+      "ade": 239.97827923487102,
+      "fde": 239.97827923487102,
+      "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_dual_head_only_lead4_s42"
+    },
+    {
+      "variant": "b3_leakfree_eval",
+      "label": "B3 leak-free TyphoFormer",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 42,
+      "delta_r_km": 103.54718894421215,
+      "mae": 0.6880536267455195,
+      "ade": 103.54718894421215,
+      "fde": 103.54718894421215,
+      "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_leakfree_eval_lead2_s42"
+    },
+    {
+      "variant": "b3_leakfree_eval",
+      "label": "B3 leak-free TyphoFormer",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 42,
+      "delta_r_km": 266.44800967261904,
+      "mae": 1.718768310546875,
+      "ade": 266.44800967261904,
+      "fde": 266.44800967261904,
+      "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_leakfree_eval_lead4_s42"
+    },
+    {
+      "variant": "b3_positive_analog_only",
+      "label": "B3 + positive analog only",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 42,
+      "delta_r_km": 92.97735780527894,
+      "mae": 0.6080640443613832,
+      "ade": 92.97735780527894,
+      "fde": 92.97735780527894,
+      "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_positive_analog_only_lead2_s42"
+    },
+    {
+      "variant": "b3_positive_analog_only",
+      "label": "B3 + positive analog only",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 42,
+      "delta_r_km": 249.36540333581348,
+      "mae": 1.6411428724016461,
+      "ade": 249.36540333581348,
+      "fde": 249.36540333581348,
+      "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b3_positive_analog_only_lead4_s42"
+    },
+    {
+      "variant": "b4_full",
+      "label": "B4 full TyphoFormer++",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 42,
+      "delta_r_km": 91.63984065525969,
+      "mae": 0.6096446426821427,
+      "ade": 91.63984065525969,
+      "fde": 91.63984065525969,
+      "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b4_full_lead2_s42"
+    },
+    {
+      "variant": "b4_full",
+      "label": "B4 full TyphoFormer++",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 42,
+      "delta_r_km": 230.79697963169642,
+      "mae": 1.5389191158234128,
+      "ade": 230.79697963169642,
+      "fde": 230.79697963169642,
+      "run_dir": "checkpoints_official_12to1_ablation_safeneg\\b4_full_lead4_s42"
+    }
+  ]
+}

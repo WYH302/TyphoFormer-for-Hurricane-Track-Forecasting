@@ -1,0 +1,1342 @@
+{
+  "protocol": "Official HURDAT2 strict-6h lead-specific clean 12->1 diagnostics on 2022-2024 test storms.",
+  "common_subset": {
+    "definition": "The common subset is the 24h-clean test window set, intersected by storm ID and window index with every shorter-lead test set.",
+    "rows": [
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "windows": 630,
+        "storms": 30,
+        "b3": 37.68001476784863,
+        "b4": 33.4414925748709,
+        "best_baseline": "constant_velocity",
+        "best_baseline_mean": 35.94338863201001,
+        "b4_gain_vs_best_percent": 6.9606571677301625,
+        "numeric_cv_residual": 32.5919251654987,
+        "numeric_cv_residual_seed_count": 3
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "windows": 630,
+        "storms": 30,
+        "b3": 98.34301758985671,
+        "b4": 83.787738802761,
+        "best_baseline": "gru",
+        "best_baseline_mean": 90.42696079715849,
+        "b4_gain_vs_best_percent": 7.342082423062164,
+        "numeric_cv_residual": 83.38159460573601,
+        "numeric_cv_residual_seed_count": 3
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "windows": 630,
+        "storms": 30,
+        "b3": 168.1061571634636,
+        "b4": 153.32036640164714,
+        "best_baseline": "informer",
+        "best_baseline_mean": 160.79695479049886,
+        "b4_gain_vs_best_percent": 4.649707700368402,
+        "numeric_cv_residual": 153.3435800845661,
+        "numeric_cv_residual_seed_count": 3
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "windows": 630,
+        "storms": 30,
+        "b3": 260.72093528086543,
+        "b4": 230.52801366375866,
+        "best_baseline": "informer",
+        "best_baseline_mean": 243.78511330740793,
+        "b4_gain_vs_best_percent": 5.43802673747857,
+        "numeric_cv_residual": 229.83758106938114,
+        "numeric_cv_residual_seed_count": 3
+      }
+    ]
+  },
+  "turning_subgroups": {
+    "definition": "24h test windows grouped by tertiles of the absolute heading change between the last two observed 6h motion vectors.",
+    "tertile_cutpoints_deg": [
+      5.044838905334473,
+      14.363734245300291
+    ],
+    "rows": [
+      {
+        "turn_group": "low",
+        "windows": 210,
+        "storms": 26,
+        "mean_turn_deg": 2.093575879387348,
+        "cv": 214.5430994397118,
+        "b3": 238.6203509217217,
+        "b4": 199.89098776919502,
+        "b4_minus_cv": -14.652111670516774,
+        "b4_minus_b3": -38.72936315252667
+      },
+      {
+        "turn_group": "medium",
+        "windows": 210,
+        "storms": 27,
+        "mean_turn_deg": 9.543054978485575,
+        "cv": 251.67114737374442,
+        "b3": 255.50641242436,
+        "b4": 231.79214628537497,
+        "b4_minus_cv": -19.87900108836945,
+        "b4_minus_b3": -23.71426613898504
+      },
+      {
+        "turn_group": "high",
+        "windows": 210,
+        "storms": 24,
+        "mean_turn_deg": 32.119430380562825,
+        "cv": 302.9457168124971,
+        "b3": 288.03604249651465,
+        "b4": 259.900906936706,
+        "b4_minus_cv": -43.04480987579109,
+        "b4_minus_b3": -28.135135559808646
+      }
+    ]
+  },
+  "per_storm_distribution": {
+    "rows": [
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL012022_ALEX",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -0.559338951110842,
+        "b4_minus_b3": -1.9373637358347615
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL022022_BONNIE",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": 5.153078609870537,
+        "b4_minus_b3": -8.46252324846056
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL022023_ARLENE",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -8.07594890064663,
+        "b4_minus_b3": -11.755121734407211
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL022024_BERYL",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": 5.61392537752787,
+        "b4_minus_b3": -5.397608280181888
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL032023_BRET",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": 3.585878795633713,
+        "b4_minus_b3": -6.305547863245012
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL042023_CINDY",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -0.2869582176208496,
+        "b4_minus_b3": -7.604284779230749
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL042024_DEBBY",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -5.197734832763658,
+        "b4_minus_b3": -15.870798428853334
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL052022_DANIELLE",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -5.795012309997894,
+        "b4_minus_b3": 2.763048613071433
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL052023_DON",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -2.068117682268653,
+        "b4_minus_b3": -5.85851463373157
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL052024_ERNESTO",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": 5.377793788909912,
+        "b4_minus_b3": -0.5303842226664202
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL062022_EARL",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -2.906427280108133,
+        "b4_minus_b3": -6.202514288822812
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL062023_GERT",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -1.1673571714849231,
+        "b4_minus_b3": -6.659896105347261
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL062024_FRANCINE",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -16.65189186731974,
+        "b4_minus_b3": -10.139764626820883
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL072022_FIONA",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -33.48859119415283,
+        "b4_minus_b3": 8.787469863891602
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL072023_EMILY",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -0.24747468282779295,
+        "b4_minus_b3": -2.393165178596977
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL072024_GORDON",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -0.10601260916640243,
+        "b4_minus_b3": -1.131046540207329
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL082022_GASTON",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -0.5025588960358576,
+        "b4_minus_b3": -5.991918549393162
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL082023_FRANKLIN",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -4.464834703529469,
+        "b4_minus_b3": -1.437947187267369
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL092022_IAN",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -2.170599085944044,
+        "b4_minus_b3": -6.792379799343298
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL092024_HELENE",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -3.928143607245545,
+        "b4_minus_b3": 5.180603133307564
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL102023_IDALIA",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -1.142436050232007,
+        "b4_minus_b3": -9.886542558670044
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL102024_ISAAC",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -1.0523597675821073,
+        "b4_minus_b3": -2.3050945254339616
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL112023_JOSE",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -11.569797972838082,
+        "b4_minus_b3": -12.953258891900369
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL112024_JOYCE",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -0.1365814208984304,
+        "b4_minus_b3": 2.807034174601249
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL122023_KATIA",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": 0.8719003556606602,
+        "b4_minus_b3": -11.191960926489404
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL122024_KIRK",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -4.228119050131902,
+        "b4_minus_b3": -11.456555724143982
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL132023_LEE",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": 1.4969791652379136,
+        "b4_minus_b3": -10.643431757010653
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL132024_LESLIE",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -3.226044247839962,
+        "b4_minus_b3": -4.259235822686957
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL142022_KARL",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -5.687889761394921,
+        "b4_minus_b3": -3.617435985141327
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL142023_MARGOT",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -1.4560054730550895,
+        "b4_minus_b3": -1.7250593894836967
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL142024_MILTON",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -0.556549072265625,
+        "b4_minus_b3": -13.405477523803711
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL152022_LISA",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -8.2379519144694,
+        "b4_minus_b3": 5.018565813700359
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL152023_NIGEL",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -11.6910130182902,
+        "b4_minus_b3": -1.3862981048284766
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL162022_MARTIN",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -42.89336282235604,
+        "b4_minus_b3": -7.322638758906606
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL172022_NICOLE",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": 2.6571311950683594,
+        "b4_minus_b3": -15.41849104563395
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL172023_PHILIPPE",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": 1.0530391667016765,
+        "b4_minus_b3": -2.6074381258295922
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL172024_PATTY",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -3.5892575846777994,
+        "b4_minus_b3": -11.249531136618717
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL182023_RINA",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -6.998353560765587,
+        "b4_minus_b3": 0.45996618270874023
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL182024_RAFAEL",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": 2.8368890890851617,
+        "b4_minus_b3": -6.084930618604023
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL192023_SEAN",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": 1.606435304268814,
+        "b4_minus_b3": -6.573388243332886
+      },
+      {
+        "lead": 1,
+        "lead_hours": 6,
+        "storm_id": "AL202023_TAMMY",
+        "best_baseline": "constant_velocity",
+        "b4_minus_best": -2.097653773666792,
+        "b4_minus_b3": -6.814841330736527
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL012022_ALEX",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -3.7095770041147915,
+        "b4_minus_b3": -26.40887848536174
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL022022_BONNIE",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -20.313643756366908,
+        "b4_minus_b3": -47.525293265070225
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL022023_ARLENE",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -22.716723124186203,
+        "b4_minus_b3": 8.081520080566406
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL032023_BRET",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": 16.941327200995556,
+        "b4_minus_b3": -17.789995617336693
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL042023_CINDY",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": 3.4496470292409214,
+        "b4_minus_b3": -18.111926635106414
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL042024_DEBBY",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": 7.032489352756045,
+        "b4_minus_b3": -61.9101935492622
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL052022_DANIELLE",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": 6.923242546263197,
+        "b4_minus_b3": -5.724560627320997
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL052023_DON",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -16.272973738776315,
+        "b4_minus_b3": -23.85444654535364
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL052024_ERNESTO",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -2.393019358317062,
+        "b4_minus_b3": -18.188443501790374
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL062022_EARL",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -12.200229163862687,
+        "b4_minus_b3": -8.495669226361116
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL062023_GERT",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -14.126453164183062,
+        "b4_minus_b3": -14.22304627924791
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL072022_FIONA",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": 15.378536648220575,
+        "b4_minus_b3": 79.75318908691418
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL072023_EMILY",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -12.501071235868658,
+        "b4_minus_b3": -14.87190261946784
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL072024_GORDON",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -1.8993317719661817,
+        "b4_minus_b3": -10.45093802249793
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL082022_GASTON",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -7.172415657648969,
+        "b4_minus_b3": -16.2974005199614
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL082023_FRANKLIN",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -1.260790360849441,
+        "b4_minus_b3": -4.19907974725389
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL092022_IAN",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -4.195721732245559,
+        "b4_minus_b3": -10.94334989123874
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL092024_HELENE",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -14.80535634358722,
+        "b4_minus_b3": 32.125821431477874
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL102023_IDALIA",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -6.56469878172264,
+        "b4_minus_b3": -25.894006924751466
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL102024_ISAAC",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": 7.439967834588245,
+        "b4_minus_b3": -20.30375225616227
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL112023_JOSE",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -21.904899173312714,
+        "b4_minus_b3": 13.771671295166016
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL112024_JOYCE",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -14.781768798828125,
+        "b4_minus_b3": -45.30142720540363
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL122023_KATIA",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -15.84446419315573,
+        "b4_minus_b3": -44.51433466098925
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL122024_KIRK",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": 9.320844469399304,
+        "b4_minus_b3": -11.080953822738778
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL132023_LEE",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -14.854601190547754,
+        "b4_minus_b3": -17.749195378236095
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL132024_LESLIE",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -11.110816059690535,
+        "b4_minus_b3": -8.289412180582694
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL142022_KARL",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -14.852694988250732,
+        "b4_minus_b3": 3.9861463228861425
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL142023_MARGOT",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -9.14088838750667,
+        "b4_minus_b3": -6.868010675064234
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL152023_NIGEL",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": 6.139044732758492,
+        "b4_minus_b3": 5.064216758265644
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL162022_MARTIN",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -25.145628452301025,
+        "b4_minus_b3": 41.81504996617639
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL172023_PHILIPPE",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -3.612491666534801,
+        "b4_minus_b3": -12.369951177526396
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL172024_PATTY",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": 9.634167353312172,
+        "b4_minus_b3": -37.329827944437675
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL182023_RINA",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -2.366809844970703,
+        "b4_minus_b3": -7.643458472357864
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL182024_RAFAEL",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -13.606825033823647,
+        "b4_minus_b3": -36.61903524398804
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL192023_SEAN",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": -5.005451255374481,
+        "b4_minus_b3": -1.0944557521078266
+      },
+      {
+        "lead": 2,
+        "lead_hours": 12,
+        "storm_id": "AL202023_TAMMY",
+        "best_baseline": "cliper_ridge",
+        "b4_minus_best": 1.2118444972568057,
+        "b4_minus_b3": -16.120196077558745
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL012022_ALEX",
+        "best_baseline": "informer",
+        "b4_minus_best": -41.04801008436414,
+        "b4_minus_b3": 12.599069807264542
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL022022_BONNIE",
+        "best_baseline": "informer",
+        "b4_minus_best": -51.81496559656581,
+        "b4_minus_b3": -60.36874018571315
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL022023_ARLENE",
+        "best_baseline": "informer",
+        "b4_minus_best": 64.77978642781575,
+        "b4_minus_b3": 16.352432250976562
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL032023_BRET",
+        "best_baseline": "informer",
+        "b4_minus_best": 6.328779220581069,
+        "b4_minus_b3": -12.004091898600251
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL042023_CINDY",
+        "best_baseline": "informer",
+        "b4_minus_best": -14.739449183146178,
+        "b4_minus_b3": -52.748489591810454
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL042024_DEBBY",
+        "best_baseline": "informer",
+        "b4_minus_best": -66.40330918629968,
+        "b4_minus_b3": -95.2528851826986
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL052022_DANIELLE",
+        "best_baseline": "informer",
+        "b4_minus_best": 14.954298251205046,
+        "b4_minus_b3": 5.708850933445831
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL052023_DON",
+        "best_baseline": "informer",
+        "b4_minus_best": -13.692599035573721,
+        "b4_minus_b3": -4.3875790102915175
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL062022_EARL",
+        "best_baseline": "informer",
+        "b4_minus_best": 6.1000717982911965,
+        "b4_minus_b3": -12.075477370044638
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL062023_GERT",
+        "best_baseline": "informer",
+        "b4_minus_best": -20.87666529229604,
+        "b4_minus_b3": -15.938131386378998
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL072022_FIONA",
+        "best_baseline": "informer",
+        "b4_minus_best": 32.503382364908816,
+        "b4_minus_b3": 4.328887939453011
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL072023_EMILY",
+        "best_baseline": "informer",
+        "b4_minus_best": -13.49337382543655,
+        "b4_minus_b3": -20.50441241264346
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL072024_GORDON",
+        "best_baseline": "informer",
+        "b4_minus_best": -27.01276235580444,
+        "b4_minus_b3": -23.097627798716232
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL082022_GASTON",
+        "best_baseline": "informer",
+        "b4_minus_best": 10.642507553100529,
+        "b4_minus_b3": -8.388026523590156
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL082023_FRANKLIN",
+        "best_baseline": "informer",
+        "b4_minus_best": -0.4472237414086635,
+        "b4_minus_b3": 8.819416375188126
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL092022_IAN",
+        "best_baseline": "informer",
+        "b4_minus_best": -37.12149906158446,
+        "b4_minus_b3": -32.995300022761015
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL092024_HELENE",
+        "best_baseline": "informer",
+        "b4_minus_best": 1.7914784749349337,
+        "b4_minus_b3": 13.056594848632812
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL102023_IDALIA",
+        "best_baseline": "informer",
+        "b4_minus_best": -23.624396377139647,
+        "b4_minus_b3": -21.61080365710791
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL102024_ISAAC",
+        "best_baseline": "informer",
+        "b4_minus_best": 5.07633796570795,
+        "b4_minus_b3": -23.108419599987172
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL112023_JOSE",
+        "best_baseline": "informer",
+        "b4_minus_best": 24.65833282470703,
+        "b4_minus_b3": 8.211437225341797
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL112024_JOYCE",
+        "best_baseline": "informer",
+        "b4_minus_best": -1.4165751139323106,
+        "b4_minus_b3": -29.70965576171878
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL122023_KATIA",
+        "best_baseline": "informer",
+        "b4_minus_best": -34.8724367753515,
+        "b4_minus_b3": -58.32553012416048
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL122024_KIRK",
+        "best_baseline": "informer",
+        "b4_minus_best": -5.84682109242388,
+        "b4_minus_b3": -21.377776906603856
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL132023_LEE",
+        "best_baseline": "informer",
+        "b4_minus_best": -15.79516968006888,
+        "b4_minus_b3": -25.912166102478878
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL132024_LESLIE",
+        "best_baseline": "informer",
+        "b4_minus_best": 0.9619221687316752,
+        "b4_minus_b3": -3.235798607269942
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL142022_KARL",
+        "best_baseline": "informer",
+        "b4_minus_best": 32.76427960395813,
+        "b4_minus_b3": -2.669176022211701
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL142023_MARGOT",
+        "best_baseline": "informer",
+        "b4_minus_best": 4.140894045432418,
+        "b4_minus_b3": -10.739245454470293
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL152023_NIGEL",
+        "best_baseline": "informer",
+        "b4_minus_best": 10.30012685060504,
+        "b4_minus_b3": 0.31682829062143014
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL162022_MARTIN",
+        "best_baseline": "informer",
+        "b4_minus_best": 177.4430374872117,
+        "b4_minus_b3": 169.9431559244793
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL172023_PHILIPPE",
+        "best_baseline": "informer",
+        "b4_minus_best": -6.67972705841062,
+        "b4_minus_b3": -20.008047091166148
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL172024_PATTY",
+        "best_baseline": "informer",
+        "b4_minus_best": -18.11266326904297,
+        "b4_minus_b3": -51.49878946940103
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL182023_RINA",
+        "best_baseline": "informer",
+        "b4_minus_best": -21.23907820383708,
+        "b4_minus_b3": -28.25679175059001
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL182024_RAFAEL",
+        "best_baseline": "informer",
+        "b4_minus_best": -23.754056930541985,
+        "b4_minus_b3": -96.51148923238117
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL192023_SEAN",
+        "best_baseline": "informer",
+        "b4_minus_best": -12.127479784416423,
+        "b4_minus_b3": -9.319922533902243
+      },
+      {
+        "lead": 3,
+        "lead_hours": 18,
+        "storm_id": "AL202023_TAMMY",
+        "best_baseline": "informer",
+        "b4_minus_best": 7.311259460449207,
+        "b4_minus_b3": -10.722851193745925
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL012022_ALEX",
+        "best_baseline": "informer",
+        "b4_minus_best": -84.44470183054607,
+        "b4_minus_b3": -137.8999897638957
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL022022_BONNIE",
+        "best_baseline": "informer",
+        "b4_minus_best": -98.89675414562222,
+        "b4_minus_b3": -73.33379904429117
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL032023_BRET",
+        "best_baseline": "informer",
+        "b4_minus_best": 58.31039365132651,
+        "b4_minus_b3": -65.43055470784503
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL042023_CINDY",
+        "best_baseline": "informer",
+        "b4_minus_best": -55.428904215494796,
+        "b4_minus_b3": -87.61706924438478
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL042024_DEBBY",
+        "best_baseline": "informer",
+        "b4_minus_best": -45.37190973191025,
+        "b4_minus_b3": -106.63283429827004
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL052022_DANIELLE",
+        "best_baseline": "informer",
+        "b4_minus_best": -13.056769053141238,
+        "b4_minus_b3": 8.765448556724152
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL052023_DON",
+        "best_baseline": "informer",
+        "b4_minus_best": -11.386914171913787,
+        "b4_minus_b3": -9.154818926670771
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL062022_EARL",
+        "best_baseline": "informer",
+        "b4_minus_best": 30.801305040582918,
+        "b4_minus_b3": -16.695357623400923
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL062023_GERT",
+        "best_baseline": "informer",
+        "b4_minus_best": -16.253469876753968,
+        "b4_minus_b3": -53.71383760525629
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL072022_FIONA",
+        "best_baseline": "informer",
+        "b4_minus_best": 133.86474609375,
+        "b4_minus_b3": 112.63389078776038
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL072023_EMILY",
+        "best_baseline": "informer",
+        "b4_minus_best": -27.827525114401794,
+        "b4_minus_b3": -29.551868243095214
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL072024_GORDON",
+        "best_baseline": "informer",
+        "b4_minus_best": -24.461557600233277,
+        "b4_minus_b3": -48.83725597240306
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL082022_GASTON",
+        "best_baseline": "informer",
+        "b4_minus_best": 7.724748042591841,
+        "b4_minus_b3": -49.778145505670864
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL082023_FRANKLIN",
+        "best_baseline": "informer",
+        "b4_minus_best": 2.8915624647429468,
+        "b4_minus_b3": 15.327615220618924
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL092022_IAN",
+        "best_baseline": "informer",
+        "b4_minus_best": -45.3065592447917,
+        "b4_minus_b3": -45.39468383789064
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL102023_IDALIA",
+        "best_baseline": "informer",
+        "b4_minus_best": -0.9431569359518903,
+        "b4_minus_b3": -63.087036739696146
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL102024_ISAAC",
+        "best_baseline": "informer",
+        "b4_minus_best": 30.560058720906625,
+        "b4_minus_b3": -11.09151652654009
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL112023_JOSE",
+        "best_baseline": "informer",
+        "b4_minus_best": -19.108988444010436,
+        "b4_minus_b3": -68.33767700195312
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL122023_KATIA",
+        "best_baseline": "informer",
+        "b4_minus_best": -55.55023130392425,
+        "b4_minus_b3": -106.70679417634625
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL122024_KIRK",
+        "best_baseline": "informer",
+        "b4_minus_best": 15.81393811732164,
+        "b4_minus_b3": 16.718526510544734
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL132023_LEE",
+        "best_baseline": "informer",
+        "b4_minus_best": -38.285675219310235,
+        "b4_minus_b3": -60.37585899009497
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL132024_LESLIE",
+        "best_baseline": "informer",
+        "b4_minus_best": -5.246158640871755,
+        "b4_minus_b3": -11.74860960950133
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL142022_KARL",
+        "best_baseline": "informer",
+        "b4_minus_best": 6.946054564581985,
+        "b4_minus_b3": -57.99385876125757
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL142023_MARGOT",
+        "best_baseline": "informer",
+        "b4_minus_best": -50.51979253625353,
+        "b4_minus_b3": -27.492302063972687
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL152023_NIGEL",
+        "best_baseline": "informer",
+        "b4_minus_best": 14.866260877219588,
+        "b4_minus_b3": -2.0632037501181912
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL162022_MARTIN",
+        "best_baseline": "informer",
+        "b4_minus_best": 194.2031724717881,
+        "b4_minus_b3": 271.71162923177076
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL172023_PHILIPPE",
+        "best_baseline": "informer",
+        "b4_minus_best": -10.75830296675366,
+        "b4_minus_b3": -39.053039405080995
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL182023_RINA",
+        "best_baseline": "informer",
+        "b4_minus_best": -25.39455668131511,
+        "b4_minus_b3": -1.9912923177083428
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL192023_SEAN",
+        "best_baseline": "informer",
+        "b4_minus_best": 3.8023522694905694,
+        "b4_minus_b3": -15.035604222615547
+      },
+      {
+        "lead": 4,
+        "lead_hours": 24,
+        "storm_id": "AL202023_TAMMY",
+        "best_baseline": "informer",
+        "b4_minus_best": -37.60638737678522,
+        "b4_minus_b3": -85.40993589825098
+      }
+    ],
+    "figure_pdf": "diagnostic_figs\\per_storm_b4_deltas.pdf",
+    "figure_png": "diagnostic_figs\\per_storm_b4_deltas.png"
+  },
+  "runtime": {
+    "definition": "Training time is parsed from per-epoch train_log.jsonl seconds on the local workstation.",
+    "rows": [
+      {
+        "model": "GRU",
+        "runs_available": 12,
+        "runs_expected": 12,
+        "median_epochs": 32.5,
+        "median_train_minutes": 1.3477359255154928
+      },
+      {
+        "model": "LSTM",
+        "runs_available": 12,
+        "runs_expected": 12,
+        "median_epochs": 30.0,
+        "median_train_minutes": 1.2461226562658947
+      },
+      {
+        "model": "Informer-style",
+        "runs_available": 12,
+        "runs_expected": 12,
+        "median_epochs": 24.0,
+        "median_train_minutes": 0.8675704042116801
+      },
+      {
+        "model": "Autoformer-style",
+        "runs_available": 12,
+        "runs_expected": 12,
+        "median_epochs": 37.0,
+        "median_train_minutes": 1.4170829554398856
+      },
+      {
+        "model": "TSMixer",
+        "runs_available": 12,
+        "runs_expected": 12,
+        "median_epochs": 29.0,
+        "median_train_minutes": 1.1777216931184133
+      },
+      {
+        "model": "B2 Numeric Transformer",
+        "runs_available": 12,
+        "runs_expected": 12,
+        "median_epochs": 26.0,
+        "median_train_minutes": 5.1059998154640205
+      },
+      {
+        "model": "B3 TyphoFormer-style",
+        "runs_available": 12,
+        "runs_expected": 12,
+        "median_epochs": 25.5,
+        "median_train_minutes": 5.800045959154765
+      },
+      {
+        "model": "B4 TyphoFormer++",
+        "runs_available": 12,
+        "runs_expected": 12,
+        "median_epochs": 23.0,
+        "median_train_minutes": 8.68794021209081
+      },
+      {
+        "model": "Numeric Transformer + CV-residual",
+        "runs_available": 12,
+        "runs_expected": 12,
+        "median_epochs": 24.5,
+        "median_train_minutes": 5.284651414553324
+      }
+    ]
+  },
+  "b4_inference_timing": [
+    {
+      "lead": 1,
+      "lead_hours": 6,
+      "windows": 759,
+      "seconds": 0.5971273999894038,
+      "windows_per_second": 1271.0855338634078
+    },
+    {
+      "lead": 2,
+      "lead_hours": 12,
+      "windows": 710,
+      "seconds": 0.4745736999902874,
+      "windows_per_second": 1496.0795341472374
+    },
+    {
+      "lead": 3,
+      "lead_hours": 18,
+      "windows": 668,
+      "seconds": 0.49888719990849495,
+      "windows_per_second": 1338.9800342091828
+    },
+    {
+      "lead": 4,
+      "lead_hours": 24,
+      "windows": 630,
+      "seconds": 0.4722017999738455,
+      "windows_per_second": 1334.1753462924003
+    }
+  ]
+}

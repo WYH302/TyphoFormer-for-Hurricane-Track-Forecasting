@@ -1,0 +1,69 @@
+{
+  "protocol": "Storm-level paired bootstrap for B4 safe TyphoFormer++ raw vs strongest non-proposed Table 2 baseline per lead.",
+  "best_baseline_by_lead": {
+    "1": "constant_velocity",
+    "2": "cliper_ridge",
+    "3": "informer",
+    "4": "informer"
+  },
+  "seeds": [
+    42,
+    123,
+    2024
+  ],
+  "bootstrap_draws": 5000,
+  "per_lead": {
+    "1": {
+      "lead_hours": 6,
+      "storm_count": 41,
+      "baseline": "constant_velocity",
+      "baseline_storm_mean": 39.64702842435374,
+      "b4_storm_mean": 35.697581417193845,
+      "paired_delta_b4_minus_baseline": -3.94944700715991,
+      "paired_delta_ci95": [
+        -7.031426958080242,
+        -1.434228341398
+      ],
+      "storm_win_rate_b4": 0.7560975609756098
+    },
+    "2": {
+      "lead_hours": 12,
+      "storm_count": 36,
+      "baseline": "cliper_ridge",
+      "baseline_storm_mean": 103.39877582946139,
+      "b4_storm_mean": 97.59632641957066,
+      "paired_delta_b4_minus_baseline": -5.80244940989074,
+      "paired_delta_ci95": [
+        -9.284553141579206,
+        -2.215666131272257
+      ],
+      "storm_win_rate_b4": 0.7222222222222222
+    },
+    "3": {
+      "lead_hours": 18,
+      "storm_count": 35,
+      "baseline": "informer",
+      "baseline_storm_mean": 171.96680346849013,
+      "b4_storm_mean": 170.52789289130962,
+      "paired_delta_b4_minus_baseline": -1.4389105771805084,
+      "paired_delta_ci95": [
+        -13.107032788238167,
+        13.549446933818583
+      ],
+      "storm_win_rate_b4": 0.5714285714285714
+    },
+    "4": {
+      "lead_hours": 24,
+      "storm_count": 30,
+      "baseline": "informer",
+      "baseline_storm_mean": 255.25839399131073,
+      "b4_storm_mean": 249.72292864078446,
+      "paired_delta_b4_minus_baseline": -5.535465350526251,
+      "paired_delta_ci95": [
+        -24.496071514047213,
+        16.88066670062322
+      ],
+      "storm_win_rate_b4": 0.6333333333333333
+    }
+  }
+}

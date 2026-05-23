@@ -1,0 +1,281 @@
+{
+  "artifact_root": "TyphoFormerPlus",
+  "artifact_root_note": "Paths in this summary are relative to the detected or supplied artifact root.",
+  "hurdat2_sha256": "D595ADA8AAA64E402C26EEB80EFB344B52EF420B1627D8C0EE6EE65F0729923B",
+  "max_files_per_split": 0,
+  "leads": [
+    {
+      "lead": 1,
+      "lead_hours": [
+        6
+      ],
+      "data_dir": "data_official_pp_12to1_lead1_safeneg",
+      "metadata": {
+        "stats_fit_split": "train",
+        "analog_candidate_split": "train",
+        "analog_negative_policy": {
+          "train": "target-dependent hard negatives are used only as supervised ranking negatives",
+          "val_test": "target-free query-neighbor negatives use only observed-history query features"
+        },
+        "source_audit": {
+          "raw_rows": 55230,
+          "raw_storms": 1991,
+          "downloaded_year_min": 1851,
+          "downloaded_year_max": 2024,
+          "rows_after_protocol_year_filter": 11510,
+          "storms_after_protocol_year_filter": 375,
+          "rows_non_standard_time_in_protocol_years": 350
+        },
+        "data_audit": {
+          "candidate_windows": {
+            "train": 5588,
+            "val": 505,
+            "test": 1095
+          },
+          "skipped_non_split_year": 0,
+          "skipped_non_standard_time": {
+            "train": 1538,
+            "val": 151,
+            "test": 336
+          },
+          "skipped_non_strict_interval": {
+            "train": 0,
+            "val": 0,
+            "test": 0
+          },
+          "generated_windows": {
+            "train": 4050,
+            "val": 354,
+            "test": 759
+          }
+        }
+      },
+      "split_storms": {
+        "train": 219,
+        "val": 22,
+        "test": 41
+      },
+      "split_counts": {
+        "train": 4050,
+        "val": 354,
+        "test": 759
+      },
+      "audited_counts": {
+        "train": 4050,
+        "val": 354,
+        "test": 759
+      },
+      "split_overlap": {
+        "train_val": 0,
+        "train_test": 0,
+        "val_test": 0
+      },
+      "failures": []
+    },
+    {
+      "lead": 2,
+      "lead_hours": [
+        12
+      ],
+      "data_dir": "data_official_pp_12to1_lead2_safeneg",
+      "metadata": {
+        "stats_fit_split": "train",
+        "analog_candidate_split": "train",
+        "analog_negative_policy": {
+          "train": "target-dependent hard negatives are used only as supervised ranking negatives",
+          "val_test": "target-free query-neighbor negatives use only observed-history query features"
+        },
+        "source_audit": {
+          "raw_rows": 55230,
+          "raw_storms": 1991,
+          "downloaded_year_min": 1851,
+          "downloaded_year_max": 2024,
+          "rows_after_protocol_year_filter": 11510,
+          "storms_after_protocol_year_filter": 375,
+          "rows_non_standard_time_in_protocol_years": 350
+        },
+        "data_audit": {
+          "candidate_windows": {
+            "train": 5339,
+            "val": 479,
+            "test": 1048
+          },
+          "skipped_non_split_year": 0,
+          "skipped_non_standard_time": {
+            "train": 1542,
+            "val": 150,
+            "test": 338
+          },
+          "skipped_non_strict_interval": {
+            "train": 0,
+            "val": 0,
+            "test": 0
+          },
+          "generated_windows": {
+            "train": 3797,
+            "val": 329,
+            "test": 710
+          }
+        }
+      },
+      "split_storms": {
+        "train": 207,
+        "val": 21,
+        "test": 36
+      },
+      "split_counts": {
+        "train": 3797,
+        "val": 329,
+        "test": 710
+      },
+      "audited_counts": {
+        "train": 3797,
+        "val": 329,
+        "test": 710
+      },
+      "split_overlap": {
+        "train_val": 0,
+        "train_test": 0,
+        "val_test": 0
+      },
+      "failures": []
+    },
+    {
+      "lead": 3,
+      "lead_hours": [
+        18
+      ],
+      "data_dir": "data_official_pp_12to1_lead3_safeneg",
+      "metadata": {
+        "stats_fit_split": "train",
+        "analog_candidate_split": "train",
+        "analog_negative_policy": {
+          "train": "target-dependent hard negatives are used only as supervised ranking negatives",
+          "val_test": "target-free query-neighbor negatives use only observed-history query features"
+        },
+        "source_audit": {
+          "raw_rows": 55230,
+          "raw_storms": 1991,
+          "downloaded_year_min": 1851,
+          "downloaded_year_max": 2024,
+          "rows_after_protocol_year_filter": 11510,
+          "storms_after_protocol_year_filter": 375,
+          "rows_non_standard_time_in_protocol_years": 350
+        },
+        "data_audit": {
+          "candidate_windows": {
+            "train": 5101,
+            "val": 456,
+            "test": 1002
+          },
+          "skipped_non_split_year": 0,
+          "skipped_non_standard_time": {
+            "train": 1536,
+            "val": 150,
+            "test": 334
+          },
+          "skipped_non_strict_interval": {
+            "train": 0,
+            "val": 0,
+            "test": 0
+          },
+          "generated_windows": {
+            "train": 3565,
+            "val": 306,
+            "test": 668
+          }
+        }
+      },
+      "split_storms": {
+        "train": 196,
+        "val": 20,
+        "test": 35
+      },
+      "split_counts": {
+        "train": 3565,
+        "val": 306,
+        "test": 668
+      },
+      "audited_counts": {
+        "train": 3565,
+        "val": 306,
+        "test": 668
+      },
+      "split_overlap": {
+        "train_val": 0,
+        "train_test": 0,
+        "val_test": 0
+      },
+      "failures": []
+    },
+    {
+      "lead": 4,
+      "lead_hours": [
+        24
+      ],
+      "data_dir": "data_official_pp_12to1_lead4_safeneg",
+      "metadata": {
+        "stats_fit_split": "train",
+        "analog_candidate_split": "train",
+        "analog_negative_policy": {
+          "train": "target-dependent hard negatives are used only as supervised ranking negatives",
+          "val_test": "target-free query-neighbor negatives use only observed-history query features"
+        },
+        "source_audit": {
+          "raw_rows": 55230,
+          "raw_storms": 1991,
+          "downloaded_year_min": 1851,
+          "downloaded_year_max": 2024,
+          "rows_after_protocol_year_filter": 11510,
+          "storms_after_protocol_year_filter": 375,
+          "rows_non_standard_time_in_protocol_years": 350
+        },
+        "data_audit": {
+          "candidate_windows": {
+            "train": 4873,
+            "val": 433,
+            "test": 956
+          },
+          "skipped_non_split_year": 0,
+          "skipped_non_standard_time": {
+            "train": 1524,
+            "val": 148,
+            "test": 326
+          },
+          "skipped_non_strict_interval": {
+            "train": 0,
+            "val": 0,
+            "test": 0
+          },
+          "generated_windows": {
+            "train": 3349,
+            "val": 285,
+            "test": 630
+          }
+        }
+      },
+      "split_storms": {
+        "train": 188,
+        "val": 20,
+        "test": 30
+      },
+      "split_counts": {
+        "train": 3349,
+        "val": 285,
+        "test": 630
+      },
+      "audited_counts": {
+        "train": 3349,
+        "val": 285,
+        "test": 630
+      },
+      "split_overlap": {
+        "train_val": 0,
+        "train_test": 0,
+        "val_test": 0
+      },
+      "failures": []
+    }
+  ],
+  "total_failures": 0
+}

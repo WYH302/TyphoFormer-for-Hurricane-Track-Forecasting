@@ -1,0 +1,1597 @@
+{
+  "protocol": "Official HURDAT2 strict-6h lead-specific clean 12->1 sequence baselines on safe-negative data.",
+  "rows": [
+    {
+      "model": "autoformer",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 123,
+      "err": 71.86490772835351,
+      "mae": 0.47102772985365393,
+      "ade": 71.86490772835351,
+      "fde": 71.86490772835351,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead1_s123"
+    },
+    {
+      "model": "autoformer",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 2024,
+      "err": 56.819568015841156,
+      "mae": 0.37047616106719367,
+      "ade": 56.819568015841156,
+      "fde": 56.819568015841156,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead1_s2024"
+    },
+    {
+      "model": "autoformer",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 42,
+      "err": 69.95007163388298,
+      "mae": 0.4591217216923931,
+      "ade": 69.95007163388298,
+      "fde": 69.95007163388298,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead1_s42"
+    },
+    {
+      "model": "autoformer",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 123,
+      "err": 162.51428463358275,
+      "mae": 1.0617434877744862,
+      "ade": 162.51428463358275,
+      "fde": 162.51428463358275,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead2_s123"
+    },
+    {
+      "model": "autoformer",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 2024,
+      "err": 134.70585696797974,
+      "mae": 0.8652866645598076,
+      "ade": 134.70585696797974,
+      "fde": 134.70585696797974,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead2_s2024"
+    },
+    {
+      "model": "autoformer",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 42,
+      "err": 160.78754745268486,
+      "mae": 1.057062472759838,
+      "ade": 160.78754745268486,
+      "fde": 160.78754745268486,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead2_s42"
+    },
+    {
+      "model": "autoformer",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 123,
+      "err": 255.64527244339448,
+      "mae": 1.6593120312262437,
+      "ade": 255.64527244339448,
+      "fde": 255.64527244339448,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead3_s123"
+    },
+    {
+      "model": "autoformer",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 2024,
+      "err": 224.48034887256736,
+      "mae": 1.459778525872145,
+      "ade": 224.48034887256736,
+      "fde": 224.48034887256736,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead3_s2024"
+    },
+    {
+      "model": "autoformer",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 42,
+      "err": 266.4368684505988,
+      "mae": 1.760725640965079,
+      "ade": 266.4368684505988,
+      "fde": 266.4368684505988,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead3_s42"
+    },
+    {
+      "model": "autoformer",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 123,
+      "err": 369.8380611359127,
+      "mae": 2.4050532991923985,
+      "ade": 369.8380611359127,
+      "fde": 369.8380611359127,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead4_s123"
+    },
+    {
+      "model": "autoformer",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 2024,
+      "err": 319.7732925657242,
+      "mae": 2.1037067413330077,
+      "ade": 319.7732925657242,
+      "fde": 319.7732925657242,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead4_s2024"
+    },
+    {
+      "model": "autoformer",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 42,
+      "err": 382.2847904265873,
+      "mae": 2.498770904541016,
+      "ade": 382.2847904265873,
+      "fde": 382.2847904265873,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead4_s42"
+    },
+    {
+      "model": "gru",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 123,
+      "err": 37.602135458482586,
+      "mae": 0.24623980603827475,
+      "ade": 37.602135458482586,
+      "fde": 37.602135458482586,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead1_s123"
+    },
+    {
+      "model": "gru",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 2024,
+      "err": 37.876044111289524,
+      "mae": 0.24798009392458145,
+      "ade": 37.876044111289524,
+      "fde": 37.876044111289524,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead1_s2024"
+    },
+    {
+      "model": "gru",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 42,
+      "err": 37.563432575371586,
+      "mae": 0.24611304023049094,
+      "ade": 37.563432575371586,
+      "fde": 37.563432575371586,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead1_s42"
+    },
+    {
+      "model": "gru",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 123,
+      "err": 94.48917528609155,
+      "mae": 0.6221644428414358,
+      "ade": 94.48917528609155,
+      "fde": 94.48917528609155,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead2_s123"
+    },
+    {
+      "model": "gru",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 2024,
+      "err": 94.4639170042226,
+      "mae": 0.6182537441522302,
+      "ade": 94.4639170042226,
+      "fde": 94.4639170042226,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead2_s2024"
+    },
+    {
+      "model": "gru",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 42,
+      "err": 91.99375429825044,
+      "mae": 0.6029959020480303,
+      "ade": 91.99375429825044,
+      "fde": 91.99375429825044,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead2_s42"
+    },
+    {
+      "model": "gru",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 123,
+      "err": 167.37479423477265,
+      "mae": 1.1039437019896365,
+      "ade": 167.37479423477265,
+      "fde": 167.37479423477265,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead3_s123"
+    },
+    {
+      "model": "gru",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 2024,
+      "err": 166.32792069669256,
+      "mae": 1.0957631636522487,
+      "ade": 166.32792069669256,
+      "fde": 166.32792069669256,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead3_s2024"
+    },
+    {
+      "model": "gru",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 42,
+      "err": 161.96983913033307,
+      "mae": 1.0656778198516297,
+      "ade": 161.96983913033307,
+      "fde": 161.96983913033307,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead3_s42"
+    },
+    {
+      "model": "gru",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 123,
+      "err": 246.51847253224207,
+      "mae": 1.6261021053980267,
+      "ade": 246.51847253224207,
+      "fde": 246.51847253224207,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead4_s123"
+    },
+    {
+      "model": "gru",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 2024,
+      "err": 248.61417526971726,
+      "mae": 1.6293968019031344,
+      "ade": 248.61417526971726,
+      "fde": 248.61417526971726,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead4_s2024"
+    },
+    {
+      "model": "gru",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 42,
+      "err": 239.1079086061508,
+      "mae": 1.5666177295503163,
+      "ade": 239.1079086061508,
+      "fde": 239.1079086061508,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead4_s42"
+    },
+    {
+      "model": "informer",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 123,
+      "err": 36.85424756438365,
+      "mae": 0.23980254335365747,
+      "ade": 36.85424756438365,
+      "fde": 36.85424756438365,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead1_s123"
+    },
+    {
+      "model": "informer",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 2024,
+      "err": 37.69277355008131,
+      "mae": 0.2453656667777201,
+      "ade": 37.69277355008131,
+      "fde": 37.69277355008131,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead1_s2024"
+    },
+    {
+      "model": "informer",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 42,
+      "err": 37.001714211364664,
+      "mae": 0.24117003442113422,
+      "ade": 37.001714211364664,
+      "fde": 37.001714211364664,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead1_s42"
+    },
+    {
+      "model": "informer",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 123,
+      "err": 94.07993305904765,
+      "mae": 0.6138764690345442,
+      "ade": 94.07993305904765,
+      "fde": 94.07993305904765,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead2_s123"
+    },
+    {
+      "model": "informer",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 2024,
+      "err": 94.20476813517826,
+      "mae": 0.6244231344948352,
+      "ade": 94.20476813517826,
+      "fde": 94.20476813517826,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead2_s2024"
+    },
+    {
+      "model": "informer",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 42,
+      "err": 95.56823261959453,
+      "mae": 0.6336527824401855,
+      "ade": 95.56823261959453,
+      "fde": 95.56823261959453,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead2_s42"
+    },
+    {
+      "model": "informer",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 123,
+      "err": 162.36765056313155,
+      "mae": 1.059289732379114,
+      "ade": 162.36765056313155,
+      "fde": 162.36765056313155,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead3_s123"
+    },
+    {
+      "model": "informer",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 2024,
+      "err": 158.28067436903535,
+      "mae": 1.047773169900129,
+      "ade": 158.28067436903535,
+      "fde": 158.28067436903535,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead3_s2024"
+    },
+    {
+      "model": "informer",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 42,
+      "err": 167.639794629491,
+      "mae": 1.0963312166179726,
+      "ade": 167.639794629491,
+      "fde": 167.639794629491,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead3_s42"
+    },
+    {
+      "model": "informer",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 123,
+      "err": 248.1671161954365,
+      "mae": 1.6417381014142718,
+      "ade": 248.1671161954365,
+      "fde": 248.1671161954365,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead4_s123"
+    },
+    {
+      "model": "informer",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 2024,
+      "err": 242.29407939608134,
+      "mae": 1.5960382612924726,
+      "ade": 242.29407939608134,
+      "fde": 242.29407939608134,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead4_s2024"
+    },
+    {
+      "model": "informer",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 42,
+      "err": 240.89417085193452,
+      "mae": 1.5918695843408979,
+      "ade": 240.89417085193452,
+      "fde": 240.89417085193452,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead4_s42"
+    },
+    {
+      "model": "lstm",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 123,
+      "err": 38.196315036617875,
+      "mae": 0.2490795057595797,
+      "ade": 38.196315036617875,
+      "fde": 38.196315036617875,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead1_s123"
+    },
+    {
+      "model": "lstm",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 2024,
+      "err": 38.082395530972086,
+      "mae": 0.2480359297338996,
+      "ade": 38.082395530972086,
+      "fde": 38.082395530972086,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead1_s2024"
+    },
+    {
+      "model": "lstm",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 42,
+      "err": 38.63762293879694,
+      "mae": 0.2512560242563682,
+      "ade": 38.63762293879694,
+      "fde": 38.63762293879694,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead1_s42"
+    },
+    {
+      "model": "lstm",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 123,
+      "err": 97.72875546737455,
+      "mae": 0.6379340856847628,
+      "ade": 97.72875546737455,
+      "fde": 97.72875546737455,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead2_s123"
+    },
+    {
+      "model": "lstm",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 2024,
+      "err": 97.16605293381382,
+      "mae": 0.6353344635224678,
+      "ade": 97.16605293381382,
+      "fde": 97.16605293381382,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead2_s2024"
+    },
+    {
+      "model": "lstm",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 42,
+      "err": 97.48340991382868,
+      "mae": 0.6389527885007187,
+      "ade": 97.48340991382868,
+      "fde": 97.48340991382868,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead2_s42"
+    },
+    {
+      "model": "lstm",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 123,
+      "err": 173.60397576429173,
+      "mae": 1.1374061093358936,
+      "ade": 173.60397576429173,
+      "fde": 173.60397576429173,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead3_s123"
+    },
+    {
+      "model": "lstm",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 2024,
+      "err": 167.84330192154752,
+      "mae": 1.0945815354764103,
+      "ade": 167.84330192154752,
+      "fde": 167.84330192154752,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead3_s2024"
+    },
+    {
+      "model": "lstm",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 42,
+      "err": 166.01596233801928,
+      "mae": 1.0835648839345235,
+      "ade": 166.01596233801928,
+      "fde": 166.01596233801928,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead3_s42"
+    },
+    {
+      "model": "lstm",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 123,
+      "err": 246.1266384548611,
+      "mae": 1.6106450640966021,
+      "ade": 246.1266384548611,
+      "fde": 246.1266384548611,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead4_s123"
+    },
+    {
+      "model": "lstm",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 2024,
+      "err": 259.19007161458336,
+      "mae": 1.7069415319533574,
+      "ade": 259.19007161458336,
+      "fde": 259.19007161458336,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead4_s2024"
+    },
+    {
+      "model": "lstm",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 42,
+      "err": 249.9506336030506,
+      "mae": 1.642637664552719,
+      "ade": 249.9506336030506,
+      "fde": 249.9506336030506,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead4_s42"
+    },
+    {
+      "model": "tsmixer",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 123,
+      "err": 36.51044264078455,
+      "mae": 0.23987305556989627,
+      "ade": 36.51044264078455,
+      "fde": 36.51044264078455,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead1_s123"
+    },
+    {
+      "model": "tsmixer",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 2024,
+      "err": 38.3955495480021,
+      "mae": 0.25168937625307025,
+      "ade": 38.3955495480021,
+      "fde": 38.3955495480021,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead1_s2024"
+    },
+    {
+      "model": "tsmixer",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 42,
+      "err": 37.036227380805336,
+      "mae": 0.24164146930960956,
+      "ade": 37.036227380805336,
+      "fde": 37.036227380805336,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead1_s42"
+    },
+    {
+      "model": "tsmixer",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 123,
+      "err": 93.35309912453235,
+      "mae": 0.61266343425697,
+      "ade": 93.35309912453235,
+      "fde": 93.35309912453235,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead2_s123"
+    },
+    {
+      "model": "tsmixer",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 2024,
+      "err": 96.6872237084617,
+      "mae": 0.6332425520453655,
+      "ade": 96.6872237084617,
+      "fde": 96.6872237084617,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead2_s2024"
+    },
+    {
+      "model": "tsmixer",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 42,
+      "err": 92.4642715669014,
+      "mae": 0.6060596466064453,
+      "ade": 92.4642715669014,
+      "fde": 92.4642715669014,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead2_s42"
+    },
+    {
+      "model": "tsmixer",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 123,
+      "err": 162.82081101468938,
+      "mae": 1.0782453856782286,
+      "ade": 162.82081101468938,
+      "fde": 162.82081101468938,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead3_s123"
+    },
+    {
+      "model": "tsmixer",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 2024,
+      "err": 172.21543180728386,
+      "mae": 1.1320643110903437,
+      "ade": 172.21543180728386,
+      "fde": 172.21543180728386,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead3_s2024"
+    },
+    {
+      "model": "tsmixer",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 42,
+      "err": 173.2758968147689,
+      "mae": 1.1397707476587353,
+      "ade": 173.2758968147689,
+      "fde": 173.2758968147689,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead3_s42"
+    },
+    {
+      "model": "tsmixer",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 123,
+      "err": 246.9124759734623,
+      "mae": 1.6338438821217371,
+      "ade": 246.9124759734623,
+      "fde": 246.9124759734623,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead4_s123"
+    },
+    {
+      "model": "tsmixer",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 2024,
+      "err": 246.44271957155257,
+      "mae": 1.6324647267659504,
+      "ade": 246.44271957155257,
+      "fde": 246.44271957155257,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead4_s2024"
+    },
+    {
+      "model": "tsmixer",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 42,
+      "err": 249.13381967695932,
+      "mae": 1.644541041056315,
+      "ade": 249.13381967695932,
+      "fde": 249.13381967695932,
+      "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead4_s42"
+    }
+  ],
+  "models": {
+    "gru": {
+      "1": {
+        "lead_hours": 6,
+        "per_seed": {
+          "123": {
+            "model": "gru",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 123,
+            "err": 37.602135458482586,
+            "mae": 0.24623980603827475,
+            "ade": 37.602135458482586,
+            "fde": 37.602135458482586,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead1_s123"
+          },
+          "2024": {
+            "model": "gru",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 2024,
+            "err": 37.876044111289524,
+            "mae": 0.24798009392458145,
+            "ade": 37.876044111289524,
+            "fde": 37.876044111289524,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead1_s2024"
+          },
+          "42": {
+            "model": "gru",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 42,
+            "err": 37.563432575371586,
+            "mae": 0.24611304023049094,
+            "ade": 37.563432575371586,
+            "fde": 37.563432575371586,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead1_s42"
+          }
+        },
+        "err": {
+          "mean": 37.680537381714565,
+          "std": 0.1704160769179303
+        },
+        "mae": {
+          "mean": 0.2467776467311157,
+          "std": 0.0010432769681685658
+        }
+      },
+      "2": {
+        "lead_hours": 12,
+        "per_seed": {
+          "123": {
+            "model": "gru",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 123,
+            "err": 94.48917528609155,
+            "mae": 0.6221644428414358,
+            "ade": 94.48917528609155,
+            "fde": 94.48917528609155,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead2_s123"
+          },
+          "2024": {
+            "model": "gru",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 2024,
+            "err": 94.4639170042226,
+            "mae": 0.6182537441522302,
+            "ade": 94.4639170042226,
+            "fde": 94.4639170042226,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead2_s2024"
+          },
+          "42": {
+            "model": "gru",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 42,
+            "err": 91.99375429825044,
+            "mae": 0.6029959020480303,
+            "ade": 91.99375429825044,
+            "fde": 91.99375429825044,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead2_s42"
+          }
+        },
+        "err": {
+          "mean": 93.64894886285487,
+          "std": 1.4334961737733256
+        },
+        "mae": {
+          "mean": 0.6144713630138988,
+          "std": 0.010128575632526837
+        }
+      },
+      "3": {
+        "lead_hours": 18,
+        "per_seed": {
+          "123": {
+            "model": "gru",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 123,
+            "err": 167.37479423477265,
+            "mae": 1.1039437019896365,
+            "ade": 167.37479423477265,
+            "fde": 167.37479423477265,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead3_s123"
+          },
+          "2024": {
+            "model": "gru",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 2024,
+            "err": 166.32792069669256,
+            "mae": 1.0957631636522487,
+            "ade": 166.32792069669256,
+            "fde": 166.32792069669256,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead3_s2024"
+          },
+          "42": {
+            "model": "gru",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 42,
+            "err": 161.96983913033307,
+            "mae": 1.0656778198516297,
+            "ade": 161.96983913033307,
+            "fde": 161.96983913033307,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead3_s42"
+          }
+        },
+        "err": {
+          "mean": 165.2241846872661,
+          "std": 2.8665414359695487
+        },
+        "mae": {
+          "mean": 1.0884615618311717,
+          "std": 0.020150793428922963
+        }
+      },
+      "4": {
+        "lead_hours": 24,
+        "per_seed": {
+          "123": {
+            "model": "gru",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 123,
+            "err": 246.51847253224207,
+            "mae": 1.6261021053980267,
+            "ade": 246.51847253224207,
+            "fde": 246.51847253224207,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead4_s123"
+          },
+          "2024": {
+            "model": "gru",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 2024,
+            "err": 248.61417526971726,
+            "mae": 1.6293968019031344,
+            "ade": 248.61417526971726,
+            "fde": 248.61417526971726,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead4_s2024"
+          },
+          "42": {
+            "model": "gru",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 42,
+            "err": 239.1079086061508,
+            "mae": 1.5666177295503163,
+            "ade": 239.1079086061508,
+            "fde": 239.1079086061508,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\gru_lead4_s42"
+          }
+        },
+        "err": {
+          "mean": 244.74685213603672,
+          "std": 4.994622667519228
+        },
+        "mae": {
+          "mean": 1.6073722122838259,
+          "std": 0.03533284100411591
+        }
+      }
+    },
+    "lstm": {
+      "1": {
+        "lead_hours": 6,
+        "per_seed": {
+          "123": {
+            "model": "lstm",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 123,
+            "err": 38.196315036617875,
+            "mae": 0.2490795057595797,
+            "ade": 38.196315036617875,
+            "fde": 38.196315036617875,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead1_s123"
+          },
+          "2024": {
+            "model": "lstm",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 2024,
+            "err": 38.082395530972086,
+            "mae": 0.2480359297338996,
+            "ade": 38.082395530972086,
+            "fde": 38.082395530972086,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead1_s2024"
+          },
+          "42": {
+            "model": "lstm",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 42,
+            "err": 38.63762293879694,
+            "mae": 0.2512560242563682,
+            "ade": 38.63762293879694,
+            "fde": 38.63762293879694,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead1_s42"
+          }
+        },
+        "err": {
+          "mean": 38.305444502128964,
+          "std": 0.2932597803689219
+        },
+        "mae": {
+          "mean": 0.2494571532499492,
+          "std": 0.0016429289101007648
+        }
+      },
+      "2": {
+        "lead_hours": 12,
+        "per_seed": {
+          "123": {
+            "model": "lstm",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 123,
+            "err": 97.72875546737455,
+            "mae": 0.6379340856847628,
+            "ade": 97.72875546737455,
+            "fde": 97.72875546737455,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead2_s123"
+          },
+          "2024": {
+            "model": "lstm",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 2024,
+            "err": 97.16605293381382,
+            "mae": 0.6353344635224678,
+            "ade": 97.16605293381382,
+            "fde": 97.16605293381382,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead2_s2024"
+          },
+          "42": {
+            "model": "lstm",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 42,
+            "err": 97.48340991382868,
+            "mae": 0.6389527885007187,
+            "ade": 97.48340991382868,
+            "fde": 97.48340991382868,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead2_s42"
+          }
+        },
+        "err": {
+          "mean": 97.45940610500568,
+          "std": 0.28211818879226264
+        },
+        "mae": {
+          "mean": 0.6374071125693165,
+          "std": 0.0018658361156224336
+        }
+      },
+      "3": {
+        "lead_hours": 18,
+        "per_seed": {
+          "123": {
+            "model": "lstm",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 123,
+            "err": 173.60397576429173,
+            "mae": 1.1374061093358936,
+            "ade": 173.60397576429173,
+            "fde": 173.60397576429173,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead3_s123"
+          },
+          "2024": {
+            "model": "lstm",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 2024,
+            "err": 167.84330192154752,
+            "mae": 1.0945815354764103,
+            "ade": 167.84330192154752,
+            "fde": 167.84330192154752,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead3_s2024"
+          },
+          "42": {
+            "model": "lstm",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 42,
+            "err": 166.01596233801928,
+            "mae": 1.0835648839345235,
+            "ade": 166.01596233801928,
+            "fde": 166.01596233801928,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead3_s42"
+          }
+        },
+        "err": {
+          "mean": 169.1544133412862,
+          "std": 3.960271052030352
+        },
+        "mae": {
+          "mean": 1.1051841762489425,
+          "std": 0.028443476962105113
+        }
+      },
+      "4": {
+        "lead_hours": 24,
+        "per_seed": {
+          "123": {
+            "model": "lstm",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 123,
+            "err": 246.1266384548611,
+            "mae": 1.6106450640966021,
+            "ade": 246.1266384548611,
+            "fde": 246.1266384548611,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead4_s123"
+          },
+          "2024": {
+            "model": "lstm",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 2024,
+            "err": 259.19007161458336,
+            "mae": 1.7069415319533574,
+            "ade": 259.19007161458336,
+            "fde": 259.19007161458336,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead4_s2024"
+          },
+          "42": {
+            "model": "lstm",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 42,
+            "err": 249.9506336030506,
+            "mae": 1.642637664552719,
+            "ade": 249.9506336030506,
+            "fde": 249.9506336030506,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\lstm_lead4_s42"
+          }
+        },
+        "err": {
+          "mean": 251.75578122416502,
+          "std": 6.716192368458786
+        },
+        "mae": {
+          "mean": 1.6534080868675596,
+          "std": 0.04904338821953257
+        }
+      }
+    },
+    "informer": {
+      "1": {
+        "lead_hours": 6,
+        "per_seed": {
+          "123": {
+            "model": "informer",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 123,
+            "err": 36.85424756438365,
+            "mae": 0.23980254335365747,
+            "ade": 36.85424756438365,
+            "fde": 36.85424756438365,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead1_s123"
+          },
+          "2024": {
+            "model": "informer",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 2024,
+            "err": 37.69277355008131,
+            "mae": 0.2453656667777201,
+            "ade": 37.69277355008131,
+            "fde": 37.69277355008131,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead1_s2024"
+          },
+          "42": {
+            "model": "informer",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 42,
+            "err": 37.001714211364664,
+            "mae": 0.24117003442113422,
+            "ade": 37.001714211364664,
+            "fde": 37.001714211364664,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead1_s42"
+          }
+        },
+        "err": {
+          "mean": 37.182911775276544,
+          "std": 0.4476671476088671
+        },
+        "mae": {
+          "mean": 0.24211274818417058,
+          "std": 0.0028988993578774364
+        }
+      },
+      "2": {
+        "lead_hours": 12,
+        "per_seed": {
+          "123": {
+            "model": "informer",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 123,
+            "err": 94.07993305904765,
+            "mae": 0.6138764690345442,
+            "ade": 94.07993305904765,
+            "fde": 94.07993305904765,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead2_s123"
+          },
+          "2024": {
+            "model": "informer",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 2024,
+            "err": 94.20476813517826,
+            "mae": 0.6244231344948352,
+            "ade": 94.20476813517826,
+            "fde": 94.20476813517826,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead2_s2024"
+          },
+          "42": {
+            "model": "informer",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 42,
+            "err": 95.56823261959453,
+            "mae": 0.6336527824401855,
+            "ade": 95.56823261959453,
+            "fde": 95.56823261959453,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead2_s42"
+          }
+        },
+        "err": {
+          "mean": 94.61764460460681,
+          "std": 0.8255962268184418
+        },
+        "mae": {
+          "mean": 0.6239841286565216,
+          "std": 0.009895462979269461
+        }
+      },
+      "3": {
+        "lead_hours": 18,
+        "per_seed": {
+          "123": {
+            "model": "informer",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 123,
+            "err": 162.36765056313155,
+            "mae": 1.059289732379114,
+            "ade": 162.36765056313155,
+            "fde": 162.36765056313155,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead3_s123"
+          },
+          "2024": {
+            "model": "informer",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 2024,
+            "err": 158.28067436903535,
+            "mae": 1.047773169900129,
+            "ade": 158.28067436903535,
+            "fde": 158.28067436903535,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead3_s2024"
+          },
+          "42": {
+            "model": "informer",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 42,
+            "err": 167.639794629491,
+            "mae": 1.0963312166179726,
+            "ade": 167.639794629491,
+            "fde": 167.639794629491,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead3_s42"
+          }
+        },
+        "err": {
+          "mean": 162.76270652055263,
+          "std": 4.6920501829731425
+        },
+        "mae": {
+          "mean": 1.0677980396324052,
+          "std": 0.02537251356291644
+        }
+      },
+      "4": {
+        "lead_hours": 24,
+        "per_seed": {
+          "123": {
+            "model": "informer",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 123,
+            "err": 248.1671161954365,
+            "mae": 1.6417381014142718,
+            "ade": 248.1671161954365,
+            "fde": 248.1671161954365,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead4_s123"
+          },
+          "2024": {
+            "model": "informer",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 2024,
+            "err": 242.29407939608134,
+            "mae": 1.5960382612924726,
+            "ade": 242.29407939608134,
+            "fde": 242.29407939608134,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead4_s2024"
+          },
+          "42": {
+            "model": "informer",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 42,
+            "err": 240.89417085193452,
+            "mae": 1.5918695843408979,
+            "ade": 240.89417085193452,
+            "fde": 240.89417085193452,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\informer_lead4_s42"
+          }
+        },
+        "err": {
+          "mean": 243.78512214781745,
+          "std": 3.8589298850873686
+        },
+        "mae": {
+          "mean": 1.609881982349214,
+          "std": 0.027666834085182154
+        }
+      }
+    },
+    "autoformer": {
+      "1": {
+        "lead_hours": 6,
+        "per_seed": {
+          "123": {
+            "model": "autoformer",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 123,
+            "err": 71.86490772835351,
+            "mae": 0.47102772985365393,
+            "ade": 71.86490772835351,
+            "fde": 71.86490772835351,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead1_s123"
+          },
+          "2024": {
+            "model": "autoformer",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 2024,
+            "err": 56.819568015841156,
+            "mae": 0.37047616106719367,
+            "ade": 56.819568015841156,
+            "fde": 56.819568015841156,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead1_s2024"
+          },
+          "42": {
+            "model": "autoformer",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 42,
+            "err": 69.95007163388298,
+            "mae": 0.4591217216923931,
+            "ade": 69.95007163388298,
+            "fde": 69.95007163388298,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead1_s42"
+          }
+        },
+        "err": {
+          "mean": 66.21151579269255,
+          "std": 8.189820608505396
+        },
+        "mae": {
+          "mean": 0.43354187087108026,
+          "std": 0.05493997699658263
+        }
+      },
+      "2": {
+        "lead_hours": 12,
+        "per_seed": {
+          "123": {
+            "model": "autoformer",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 123,
+            "err": 162.51428463358275,
+            "mae": 1.0617434877744862,
+            "ade": 162.51428463358275,
+            "fde": 162.51428463358275,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead2_s123"
+          },
+          "2024": {
+            "model": "autoformer",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 2024,
+            "err": 134.70585696797974,
+            "mae": 0.8652866645598076,
+            "ade": 134.70585696797974,
+            "fde": 134.70585696797974,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead2_s2024"
+          },
+          "42": {
+            "model": "autoformer",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 42,
+            "err": 160.78754745268486,
+            "mae": 1.057062472759838,
+            "ade": 160.78754745268486,
+            "fde": 160.78754745268486,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead2_s42"
+          }
+        },
+        "err": {
+          "mean": 152.66922968474913,
+          "std": 15.58067632820073
+        },
+        "mae": {
+          "mean": 0.9946975416980439,
+          "std": 0.11209754375836077
+        }
+      },
+      "3": {
+        "lead_hours": 18,
+        "per_seed": {
+          "123": {
+            "model": "autoformer",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 123,
+            "err": 255.64527244339448,
+            "mae": 1.6593120312262437,
+            "ade": 255.64527244339448,
+            "fde": 255.64527244339448,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead3_s123"
+          },
+          "2024": {
+            "model": "autoformer",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 2024,
+            "err": 224.48034887256736,
+            "mae": 1.459778525872145,
+            "ade": 224.48034887256736,
+            "fde": 224.48034887256736,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead3_s2024"
+          },
+          "42": {
+            "model": "autoformer",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 42,
+            "err": 266.4368684505988,
+            "mae": 1.760725640965079,
+            "ade": 266.4368684505988,
+            "fde": 266.4368684505988,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead3_s42"
+          }
+        },
+        "err": {
+          "mean": 248.8541632555202,
+          "std": 21.787077747524027
+        },
+        "mae": {
+          "mean": 1.6266053993544893,
+          "std": 0.153116244556173
+        }
+      },
+      "4": {
+        "lead_hours": 24,
+        "per_seed": {
+          "123": {
+            "model": "autoformer",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 123,
+            "err": 369.8380611359127,
+            "mae": 2.4050532991923985,
+            "ade": 369.8380611359127,
+            "fde": 369.8380611359127,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead4_s123"
+          },
+          "2024": {
+            "model": "autoformer",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 2024,
+            "err": 319.7732925657242,
+            "mae": 2.1037067413330077,
+            "ade": 319.7732925657242,
+            "fde": 319.7732925657242,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead4_s2024"
+          },
+          "42": {
+            "model": "autoformer",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 42,
+            "err": 382.2847904265873,
+            "mae": 2.498770904541016,
+            "ade": 382.2847904265873,
+            "fde": 382.2847904265873,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\autoformer_lead4_s42"
+          }
+        },
+        "err": {
+          "mean": 357.29871470940805,
+          "std": 33.08849116845755
+        },
+        "mae": {
+          "mean": 2.335843648355474,
+          "std": 0.2064253014761942
+        }
+      }
+    },
+    "tsmixer": {
+      "1": {
+        "lead_hours": 6,
+        "per_seed": {
+          "123": {
+            "model": "tsmixer",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 123,
+            "err": 36.51044264078455,
+            "mae": 0.23987305556989627,
+            "ade": 36.51044264078455,
+            "fde": 36.51044264078455,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead1_s123"
+          },
+          "2024": {
+            "model": "tsmixer",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 2024,
+            "err": 38.3955495480021,
+            "mae": 0.25168937625307025,
+            "ade": 38.3955495480021,
+            "fde": 38.3955495480021,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead1_s2024"
+          },
+          "42": {
+            "model": "tsmixer",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 42,
+            "err": 37.036227380805336,
+            "mae": 0.24164146930960956,
+            "ade": 37.036227380805336,
+            "fde": 37.036227380805336,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead1_s42"
+          }
+        },
+        "err": {
+          "mean": 37.314073189864,
+          "std": 0.9727824695780806
+        },
+        "mae": {
+          "mean": 0.24440130037752536,
+          "std": 0.0063732926548587315
+        }
+      },
+      "2": {
+        "lead_hours": 12,
+        "per_seed": {
+          "123": {
+            "model": "tsmixer",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 123,
+            "err": 93.35309912453235,
+            "mae": 0.61266343425697,
+            "ade": 93.35309912453235,
+            "fde": 93.35309912453235,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead2_s123"
+          },
+          "2024": {
+            "model": "tsmixer",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 2024,
+            "err": 96.6872237084617,
+            "mae": 0.6332425520453655,
+            "ade": 96.6872237084617,
+            "fde": 96.6872237084617,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead2_s2024"
+          },
+          "42": {
+            "model": "tsmixer",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 42,
+            "err": 92.4642715669014,
+            "mae": 0.6060596466064453,
+            "ade": 92.4642715669014,
+            "fde": 92.4642715669014,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead2_s42"
+          }
+        },
+        "err": {
+          "mean": 94.16819813329849,
+          "std": 2.2263470064313493
+        },
+        "mae": {
+          "mean": 0.6173218776362602,
+          "std": 0.014177567071393437
+        }
+      },
+      "3": {
+        "lead_hours": 18,
+        "per_seed": {
+          "123": {
+            "model": "tsmixer",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 123,
+            "err": 162.82081101468938,
+            "mae": 1.0782453856782286,
+            "ade": 162.82081101468938,
+            "fde": 162.82081101468938,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead3_s123"
+          },
+          "2024": {
+            "model": "tsmixer",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 2024,
+            "err": 172.21543180728386,
+            "mae": 1.1320643110903437,
+            "ade": 172.21543180728386,
+            "fde": 172.21543180728386,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead3_s2024"
+          },
+          "42": {
+            "model": "tsmixer",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 42,
+            "err": 173.2758968147689,
+            "mae": 1.1397707476587353,
+            "ade": 173.2758968147689,
+            "fde": 173.2758968147689,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead3_s42"
+          }
+        },
+        "err": {
+          "mean": 169.43737987891404,
+          "std": 5.754596785118448
+        },
+        "mae": {
+          "mean": 1.1166934814757692,
+          "std": 0.03351923841599486
+        }
+      },
+      "4": {
+        "lead_hours": 24,
+        "per_seed": {
+          "123": {
+            "model": "tsmixer",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 123,
+            "err": 246.9124759734623,
+            "mae": 1.6338438821217371,
+            "ade": 246.9124759734623,
+            "fde": 246.9124759734623,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead4_s123"
+          },
+          "2024": {
+            "model": "tsmixer",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 2024,
+            "err": 246.44271957155257,
+            "mae": 1.6324647267659504,
+            "ade": 246.44271957155257,
+            "fde": 246.44271957155257,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead4_s2024"
+          },
+          "42": {
+            "model": "tsmixer",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 42,
+            "err": 249.13381967695932,
+            "mae": 1.644541041056315,
+            "ade": 249.13381967695932,
+            "fde": 249.13381967695932,
+            "run_dir": "checkpoints_official_12to1_sequence_baselines_safeneg\\tsmixer_lead4_s42"
+          }
+        },
+        "err": {
+          "mean": 247.49633840732474,
+          "std": 1.4374200675470161
+        },
+        "mae": {
+          "mean": 1.6369498833146676,
+          "std": 0.0066102022864493225
+        }
+      }
+    }
+  }
+}

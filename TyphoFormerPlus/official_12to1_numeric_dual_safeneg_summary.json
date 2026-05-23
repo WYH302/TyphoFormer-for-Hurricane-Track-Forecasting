@@ -1,0 +1,181 @@
+{
+  "protocol": "Official HURDAT2 strict-6h lead-specific clean 12->1 numeric-only Transformer with direct/CV-residual dual head.",
+  "seeds": [
+    42,
+    123,
+    2024
+  ],
+  "rows": [
+    {
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 42,
+      "run_dir": "checkpoints_official_12to1_numeric_dual_safeneg\\numeric_dual_lead1_s42",
+      "err": 33.62251114876688,
+      "mae": 0.2204761530256711,
+      "ade": 33.62251114876688,
+      "fde": 33.62251114876688
+    },
+    {
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 123,
+      "run_dir": "checkpoints_official_12to1_numeric_dual_safeneg\\numeric_dual_lead1_s123",
+      "err": 33.36458880156868,
+      "mae": 0.21792802069341083,
+      "ade": 33.36458880156868,
+      "fde": 33.36458880156868
+    },
+    {
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 2024,
+      "run_dir": "checkpoints_official_12to1_numeric_dual_safeneg\\numeric_dual_lead1_s2024",
+      "err": 33.847048310894266,
+      "mae": 0.22291434643610977,
+      "ade": 33.847048310894266,
+      "fde": 33.847048310894266
+    },
+    {
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 42,
+      "run_dir": "checkpoints_official_12to1_numeric_dual_safeneg\\numeric_dual_lead2_s42",
+      "err": 85.94175225916044,
+      "mae": 0.5680126499122298,
+      "ade": 85.94175225916044,
+      "fde": 85.94175225916044
+    },
+    {
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 123,
+      "run_dir": "checkpoints_official_12to1_numeric_dual_safeneg\\numeric_dual_lead2_s123",
+      "err": 84.98350834376376,
+      "mae": 0.5573255700124822,
+      "ade": 84.98350834376376,
+      "fde": 84.98350834376376
+    },
+    {
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 2024,
+      "run_dir": "checkpoints_official_12to1_numeric_dual_safeneg\\numeric_dual_lead2_s2024",
+      "err": 89.26343719052596,
+      "mae": 0.5878401286165479,
+      "ade": 89.26343719052596,
+      "fde": 89.26343719052596
+    },
+    {
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 42,
+      "run_dir": "checkpoints_official_12to1_numeric_dual_safeneg\\numeric_dual_lead3_s42",
+      "err": 155.7157194400262,
+      "mae": 1.0333734500907852,
+      "ade": 155.7157194400262,
+      "fde": 155.7157194400262
+    },
+    {
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 123,
+      "run_dir": "checkpoints_official_12to1_numeric_dual_safeneg\\numeric_dual_lead3_s123",
+      "err": 154.18464852521518,
+      "mae": 1.0205538001602996,
+      "ade": 154.18464852521518,
+      "fde": 154.18464852521518
+    },
+    {
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 2024,
+      "run_dir": "checkpoints_official_12to1_numeric_dual_safeneg\\numeric_dual_lead3_s2024",
+      "err": 158.31463586498876,
+      "mae": 1.0390594790795606,
+      "ade": 158.31463586498876,
+      "fde": 158.31463586498876
+    },
+    {
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 42,
+      "run_dir": "checkpoints_official_12to1_numeric_dual_safeneg\\numeric_dual_lead4_s42",
+      "err": 234.03482840401784,
+      "mae": 1.5478604210747613,
+      "ade": 234.03482840401784,
+      "fde": 234.03482840401784
+    },
+    {
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 123,
+      "run_dir": "checkpoints_official_12to1_numeric_dual_safeneg\\numeric_dual_lead4_s123",
+      "err": 230.19724702380952,
+      "mae": 1.5329146248953682,
+      "ade": 230.19724702380952,
+      "fde": 230.19724702380952
+    },
+    {
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 2024,
+      "run_dir": "checkpoints_official_12to1_numeric_dual_safeneg\\numeric_dual_lead4_s2024",
+      "err": 225.2806625124008,
+      "mae": 1.482589394705636,
+      "ade": 225.2806625124008,
+      "fde": 225.2806625124008
+    }
+  ],
+  "aggregate": {
+    "1": {
+      "lead_hours": 6,
+      "seed_count": 3,
+      "err": {
+        "mean": 33.61138275374328,
+        "std": 0.24142219329739034
+      },
+      "mae": {
+        "mean": 0.22043950671839724,
+        "std": 0.0024933648583697395
+      }
+    },
+    "2": {
+      "lead_hours": 12,
+      "seed_count": 3,
+      "err": {
+        "mean": 86.72956593115005,
+        "std": 2.2460933906823937
+      },
+      "mae": {
+        "mean": 0.5710594495137533,
+        "std": 0.015483759639025757
+      }
+    },
+    "3": {
+      "lead_hours": 18,
+      "seed_count": 3,
+      "err": {
+        "mean": 156.07166794341003,
+        "std": 2.0878753218208246
+      },
+      "mae": {
+        "mean": 1.0309955764435486,
+        "std": 0.00947922730908815
+      }
+    },
+    "4": {
+      "lead_hours": 24,
+      "seed_count": 3,
+      "err": {
+        "mean": 229.83757931340938,
+        "std": 4.388151747708389
+      },
+      "mae": {
+        "mean": 1.5211214802252553,
+        "std": 0.0341962778197777
+      }
+    }
+  },
+  "notes": "Same TyphoFormer++ backbone and dual head as the core model, but variant=numeric disables text and analog inputs."
+}
