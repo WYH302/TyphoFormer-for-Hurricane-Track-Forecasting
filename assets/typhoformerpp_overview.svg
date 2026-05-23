@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="0 0 1120 430" role="img" aria-labelledby="title desc">
+  <title id="title">TyphoFormer++ pipeline overview</title>
+  <desc id="desc">A schematic showing strict HURDAT2 windows, numerical storm features, structured storm text features, analog memory, TyphoFormer++ fusion, and lead-specific forecasts.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#123c69"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#eef6ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#020617" flood-opacity="0.28"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#93c5fd"/>
+    </marker>
+    <style>
+      .title { font: 700 34px Arial, sans-serif; fill: #f8fafc; }
+      .subtitle { font: 400 16px Arial, sans-serif; fill: #cbd5e1; }
+      .card-title { font: 700 18px Arial, sans-serif; fill: #0f172a; }
+      .card-body { font: 400 14px Arial, sans-serif; fill: #334155; }
+      .label { font: 700 13px Arial, sans-serif; fill: #1e3a8a; }
+      .small { font: 400 12px Arial, sans-serif; fill: #64748b; }
+      .chip { fill: #dbeafe; stroke: #93c5fd; stroke-width: 1; }
+      .line { stroke: #93c5fd; stroke-width: 3; marker-end: url(#arrow); fill: none; }
+    </style>
+  </defs>
+  <rect width="1120" height="430" rx="0" fill="url(#bg)"/>
+  <text x="56" y="58" class="title">TyphoFormer++</text>
+  <text x="56" y="88" class="subtitle">Robust hurricane track forecasting under strict 6-hour HURDAT2 protocols</text>
+
+  <g filter="url(#shadow)">
+    <rect x="58" y="132" width="195" height="180" rx="12" fill="url(#card)"/>
+    <text x="82" y="169" class="card-title">Strict HURDAT2</text>
+    <text x="82" y="198" class="card-body">12 observed records</text>
+    <text x="82" y="221" class="card-body">0000 / 0600 / 1200 / 1800</text>
+    <text x="82" y="244" class="card-body">Storm-level splits</text>
+    <rect x="82" y="267" width="118" height="25" rx="12" class="chip"/>
+    <text x="96" y="284" class="label">Leakage audit</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="314" y="104" width="198" height="114" rx="12" fill="url(#card)"/>
+    <text x="338" y="141" class="card-title">Numeric Features</text>
+    <text x="338" y="170" class="card-body">Track, motion, intensity</text>
+    <text x="338" y="193" class="card-body">Train-only normalization</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="314" y="246" width="198" height="114" rx="12" fill="url(#card)"/>
+    <text x="338" y="283" class="card-title">Text Features</text>
+    <text x="338" y="312" class="card-body">Structured storm context</text>
+    <text x="338" y="335" class="card-body">Hash embeddings</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="586" y="122" width="222" height="202" rx="14" fill="url(#card)"/>
+    <text x="615" y="160" class="card-title">TyphoFormer++ Core</text>
+    <text x="615" y="191" class="card-body">Prompt-aware fusion</text>
+    <text x="615" y="214" class="card-body">Positive analog memory</text>
+    <text x="615" y="237" class="card-body">Alignment and ranking loss</text>
+    <text x="615" y="260" class="card-body">Dual CV-residual head</text>
+    <rect x="615" y="284" width="142" height="25" rx="12" class="chip"/>
+    <text x="629" y="301" class="label">Safe negatives</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="882" y="132" width="182" height="180" rx="12" fill="url(#card)"/>
+    <text x="910" y="169" class="card-title">Forecast Leads</text>
+    <text x="910" y="200" class="card-body">6h trajectory point</text>
+    <text x="910" y="223" class="card-body">12h trajectory point</text>
+    <text x="910" y="246" class="card-body">18h trajectory point</text>
+    <text x="910" y="269" class="card-body">24h trajectory point</text>
+  </g>
+
+  <path class="line" d="M253 222 C280 222 287 161 314 161"/>
+  <path class="line" d="M253 222 C281 222 287 303 314 303"/>
+  <path class="line" d="M512 161 C542 161 552 198 586 198"/>
+  <path class="line" d="M512 303 C542 303 552 244 586 244"/>
+  <path class="line" d="M808 222 C836 222 851 222 882 222"/>
+
+  <text x="58" y="375" class="subtitle">Paper-facing claim: improves over local leak-free TyphoFormer reproduction and strong local baselines under the same audited protocol.</text>
+  <text x="58" y="400" class="small">This is retrospective research code, not an operational hurricane forecast system.</text>
+</svg>
