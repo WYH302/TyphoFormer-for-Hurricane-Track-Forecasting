@@ -1,0 +1,16 @@
+# Local/generated artifacts
+checkpoints*/
+data*/
+embedding_chunks/
+experiment_logs/
+__pycache__/
+assets/
+
+# Large model and array outputs
+*.ckpt
+*.log
+*.npy
+*.npz
+*.pt
+*.pth
+*.py[cod]

@@ -1,0 +1,1753 @@
+{
+  "protocol": "Official HURDAT2 strict-6h lead-specific clean 12->1 full ablation on safe-negative data.",
+  "seeds": [
+    42,
+    123,
+    2024
+  ],
+  "leads": [
+    6,
+    12,
+    18,
+    24
+  ],
+  "variants": {
+    "b3_leakfree_eval": {
+      "label": "B3 leak-free TyphoFormer",
+      "per_lead": {
+        "1": {
+          "123": {
+            "variant": "b3_leakfree_eval",
+            "label": "B3 leak-free TyphoFormer",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 123,
+            "err": 38.7310659134655,
+            "mae": 0.25267509792162024,
+            "ade": 38.7310659134655,
+            "fde": 38.7310659134655,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead1_s123"
+          },
+          "2024": {
+            "variant": "b3_leakfree_eval",
+            "label": "B3 leak-free TyphoFormer",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 2024,
+            "err": 40.03041834573658,
+            "mae": 0.2608620614716501,
+            "ade": 40.03041834573658,
+            "fde": 40.03041834573658,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead1_s2024"
+          },
+          "42": {
+            "variant": "b3_leakfree_eval",
+            "label": "B3 leak-free TyphoFormer",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 42,
+            "err": 39.62369872081892,
+            "mae": 0.25767992419216473,
+            "ade": 39.62369872081892,
+            "fde": 39.62369872081892,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead1_s42"
+          }
+        },
+        "2": {
+          "123": {
+            "variant": "b3_leakfree_eval",
+            "label": "B3 leak-free TyphoFormer",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 123,
+            "err": 100.19110881106954,
+            "mae": 0.6568356675161442,
+            "ade": 100.19110881106954,
+            "fde": 100.19110881106954,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead2_s123"
+          },
+          "2024": {
+            "variant": "b3_leakfree_eval",
+            "label": "B3 leak-free TyphoFormer",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 2024,
+            "err": 101.5870811784771,
+            "mae": 0.6662790849175252,
+            "ade": 101.5870811784771,
+            "fde": 101.5870811784771,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead2_s2024"
+          },
+          "42": {
+            "variant": "b3_leakfree_eval",
+            "label": "B3 leak-free TyphoFormer",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 42,
+            "err": 103.54718894421215,
+            "mae": 0.6880536267455195,
+            "ade": 103.54718894421215,
+            "fde": 103.54718894421215,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead2_s42"
+          }
+        },
+        "3": {
+          "123": {
+            "variant": "b3_leakfree_eval",
+            "label": "B3 leak-free TyphoFormer",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 123,
+            "err": 172.9367039846089,
+            "mae": 1.1238788159307604,
+            "ade": 172.9367039846089,
+            "fde": 172.9367039846089,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead3_s123"
+          },
+          "2024": {
+            "variant": "b3_leakfree_eval",
+            "label": "B3 leak-free TyphoFormer",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 2024,
+            "err": 166.03426009309507,
+            "mae": 1.0990739354116474,
+            "ade": 166.03426009309507,
+            "fde": 166.03426009309507,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead3_s2024"
+          },
+          "42": {
+            "variant": "b3_leakfree_eval",
+            "label": "B3 leak-free TyphoFormer",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 42,
+            "err": 173.99282635900076,
+            "mae": 1.149558592699245,
+            "ade": 173.99282635900076,
+            "fde": 173.99282635900076,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead3_s42"
+          }
+        },
+        "4": {
+          "123": {
+            "variant": "b3_leakfree_eval",
+            "label": "B3 leak-free TyphoFormer",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 123,
+            "err": 262.29337022569445,
+            "mae": 1.7184581756591797,
+            "ade": 262.29337022569445,
+            "fde": 262.29337022569445,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead4_s123"
+          },
+          "2024": {
+            "variant": "b3_leakfree_eval",
+            "label": "B3 leak-free TyphoFormer",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 2024,
+            "err": 253.4214363219246,
+            "mae": 1.6715263063945467,
+            "ade": 253.4214363219246,
+            "fde": 253.4214363219246,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead4_s2024"
+          },
+          "42": {
+            "variant": "b3_leakfree_eval",
+            "label": "B3 leak-free TyphoFormer",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 42,
+            "err": 266.44800967261904,
+            "mae": 1.718768310546875,
+            "ade": 266.44800967261904,
+            "fde": 266.44800967261904,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead4_s42"
+          }
+        }
+      },
+      "aggregate": {
+        "1": {
+          "lead_hours": 6,
+          "err": {
+            "mean": 39.461727660007,
+            "std": 0.6646466386115228
+          },
+          "mae": {
+            "mean": 0.25707236119514504,
+            "std": 0.004127159148723248
+          }
+        },
+        "2": {
+          "lead_hours": 12,
+          "err": {
+            "mean": 101.77512631125293,
+            "std": 1.6859238399136367
+          },
+          "mae": {
+            "mean": 0.6703894597263963,
+            "std": 0.01600973548856403
+          }
+        },
+        "3": {
+          "lead_hours": 18,
+          "err": {
+            "mean": 170.98793014556824,
+            "std": 4.3223817345301585
+          },
+          "mae": {
+            "mean": 1.1241704480138843,
+            "std": 0.025243592104046468
+          }
+        },
+        "4": {
+          "lead_hours": 24,
+          "err": {
+            "mean": 260.72093874007936,
+            "std": 6.654119693691333
+          },
+          "mae": {
+            "mean": 1.7029175975335338,
+            "std": 0.02718609783403327
+          }
+        }
+      }
+    },
+    "b3_dual_head": {
+      "label": "B3 + dual CV-residual head",
+      "per_lead": {
+        "1": {
+          "123": {
+            "variant": "b3_dual_head",
+            "label": "B3 + dual CV-residual head",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 123,
+            "err": 33.30570427011281,
+            "mae": 0.2172845066457555,
+            "ade": 33.30570427011281,
+            "fde": 33.30570427011281,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead1_s123"
+          },
+          "2024": {
+            "variant": "b3_dual_head",
+            "label": "B3 + dual CV-residual head",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 2024,
+            "err": 33.99304343966156,
+            "mae": 0.22210096025027148,
+            "ade": 33.99304343966156,
+            "fde": 33.99304343966156,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead1_s2024"
+          },
+          "42": {
+            "variant": "b3_dual_head",
+            "label": "B3 + dual CV-residual head",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 42,
+            "err": 34.200410181982875,
+            "mae": 0.22473753299637744,
+            "ade": 34.200410181982875,
+            "fde": 34.200410181982875,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead1_s42"
+          }
+        },
+        "2": {
+          "123": {
+            "variant": "b3_dual_head",
+            "label": "B3 + dual CV-residual head",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 123,
+            "err": 86.77385099169234,
+            "mae": 0.5700726092701227,
+            "ade": 86.77385099169234,
+            "fde": 86.77385099169234,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead2_s123"
+          },
+          "2024": {
+            "variant": "b3_dual_head",
+            "label": "B3 + dual CV-residual head",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 2024,
+            "err": 86.12418505171655,
+            "mae": 0.5644875271219603,
+            "ade": 86.12418505171655,
+            "fde": 86.12418505171655,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead2_s2024"
+          },
+          "42": {
+            "variant": "b3_dual_head",
+            "label": "B3 + dual CV-residual head",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 42,
+            "err": 86.48825361224966,
+            "mae": 0.5724906881090621,
+            "ade": 86.48825361224966,
+            "fde": 86.48825361224966,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead2_s42"
+          }
+        },
+        "3": {
+          "123": {
+            "variant": "b3_dual_head",
+            "label": "B3 + dual CV-residual head",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 123,
+            "err": 151.84761677816243,
+            "mae": 0.9994810584062588,
+            "ade": 151.84761677816243,
+            "fde": 151.84761677816243,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead3_s123"
+          },
+          "2024": {
+            "variant": "b3_dual_head",
+            "label": "B3 + dual CV-residual head",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 2024,
+            "err": 153.07341688692927,
+            "mae": 1.02379874840468,
+            "ade": 153.07341688692927,
+            "fde": 153.07341688692927,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead3_s2024"
+          },
+          "42": {
+            "variant": "b3_dual_head",
+            "label": "B3 + dual CV-residual head",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 42,
+            "err": 156.38328250725112,
+            "mae": 1.0330222866492358,
+            "ade": 156.38328250725112,
+            "fde": 156.38328250725112,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead3_s42"
+          }
+        },
+        "4": {
+          "123": {
+            "variant": "b3_dual_head",
+            "label": "B3 + dual CV-residual head",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 123,
+            "err": 235.8104011656746,
+            "mae": 1.56577758183555,
+            "ade": 235.8104011656746,
+            "fde": 235.8104011656746,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead4_s123"
+          },
+          "2024": {
+            "variant": "b3_dual_head",
+            "label": "B3 + dual CV-residual head",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 2024,
+            "err": 233.66012679811507,
+            "mae": 1.5706735277932788,
+            "ade": 233.66012679811507,
+            "fde": 233.66012679811507,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead4_s2024"
+          },
+          "42": {
+            "variant": "b3_dual_head",
+            "label": "B3 + dual CV-residual head",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 42,
+            "err": 239.97827923487102,
+            "mae": 1.6020840357220363,
+            "ade": 239.97827923487102,
+            "fde": 239.97827923487102,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead4_s42"
+          }
+        }
+      },
+      "aggregate": {
+        "1": {
+          "lead_hours": 6,
+          "err": {
+            "mean": 33.83305263058575,
+            "std": 0.4683187604883662
+          },
+          "mae": {
+            "mean": 0.22137433329746814,
+            "std": 0.0037792711588574175
+          }
+        },
+        "2": {
+          "lead_hours": 12,
+          "err": {
+            "mean": 86.46209655188619,
+            "std": 0.3256218700368585
+          },
+          "mae": {
+            "mean": 0.5690169415003817,
+            "std": 0.004104689059651139
+          }
+        },
+        "3": {
+          "lead_hours": 18,
+          "err": {
+            "mean": 153.76810539078093,
+            "std": 2.3462757701398127
+          },
+          "mae": {
+            "mean": 1.0187673644867248,
+            "std": 0.01732742381628795
+          }
+        },
+        "4": {
+          "lead_hours": 24,
+          "err": {
+            "mean": 236.4829357328869,
+            "std": 3.2123184169059074
+          },
+          "mae": {
+            "mean": 1.579511715116955,
+            "std": 0.019700883605289956
+          }
+        }
+      }
+    },
+    "b3_positive_analog": {
+      "label": "B3 + positive analog only",
+      "per_lead": {
+        "1": {
+          "123": {
+            "variant": "b3_positive_analog",
+            "label": "B3 + positive analog only",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 123,
+            "err": 38.81155206532032,
+            "mae": 0.25309175559183356,
+            "ade": 38.81155206532032,
+            "fde": 38.81155206532032,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead1_s123"
+          },
+          "2024": {
+            "variant": "b3_positive_analog",
+            "label": "B3 + positive analog only",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 2024,
+            "err": 39.34784040086668,
+            "mae": 0.2554682579593382,
+            "ade": 39.34784040086668,
+            "fde": 39.34784040086668,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead1_s2024"
+          },
+          "42": {
+            "variant": "b3_positive_analog",
+            "label": "B3 + positive analog only",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 42,
+            "err": 39.4403976822402,
+            "mae": 0.258242647324312,
+            "ade": 39.4403976822402,
+            "fde": 39.4403976822402,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead1_s42"
+          }
+        },
+        "2": {
+          "123": {
+            "variant": "b3_positive_analog",
+            "label": "B3 + positive analog only",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 123,
+            "err": 98.82452684859155,
+            "mae": 0.6468803647538306,
+            "ade": 98.82452684859155,
+            "fde": 98.82452684859155,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead2_s123"
+          },
+          "2024": {
+            "variant": "b3_positive_analog",
+            "label": "B3 + positive analog only",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 2024,
+            "err": 98.8914952237841,
+            "mae": 0.6497036302593392,
+            "ade": 98.8914952237841,
+            "fde": 98.8914952237841,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead2_s2024"
+          },
+          "42": {
+            "variant": "b3_positive_analog",
+            "label": "B3 + positive analog only",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 42,
+            "err": 92.97735780527894,
+            "mae": 0.6080640443613832,
+            "ade": 92.97735780527894,
+            "fde": 92.97735780527894,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead2_s42"
+          }
+        },
+        "3": {
+          "123": {
+            "variant": "b3_positive_analog",
+            "label": "B3 + positive analog only",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 123,
+            "err": 175.061165267122,
+            "mae": 1.1373397233243474,
+            "ade": 175.061165267122,
+            "fde": 175.061165267122,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead3_s123"
+          },
+          "2024": {
+            "variant": "b3_positive_analog",
+            "label": "B3 + positive analog only",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 2024,
+            "err": 170.21988810465007,
+            "mae": 1.1125216512622949,
+            "ade": 170.21988810465007,
+            "fde": 170.21988810465007,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead3_s2024"
+          },
+          "42": {
+            "variant": "b3_positive_analog",
+            "label": "B3 + positive analog only",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 42,
+            "err": 182.2134863573634,
+            "mae": 1.1946858674466252,
+            "ade": 182.2134863573634,
+            "fde": 182.2134863573634,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead3_s42"
+          }
+        },
+        "4": {
+          "123": {
+            "variant": "b3_positive_analog",
+            "label": "B3 + positive analog only",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 123,
+            "err": 263.68473462301586,
+            "mae": 1.7232240343850755,
+            "ade": 263.68473462301586,
+            "fde": 263.68473462301586,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead4_s123"
+          },
+          "2024": {
+            "variant": "b3_positive_analog",
+            "label": "B3 + positive analog only",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 2024,
+            "err": 268.8819180927579,
+            "mae": 1.7354922461131261,
+            "ade": 268.8819180927579,
+            "fde": 268.8819180927579,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead4_s2024"
+          },
+          "42": {
+            "variant": "b3_positive_analog",
+            "label": "B3 + positive analog only",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 42,
+            "err": 249.36540333581348,
+            "mae": 1.6411428724016461,
+            "ade": 249.36540333581348,
+            "fde": 249.36540333581348,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead4_s42"
+          }
+        }
+      },
+      "aggregate": {
+        "1": {
+          "lead_hours": 6,
+          "err": {
+            "mean": 39.19993004947573,
+            "std": 0.3395140741063345
+          },
+          "mae": {
+            "mean": 0.2556008869584946,
+            "std": 0.0025780058666519073
+          }
+        },
+        "2": {
+          "lead_hours": 12,
+          "err": {
+            "mean": 96.89779329255153,
+            "std": 3.39536183612567
+          },
+          "mae": {
+            "mean": 0.6348826797915177,
+            "std": 0.023268478931367582
+          }
+        },
+        "3": {
+          "lead_hours": 18,
+          "err": {
+            "mean": 175.83151324304515,
+            "std": 6.033794557728886
+          },
+          "mae": {
+            "mean": 1.1481824140110892,
+            "std": 0.04214157758428854
+          }
+        },
+        "4": {
+          "lead_hours": 24,
+          "err": {
+            "mean": 260.64401868386244,
+            "std": 10.107326656019083
+          },
+          "mae": {
+            "mean": 1.6999530509666159,
+            "std": 0.05129917233137193
+          }
+        }
+      }
+    },
+    "b3_alignment_rank": {
+      "label": "B3 + alignment/rank only",
+      "per_lead": {
+        "1": {
+          "123": {
+            "variant": "b3_alignment_rank",
+            "label": "B3 + alignment/rank only",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 123,
+            "err": 41.708560747591406,
+            "mae": 0.2713983055788224,
+            "ade": 41.708560747591406,
+            "fde": 41.708560747591406,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead1_s123"
+          },
+          "2024": {
+            "variant": "b3_alignment_rank",
+            "label": "B3 + alignment/rank only",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 2024,
+            "err": 43.38762583374506,
+            "mae": 0.2835855647352216,
+            "ade": 43.38762583374506,
+            "fde": 43.38762583374506,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead1_s2024"
+          },
+          "42": {
+            "variant": "b3_alignment_rank",
+            "label": "B3 + alignment/rank only",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 42,
+            "err": 44.045783604557805,
+            "mae": 0.2873158775299434,
+            "ade": 44.045783604557805,
+            "fde": 44.045783604557805,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead1_s42"
+          }
+        },
+        "2": {
+          "123": {
+            "variant": "b3_alignment_rank",
+            "label": "B3 + alignment/rank only",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 123,
+            "err": 104.81887112469741,
+            "mae": 0.6851127570783588,
+            "ade": 104.81887112469741,
+            "fde": 104.81887112469741,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead2_s123"
+          },
+          "2024": {
+            "variant": "b3_alignment_rank",
+            "label": "B3 + alignment/rank only",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 2024,
+            "err": 109.57289033271897,
+            "mae": 0.7123034960787061,
+            "ade": 109.57289033271897,
+            "fde": 109.57289033271897,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead2_s2024"
+          },
+          "42": {
+            "variant": "b3_alignment_rank",
+            "label": "B3 + alignment/rank only",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 42,
+            "err": 104.1036210181008,
+            "mae": 0.6830265730199679,
+            "ade": 104.1036210181008,
+            "fde": 104.1036210181008,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead2_s42"
+          }
+        },
+        "3": {
+          "123": {
+            "variant": "b3_alignment_rank",
+            "label": "B3 + alignment/rank only",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 123,
+            "err": 173.5836539811003,
+            "mae": 1.129886490142274,
+            "ade": 173.5836539811003,
+            "fde": 173.5836539811003,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead3_s123"
+          },
+          "2024": {
+            "variant": "b3_alignment_rank",
+            "label": "B3 + alignment/rank only",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 2024,
+            "err": 177.543114941991,
+            "mae": 1.1675739345436325,
+            "ade": 177.543114941991,
+            "fde": 177.543114941991,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead3_s2024"
+          },
+          "42": {
+            "variant": "b3_alignment_rank",
+            "label": "B3 + alignment/rank only",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 42,
+            "err": 179.3351173629304,
+            "mae": 1.1801522534764455,
+            "ade": 179.3351173629304,
+            "fde": 179.3351173629304,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead3_s42"
+          }
+        },
+        "4": {
+          "123": {
+            "variant": "b3_alignment_rank",
+            "label": "B3 + alignment/rank only",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 123,
+            "err": 271.7022972470238,
+            "mae": 1.7799222976442368,
+            "ade": 271.7022972470238,
+            "fde": 271.7022972470238,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead4_s123"
+          },
+          "2024": {
+            "variant": "b3_alignment_rank",
+            "label": "B3 + alignment/rank only",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 2024,
+            "err": 288.7178958953373,
+            "mae": 1.929454379611545,
+            "ade": 288.7178958953373,
+            "fde": 288.7178958953373,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead4_s2024"
+          },
+          "42": {
+            "variant": "b3_alignment_rank",
+            "label": "B3 + alignment/rank only",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 42,
+            "err": 283.2389353918651,
+            "mae": 1.8370470561678447,
+            "ade": 283.2389353918651,
+            "fde": 283.2389353918651,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead4_s42"
+          }
+        }
+      },
+      "aggregate": {
+        "1": {
+          "lead_hours": 6,
+          "err": {
+            "mean": 43.04732339529809,
+            "std": 1.2051999763488463
+          },
+          "mae": {
+            "mean": 0.2807665826146625,
+            "std": 0.008324798457128128
+          }
+        },
+        "2": {
+          "lead_hours": 12,
+          "err": {
+            "mean": 106.16512749183906,
+            "std": 2.9727985743248833
+          },
+          "mae": {
+            "mean": 0.693480942059011,
+            "std": 0.016334149682478975
+          }
+        },
+        "3": {
+          "lead_hours": 18,
+          "err": {
+            "mean": 176.82062876200723,
+            "std": 2.943012481851508
+          },
+          "mae": {
+            "mean": 1.1592042260541173,
+            "std": 0.026157231429211492
+          }
+        },
+        "4": {
+          "lead_hours": 24,
+          "err": {
+            "mean": 281.2197095114087,
+            "std": 8.685655082223239
+          },
+          "mae": {
+            "mean": 1.8488079111412088,
+            "std": 0.07545660452636223
+          }
+        }
+      }
+    },
+    "b4_safe_existing": {
+      "label": "B4 safe TyphoFormer++",
+      "per_lead": {
+        "1": {
+          "123": {
+            "variant": "b4_safe_existing",
+            "label": "B4 safe TyphoFormer++",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 123,
+            "err": 33.698401087985836,
+            "mae": 0.21944615963419437,
+            "ade": 33.698401087985836,
+            "fde": 33.698401087985836,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead1_s123"
+          },
+          "2024": {
+            "variant": "b4_safe_existing",
+            "label": "B4 safe TyphoFormer++",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 2024,
+            "err": 34.699880245646,
+            "mae": 0.22705365860729193,
+            "ade": 34.699880245646,
+            "fde": 34.699880245646,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead1_s2024"
+          },
+          "42": {
+            "variant": "b4_safe_existing",
+            "label": "B4 safe TyphoFormer++",
+            "lead": 1,
+            "lead_hours": 6,
+            "seed": 42,
+            "err": 34.061404262135625,
+            "mae": 0.22316060801268567,
+            "ade": 34.061404262135625,
+            "fde": 34.061404262135625,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead1_s42"
+          }
+        },
+        "2": {
+          "123": {
+            "variant": "b4_safe_existing",
+            "label": "B4 safe TyphoFormer++",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 123,
+            "err": 85.64041722257372,
+            "mae": 0.5692436419742208,
+            "ade": 85.64041722257372,
+            "fde": 85.64041722257372,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead2_s123"
+          },
+          "2024": {
+            "variant": "b4_safe_existing",
+            "label": "B4 safe TyphoFormer++",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 2024,
+            "err": 87.80139005419234,
+            "mae": 0.5827383054813868,
+            "ade": 87.80139005419234,
+            "fde": 87.80139005419234,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead2_s2024"
+          },
+          "42": {
+            "variant": "b4_safe_existing",
+            "label": "B4 safe TyphoFormer++",
+            "lead": 2,
+            "lead_hours": 12,
+            "seed": 42,
+            "err": 86.69362823056503,
+            "mae": 0.5662887667266416,
+            "ade": 86.69362823056503,
+            "fde": 86.69362823056503,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead2_s42"
+          }
+        },
+        "3": {
+          "123": {
+            "variant": "b4_safe_existing",
+            "label": "B4 safe TyphoFormer++",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 123,
+            "err": 151.3429963802863,
+            "mae": 1.0075913332179636,
+            "ade": 151.3429963802863,
+            "fde": 151.3429963802863,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead3_s123"
+          },
+          "2024": {
+            "variant": "b4_safe_existing",
+            "label": "B4 safe TyphoFormer++",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 2024,
+            "err": 160.55864637911677,
+            "mae": 1.0714843601523758,
+            "ade": 160.55864637911677,
+            "fde": 160.55864637911677,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead3_s2024"
+          },
+          "42": {
+            "variant": "b4_safe_existing",
+            "label": "B4 safe TyphoFormer++",
+            "lead": 3,
+            "lead_hours": 18,
+            "seed": 42,
+            "err": 156.69815154846557,
+            "mae": 1.042058853332154,
+            "ade": 156.69815154846557,
+            "fde": 156.69815154846557,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead3_s42"
+          }
+        },
+        "4": {
+          "123": {
+            "variant": "b4_safe_existing",
+            "label": "B4 safe TyphoFormer++",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 123,
+            "err": 231.8823707217262,
+            "mae": 1.53337648179796,
+            "ade": 231.8823707217262,
+            "fde": 231.8823707217262,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead4_s123"
+          },
+          "2024": {
+            "variant": "b4_safe_existing",
+            "label": "B4 safe TyphoFormer++",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 2024,
+            "err": 230.41523127480158,
+            "mae": 1.523384281945607,
+            "ade": 230.41523127480158,
+            "fde": 230.41523127480158,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead4_s2024"
+          },
+          "42": {
+            "variant": "b4_safe_existing",
+            "label": "B4 safe TyphoFormer++",
+            "lead": 4,
+            "lead_hours": 24,
+            "seed": 42,
+            "err": 229.28643508184524,
+            "mae": 1.532789551265656,
+            "ade": 229.28643508184524,
+            "fde": 229.28643508184524,
+            "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead4_s42"
+          }
+        }
+      },
+      "aggregate": {
+        "1": {
+          "lead_hours": 6,
+          "err": {
+            "mean": 34.15322853192249,
+            "std": 0.5070146922904164
+          },
+          "mae": {
+            "mean": 0.223220142084724,
+            "std": 0.0038040988927366525
+          }
+        },
+        "2": {
+          "lead_hours": 12,
+          "err": {
+            "mean": 86.71181183577703,
+            "std": 1.0806011648024125
+          },
+          "mae": {
+            "mean": 0.5727569047274165,
+            "std": 0.008769497858527
+          }
+        },
+        "3": {
+          "lead_hours": 18,
+          "err": {
+            "mean": 156.19993143595622,
+            "std": 4.6279821397254315
+          },
+          "mae": {
+            "mean": 1.0403781822341645,
+            "std": 0.03197965312843613
+          }
+        },
+        "4": {
+          "lead_hours": 24,
+          "err": {
+            "mean": 230.52801235945768,
+            "std": 1.3016374846297258
+          },
+          "mae": {
+            "mean": 1.5298501050030744,
+            "std": 0.005607251797475777
+          }
+        }
+      }
+    }
+  },
+  "rows": [
+    {
+      "variant": "b3_alignment_rank",
+      "label": "B3 + alignment/rank only",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 123,
+      "err": 41.708560747591406,
+      "mae": 0.2713983055788224,
+      "ade": 41.708560747591406,
+      "fde": 41.708560747591406,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead1_s123"
+    },
+    {
+      "variant": "b3_alignment_rank",
+      "label": "B3 + alignment/rank only",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 2024,
+      "err": 43.38762583374506,
+      "mae": 0.2835855647352216,
+      "ade": 43.38762583374506,
+      "fde": 43.38762583374506,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead1_s2024"
+    },
+    {
+      "variant": "b3_alignment_rank",
+      "label": "B3 + alignment/rank only",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 42,
+      "err": 44.045783604557805,
+      "mae": 0.2873158775299434,
+      "ade": 44.045783604557805,
+      "fde": 44.045783604557805,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead1_s42"
+    },
+    {
+      "variant": "b3_alignment_rank",
+      "label": "B3 + alignment/rank only",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 123,
+      "err": 104.81887112469741,
+      "mae": 0.6851127570783588,
+      "ade": 104.81887112469741,
+      "fde": 104.81887112469741,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead2_s123"
+    },
+    {
+      "variant": "b3_alignment_rank",
+      "label": "B3 + alignment/rank only",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 2024,
+      "err": 109.57289033271897,
+      "mae": 0.7123034960787061,
+      "ade": 109.57289033271897,
+      "fde": 109.57289033271897,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead2_s2024"
+    },
+    {
+      "variant": "b3_alignment_rank",
+      "label": "B3 + alignment/rank only",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 42,
+      "err": 104.1036210181008,
+      "mae": 0.6830265730199679,
+      "ade": 104.1036210181008,
+      "fde": 104.1036210181008,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead2_s42"
+    },
+    {
+      "variant": "b3_alignment_rank",
+      "label": "B3 + alignment/rank only",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 123,
+      "err": 173.5836539811003,
+      "mae": 1.129886490142274,
+      "ade": 173.5836539811003,
+      "fde": 173.5836539811003,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead3_s123"
+    },
+    {
+      "variant": "b3_alignment_rank",
+      "label": "B3 + alignment/rank only",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 2024,
+      "err": 177.543114941991,
+      "mae": 1.1675739345436325,
+      "ade": 177.543114941991,
+      "fde": 177.543114941991,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead3_s2024"
+    },
+    {
+      "variant": "b3_alignment_rank",
+      "label": "B3 + alignment/rank only",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 42,
+      "err": 179.3351173629304,
+      "mae": 1.1801522534764455,
+      "ade": 179.3351173629304,
+      "fde": 179.3351173629304,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead3_s42"
+    },
+    {
+      "variant": "b3_alignment_rank",
+      "label": "B3 + alignment/rank only",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 123,
+      "err": 271.7022972470238,
+      "mae": 1.7799222976442368,
+      "ade": 271.7022972470238,
+      "fde": 271.7022972470238,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead4_s123"
+    },
+    {
+      "variant": "b3_alignment_rank",
+      "label": "B3 + alignment/rank only",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 2024,
+      "err": 288.7178958953373,
+      "mae": 1.929454379611545,
+      "ade": 288.7178958953373,
+      "fde": 288.7178958953373,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead4_s2024"
+    },
+    {
+      "variant": "b3_alignment_rank",
+      "label": "B3 + alignment/rank only",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 42,
+      "err": 283.2389353918651,
+      "mae": 1.8370470561678447,
+      "ade": 283.2389353918651,
+      "fde": 283.2389353918651,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_alignment_rank_lead4_s42"
+    },
+    {
+      "variant": "b3_dual_head",
+      "label": "B3 + dual CV-residual head",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 123,
+      "err": 33.30570427011281,
+      "mae": 0.2172845066457555,
+      "ade": 33.30570427011281,
+      "fde": 33.30570427011281,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead1_s123"
+    },
+    {
+      "variant": "b3_dual_head",
+      "label": "B3 + dual CV-residual head",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 2024,
+      "err": 33.99304343966156,
+      "mae": 0.22210096025027148,
+      "ade": 33.99304343966156,
+      "fde": 33.99304343966156,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead1_s2024"
+    },
+    {
+      "variant": "b3_dual_head",
+      "label": "B3 + dual CV-residual head",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 42,
+      "err": 34.200410181982875,
+      "mae": 0.22473753299637744,
+      "ade": 34.200410181982875,
+      "fde": 34.200410181982875,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead1_s42"
+    },
+    {
+      "variant": "b3_dual_head",
+      "label": "B3 + dual CV-residual head",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 123,
+      "err": 86.77385099169234,
+      "mae": 0.5700726092701227,
+      "ade": 86.77385099169234,
+      "fde": 86.77385099169234,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead2_s123"
+    },
+    {
+      "variant": "b3_dual_head",
+      "label": "B3 + dual CV-residual head",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 2024,
+      "err": 86.12418505171655,
+      "mae": 0.5644875271219603,
+      "ade": 86.12418505171655,
+      "fde": 86.12418505171655,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead2_s2024"
+    },
+    {
+      "variant": "b3_dual_head",
+      "label": "B3 + dual CV-residual head",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 42,
+      "err": 86.48825361224966,
+      "mae": 0.5724906881090621,
+      "ade": 86.48825361224966,
+      "fde": 86.48825361224966,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead2_s42"
+    },
+    {
+      "variant": "b3_dual_head",
+      "label": "B3 + dual CV-residual head",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 123,
+      "err": 151.84761677816243,
+      "mae": 0.9994810584062588,
+      "ade": 151.84761677816243,
+      "fde": 151.84761677816243,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead3_s123"
+    },
+    {
+      "variant": "b3_dual_head",
+      "label": "B3 + dual CV-residual head",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 2024,
+      "err": 153.07341688692927,
+      "mae": 1.02379874840468,
+      "ade": 153.07341688692927,
+      "fde": 153.07341688692927,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead3_s2024"
+    },
+    {
+      "variant": "b3_dual_head",
+      "label": "B3 + dual CV-residual head",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 42,
+      "err": 156.38328250725112,
+      "mae": 1.0330222866492358,
+      "ade": 156.38328250725112,
+      "fde": 156.38328250725112,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead3_s42"
+    },
+    {
+      "variant": "b3_dual_head",
+      "label": "B3 + dual CV-residual head",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 123,
+      "err": 235.8104011656746,
+      "mae": 1.56577758183555,
+      "ade": 235.8104011656746,
+      "fde": 235.8104011656746,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead4_s123"
+    },
+    {
+      "variant": "b3_dual_head",
+      "label": "B3 + dual CV-residual head",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 2024,
+      "err": 233.66012679811507,
+      "mae": 1.5706735277932788,
+      "ade": 233.66012679811507,
+      "fde": 233.66012679811507,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead4_s2024"
+    },
+    {
+      "variant": "b3_dual_head",
+      "label": "B3 + dual CV-residual head",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 42,
+      "err": 239.97827923487102,
+      "mae": 1.6020840357220363,
+      "ade": 239.97827923487102,
+      "fde": 239.97827923487102,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_dual_head_lead4_s42"
+    },
+    {
+      "variant": "b3_leakfree_eval",
+      "label": "B3 leak-free TyphoFormer",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 123,
+      "err": 38.7310659134655,
+      "mae": 0.25267509792162024,
+      "ade": 38.7310659134655,
+      "fde": 38.7310659134655,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead1_s123"
+    },
+    {
+      "variant": "b3_leakfree_eval",
+      "label": "B3 leak-free TyphoFormer",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 2024,
+      "err": 40.03041834573658,
+      "mae": 0.2608620614716501,
+      "ade": 40.03041834573658,
+      "fde": 40.03041834573658,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead1_s2024"
+    },
+    {
+      "variant": "b3_leakfree_eval",
+      "label": "B3 leak-free TyphoFormer",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 42,
+      "err": 39.62369872081892,
+      "mae": 0.25767992419216473,
+      "ade": 39.62369872081892,
+      "fde": 39.62369872081892,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead1_s42"
+    },
+    {
+      "variant": "b3_leakfree_eval",
+      "label": "B3 leak-free TyphoFormer",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 123,
+      "err": 100.19110881106954,
+      "mae": 0.6568356675161442,
+      "ade": 100.19110881106954,
+      "fde": 100.19110881106954,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead2_s123"
+    },
+    {
+      "variant": "b3_leakfree_eval",
+      "label": "B3 leak-free TyphoFormer",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 2024,
+      "err": 101.5870811784771,
+      "mae": 0.6662790849175252,
+      "ade": 101.5870811784771,
+      "fde": 101.5870811784771,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead2_s2024"
+    },
+    {
+      "variant": "b3_leakfree_eval",
+      "label": "B3 leak-free TyphoFormer",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 42,
+      "err": 103.54718894421215,
+      "mae": 0.6880536267455195,
+      "ade": 103.54718894421215,
+      "fde": 103.54718894421215,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead2_s42"
+    },
+    {
+      "variant": "b3_leakfree_eval",
+      "label": "B3 leak-free TyphoFormer",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 123,
+      "err": 172.9367039846089,
+      "mae": 1.1238788159307604,
+      "ade": 172.9367039846089,
+      "fde": 172.9367039846089,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead3_s123"
+    },
+    {
+      "variant": "b3_leakfree_eval",
+      "label": "B3 leak-free TyphoFormer",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 2024,
+      "err": 166.03426009309507,
+      "mae": 1.0990739354116474,
+      "ade": 166.03426009309507,
+      "fde": 166.03426009309507,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead3_s2024"
+    },
+    {
+      "variant": "b3_leakfree_eval",
+      "label": "B3 leak-free TyphoFormer",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 42,
+      "err": 173.99282635900076,
+      "mae": 1.149558592699245,
+      "ade": 173.99282635900076,
+      "fde": 173.99282635900076,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead3_s42"
+    },
+    {
+      "variant": "b3_leakfree_eval",
+      "label": "B3 leak-free TyphoFormer",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 123,
+      "err": 262.29337022569445,
+      "mae": 1.7184581756591797,
+      "ade": 262.29337022569445,
+      "fde": 262.29337022569445,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead4_s123"
+    },
+    {
+      "variant": "b3_leakfree_eval",
+      "label": "B3 leak-free TyphoFormer",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 2024,
+      "err": 253.4214363219246,
+      "mae": 1.6715263063945467,
+      "ade": 253.4214363219246,
+      "fde": 253.4214363219246,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead4_s2024"
+    },
+    {
+      "variant": "b3_leakfree_eval",
+      "label": "B3 leak-free TyphoFormer",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 42,
+      "err": 266.44800967261904,
+      "mae": 1.718768310546875,
+      "ade": 266.44800967261904,
+      "fde": 266.44800967261904,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_leakfree_eval_lead4_s42"
+    },
+    {
+      "variant": "b3_positive_analog",
+      "label": "B3 + positive analog only",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 123,
+      "err": 38.81155206532032,
+      "mae": 0.25309175559183356,
+      "ade": 38.81155206532032,
+      "fde": 38.81155206532032,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead1_s123"
+    },
+    {
+      "variant": "b3_positive_analog",
+      "label": "B3 + positive analog only",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 2024,
+      "err": 39.34784040086668,
+      "mae": 0.2554682579593382,
+      "ade": 39.34784040086668,
+      "fde": 39.34784040086668,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead1_s2024"
+    },
+    {
+      "variant": "b3_positive_analog",
+      "label": "B3 + positive analog only",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 42,
+      "err": 39.4403976822402,
+      "mae": 0.258242647324312,
+      "ade": 39.4403976822402,
+      "fde": 39.4403976822402,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead1_s42"
+    },
+    {
+      "variant": "b3_positive_analog",
+      "label": "B3 + positive analog only",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 123,
+      "err": 98.82452684859155,
+      "mae": 0.6468803647538306,
+      "ade": 98.82452684859155,
+      "fde": 98.82452684859155,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead2_s123"
+    },
+    {
+      "variant": "b3_positive_analog",
+      "label": "B3 + positive analog only",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 2024,
+      "err": 98.8914952237841,
+      "mae": 0.6497036302593392,
+      "ade": 98.8914952237841,
+      "fde": 98.8914952237841,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead2_s2024"
+    },
+    {
+      "variant": "b3_positive_analog",
+      "label": "B3 + positive analog only",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 42,
+      "err": 92.97735780527894,
+      "mae": 0.6080640443613832,
+      "ade": 92.97735780527894,
+      "fde": 92.97735780527894,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead2_s42"
+    },
+    {
+      "variant": "b3_positive_analog",
+      "label": "B3 + positive analog only",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 123,
+      "err": 175.061165267122,
+      "mae": 1.1373397233243474,
+      "ade": 175.061165267122,
+      "fde": 175.061165267122,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead3_s123"
+    },
+    {
+      "variant": "b3_positive_analog",
+      "label": "B3 + positive analog only",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 2024,
+      "err": 170.21988810465007,
+      "mae": 1.1125216512622949,
+      "ade": 170.21988810465007,
+      "fde": 170.21988810465007,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead3_s2024"
+    },
+    {
+      "variant": "b3_positive_analog",
+      "label": "B3 + positive analog only",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 42,
+      "err": 182.2134863573634,
+      "mae": 1.1946858674466252,
+      "ade": 182.2134863573634,
+      "fde": 182.2134863573634,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead3_s42"
+    },
+    {
+      "variant": "b3_positive_analog",
+      "label": "B3 + positive analog only",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 123,
+      "err": 263.68473462301586,
+      "mae": 1.7232240343850755,
+      "ade": 263.68473462301586,
+      "fde": 263.68473462301586,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead4_s123"
+    },
+    {
+      "variant": "b3_positive_analog",
+      "label": "B3 + positive analog only",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 2024,
+      "err": 268.8819180927579,
+      "mae": 1.7354922461131261,
+      "ade": 268.8819180927579,
+      "fde": 268.8819180927579,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead4_s2024"
+    },
+    {
+      "variant": "b3_positive_analog",
+      "label": "B3 + positive analog only",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 42,
+      "err": 249.36540333581348,
+      "mae": 1.6411428724016461,
+      "ade": 249.36540333581348,
+      "fde": 249.36540333581348,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b3_positive_analog_lead4_s42"
+    },
+    {
+      "variant": "b4_safe_existing",
+      "label": "B4 safe TyphoFormer++",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 123,
+      "err": 33.698401087985836,
+      "mae": 0.21944615963419437,
+      "ade": 33.698401087985836,
+      "fde": 33.698401087985836,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead1_s123"
+    },
+    {
+      "variant": "b4_safe_existing",
+      "label": "B4 safe TyphoFormer++",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 2024,
+      "err": 34.699880245646,
+      "mae": 0.22705365860729193,
+      "ade": 34.699880245646,
+      "fde": 34.699880245646,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead1_s2024"
+    },
+    {
+      "variant": "b4_safe_existing",
+      "label": "B4 safe TyphoFormer++",
+      "lead": 1,
+      "lead_hours": 6,
+      "seed": 42,
+      "err": 34.061404262135625,
+      "mae": 0.22316060801268567,
+      "ade": 34.061404262135625,
+      "fde": 34.061404262135625,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead1_s42"
+    },
+    {
+      "variant": "b4_safe_existing",
+      "label": "B4 safe TyphoFormer++",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 123,
+      "err": 85.64041722257372,
+      "mae": 0.5692436419742208,
+      "ade": 85.64041722257372,
+      "fde": 85.64041722257372,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead2_s123"
+    },
+    {
+      "variant": "b4_safe_existing",
+      "label": "B4 safe TyphoFormer++",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 2024,
+      "err": 87.80139005419234,
+      "mae": 0.5827383054813868,
+      "ade": 87.80139005419234,
+      "fde": 87.80139005419234,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead2_s2024"
+    },
+    {
+      "variant": "b4_safe_existing",
+      "label": "B4 safe TyphoFormer++",
+      "lead": 2,
+      "lead_hours": 12,
+      "seed": 42,
+      "err": 86.69362823056503,
+      "mae": 0.5662887667266416,
+      "ade": 86.69362823056503,
+      "fde": 86.69362823056503,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead2_s42"
+    },
+    {
+      "variant": "b4_safe_existing",
+      "label": "B4 safe TyphoFormer++",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 123,
+      "err": 151.3429963802863,
+      "mae": 1.0075913332179636,
+      "ade": 151.3429963802863,
+      "fde": 151.3429963802863,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead3_s123"
+    },
+    {
+      "variant": "b4_safe_existing",
+      "label": "B4 safe TyphoFormer++",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 2024,
+      "err": 160.55864637911677,
+      "mae": 1.0714843601523758,
+      "ade": 160.55864637911677,
+      "fde": 160.55864637911677,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead3_s2024"
+    },
+    {
+      "variant": "b4_safe_existing",
+      "label": "B4 safe TyphoFormer++",
+      "lead": 3,
+      "lead_hours": 18,
+      "seed": 42,
+      "err": 156.69815154846557,
+      "mae": 1.042058853332154,
+      "ade": 156.69815154846557,
+      "fde": 156.69815154846557,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead3_s42"
+    },
+    {
+      "variant": "b4_safe_existing",
+      "label": "B4 safe TyphoFormer++",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 123,
+      "err": 231.8823707217262,
+      "mae": 1.53337648179796,
+      "ade": 231.8823707217262,
+      "fde": 231.8823707217262,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead4_s123"
+    },
+    {
+      "variant": "b4_safe_existing",
+      "label": "B4 safe TyphoFormer++",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 2024,
+      "err": 230.41523127480158,
+      "mae": 1.523384281945607,
+      "ade": 230.41523127480158,
+      "fde": 230.41523127480158,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead4_s2024"
+    },
+    {
+      "variant": "b4_safe_existing",
+      "label": "B4 safe TyphoFormer++",
+      "lead": 4,
+      "lead_hours": 24,
+      "seed": 42,
+      "err": 229.28643508184524,
+      "mae": 1.532789551265656,
+      "ade": 229.28643508184524,
+      "fde": 229.28643508184524,
+      "run_dir": "checkpoints_official_12to1_ablation_full_safeneg\\b4_safe_existing_lead4_s42"
+    }
+  ]
+}

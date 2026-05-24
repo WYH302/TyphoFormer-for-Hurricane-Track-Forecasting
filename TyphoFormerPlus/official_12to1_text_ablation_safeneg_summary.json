@@ -1,0 +1,233 @@
+{
+  "protocol": "Official HURDAT2 strict-6h lead-specific clean 12->1 text-template ablation on safe-negative data.",
+  "seeds": [
+    42,
+    123,
+    2024
+  ],
+  "rows": {
+    "b2_numeric_transformer": {
+      "label": "B2/B3 without text-template",
+      "aggregate": {
+        "1": {
+          "lead_hours": 6,
+          "err": {
+            "mean": 39.18499726373792,
+            "std": 0.7070024897276265
+          }
+        },
+        "2": {
+          "lead_hours": 12,
+          "err": {
+            "mean": 101.20122081774501,
+            "std": 4.731493580983451
+          }
+        },
+        "3": {
+          "lead_hours": 18,
+          "err": {
+            "mean": 173.3648564687032,
+            "std": 5.238393285372853
+          }
+        },
+        "4": {
+          "lead_hours": 24,
+          "err": {
+            "mean": 265.2774894593254,
+            "std": 8.33202044937075
+          }
+        }
+      }
+    },
+    "b3_typhoformer_leakfree": {
+      "label": "B3 with hash text-template",
+      "aggregate": {
+        "1": {
+          "lead_hours": 6,
+          "err": {
+            "mean": 39.461727660007,
+            "std": 0.6646466386115228
+          }
+        },
+        "2": {
+          "lead_hours": 12,
+          "err": {
+            "mean": 101.77512631125293,
+            "std": 1.6859238399136367
+          }
+        },
+        "3": {
+          "lead_hours": 18,
+          "err": {
+            "mean": 170.98793014556824,
+            "std": 4.3223817345301585
+          }
+        },
+        "4": {
+          "lead_hours": 24,
+          "err": {
+            "mean": 260.72093874007936,
+            "std": 6.654119693691333
+          }
+        }
+      }
+    },
+    "b4_typhoformerpp_safeneg_raw": {
+      "label": "B4 full with hash text-template",
+      "aggregate": {
+        "1": {
+          "lead_hours": 6,
+          "err": {
+            "mean": 34.153228424702185,
+            "std": 0.5070159504906125
+          }
+        },
+        "2": {
+          "lead_hours": 12,
+          "err": {
+            "mean": 86.71181090448944,
+            "std": 1.0806007057878022
+          }
+        },
+        "3": {
+          "lead_hours": 18,
+          "err": {
+            "mean": 156.19992924307635,
+            "std": 4.627979769562975
+          }
+        },
+        "4": {
+          "lead_hours": 24,
+          "err": {
+            "mean": 230.52801442625662,
+            "std": 1.3016405089337275
+          }
+        }
+      }
+    },
+    "b4_typhoformerpp_safeneg_val_cv_calibrated": {
+      "label": "B4 full + val CV calibration",
+      "aggregate": {
+        "1": {
+          "lead_hours": 6,
+          "err": {
+            "mean": 34.29451786890645,
+            "std": 0.4575682476136525
+          }
+        },
+        "2": {
+          "lead_hours": 12,
+          "err": {
+            "mean": 86.16017504768193,
+            "std": 0.8251772466512125
+          }
+        },
+        "3": {
+          "lead_hours": 18,
+          "err": {
+            "mean": 154.98481479423964,
+            "std": 4.902194891348755
+          }
+        },
+        "4": {
+          "lead_hours": 24,
+          "err": {
+            "mean": 228.95935949900795,
+            "std": 2.043319221227976
+          }
+        }
+      }
+    },
+    "b4_no_text": {
+      "label": "B4 without text-template",
+      "per_lead": {
+        "1": {
+          "42": {
+            "err": 32.393521878087945,
+            "eval_path": "checkpoints_official_12to1_text_ablation_safeneg\\b4_plus_dual_no_text_lead1_s42\\eval_test.json"
+          },
+          "123": {
+            "err": 33.724797707458414,
+            "eval_path": "checkpoints_official_12to1_text_ablation_safeneg\\b4_plus_dual_no_text_lead1_s123\\eval_test.json"
+          },
+          "2024": {
+            "err": 33.17834826483243,
+            "eval_path": "checkpoints_official_12to1_text_ablation_safeneg\\b4_plus_dual_no_text_lead1_s2024\\eval_test.json"
+          }
+        },
+        "2": {
+          "42": {
+            "err": 84.68787291620819,
+            "eval_path": "checkpoints_official_12to1_text_ablation_safeneg\\b4_plus_dual_no_text_lead2_s42\\eval_test.json"
+          },
+          "123": {
+            "err": 85.68367369745819,
+            "eval_path": "checkpoints_official_12to1_text_ablation_safeneg\\b4_plus_dual_no_text_lead2_s123\\eval_test.json"
+          },
+          "2024": {
+            "err": 84.58998812823228,
+            "eval_path": "checkpoints_official_12to1_text_ablation_safeneg\\b4_plus_dual_no_text_lead2_s2024\\eval_test.json"
+          }
+        },
+        "3": {
+          "42": {
+            "err": 156.538720410741,
+            "eval_path": "checkpoints_official_12to1_text_ablation_safeneg\\b4_plus_dual_no_text_lead3_s42\\eval_test.json"
+          },
+          "123": {
+            "err": 153.28925839726796,
+            "eval_path": "checkpoints_official_12to1_text_ablation_safeneg\\b4_plus_dual_no_text_lead3_s123\\eval_test.json"
+          },
+          "2024": {
+            "err": 156.26237880683945,
+            "eval_path": "checkpoints_official_12to1_text_ablation_safeneg\\b4_plus_dual_no_text_lead3_s2024\\eval_test.json"
+          }
+        },
+        "4": {
+          "42": {
+            "err": 242.61368970114088,
+            "eval_path": "checkpoints_official_12to1_text_ablation_safeneg\\b4_plus_dual_no_text_lead4_s42\\eval_test.json"
+          },
+          "123": {
+            "err": 245.59484437003968,
+            "eval_path": "checkpoints_official_12to1_text_ablation_safeneg\\b4_plus_dual_no_text_lead4_s123\\eval_test.json"
+          },
+          "2024": {
+            "err": 233.847408234127,
+            "eval_path": "checkpoints_official_12to1_text_ablation_safeneg\\b4_plus_dual_no_text_lead4_s2024\\eval_test.json"
+          }
+        }
+      },
+      "aggregate": {
+        "1": {
+          "lead_hours": 6,
+          "err": {
+            "mean": 33.0988892834596,
+            "std": 0.6691854232999354
+          }
+        },
+        "2": {
+          "lead_hours": 12,
+          "err": {
+            "mean": 84.98717824729955,
+            "std": 0.6051650948278771
+          }
+        },
+        "3": {
+          "lead_hours": 18,
+          "err": {
+            "mean": 155.36345253828281,
+            "std": 1.8016109933825788
+          }
+        },
+        "4": {
+          "lead_hours": 24,
+          "err": {
+            "mean": 240.6853141017692,
+            "std": 6.106516050992248
+          }
+        }
+      }
+    }
+  }
+}

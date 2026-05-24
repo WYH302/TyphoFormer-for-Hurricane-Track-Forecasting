@@ -1,0 +1,223 @@
+{
+  "protocol": "Storm-level paired bootstrap for B4 safe TyphoFormer++ raw vs B3 leak-free TyphoFormer on official strict-6h lead-specific 12->1 test storms.",
+  "seeds": [
+    42,
+    123,
+    2024
+  ],
+  "bootstrap_draws": 5000,
+  "per_lead": {
+    "1": {
+      "lead_hours": 6,
+      "storm_count": 41,
+      "b3_storm_mean": 41.023330783548786,
+      "b4_storm_mean": 35.697581417193845,
+      "paired_delta_b4_minus_b3": -5.325749366354942,
+      "paired_delta_ci95": [
+        -7.087757416093226,
+        -3.5712184688702235
+      ],
+      "storm_win_rate_b4": 0.8536585365853658,
+      "per_seed": {
+        "42": {
+          "storm_count": 41,
+          "b3_window_mean": 39.62369875977005,
+          "b4_window_mean": 34.06140425695261,
+          "b3_storm_mean": 41.1723039278421,
+          "b4_storm_mean": 36.70932375365121,
+          "paired_delta_b4_minus_b3": -4.462980174190889,
+          "paired_delta_ci95": [
+            -7.412549295996427,
+            -1.7544882134471045
+          ],
+          "storm_win_rate_b4": 0.7073170731707317
+        },
+        "123": {
+          "storm_count": 41,
+          "b3_window_mean": 38.73106536202437,
+          "b4_window_mean": 33.698401183321856,
+          "b3_storm_mean": 39.356923447164576,
+          "b4_storm_mean": 34.149868396532725,
+          "paired_delta_b4_minus_b3": -5.20705505063185,
+          "paired_delta_ci95": [
+            -7.79131552719854,
+            -2.8801765726159676
+          ],
+          "storm_win_rate_b4": 0.8048780487804879
+        },
+        "2024": {
+          "storm_count": 41,
+          "b3_window_mean": 40.03041804967662,
+          "b4_window_mean": 34.69988077525565,
+          "b3_storm_mean": 42.540764975639675,
+          "b4_storm_mean": 36.23355210139759,
+          "paired_delta_b4_minus_b3": -6.307212874242091,
+          "paired_delta_ci95": [
+            -9.209809364915984,
+            -3.6823347426006445
+          ],
+          "storm_win_rate_b4": 0.8048780487804879
+        }
+      }
+    },
+    "2": {
+      "lead_hours": 12,
+      "storm_count": 36,
+      "b3_storm_mean": 108.86230536968758,
+      "b4_storm_mean": 97.59632641957066,
+      "paired_delta_b4_minus_b3": -11.2659789501169,
+      "paired_delta_ci95": [
+        -19.155768722787094,
+        -3.0105381845692034
+      ],
+      "storm_win_rate_b4": 0.8055555555555556,
+      "per_seed": {
+        "42": {
+          "storm_count": 36,
+          "b3_window_mean": 103.5471878981926,
+          "b4_window_mean": 86.69362742565048,
+          "b3_storm_mean": 103.30141289264066,
+          "b4_storm_mean": 96.35859144028068,
+          "paired_delta_b4_minus_b3": -6.94282145235999,
+          "paired_delta_ci95": [
+            -18.27199800154888,
+            6.313828411291587
+          ],
+          "storm_win_rate_b4": 0.7777777777777778
+        },
+        "123": {
+          "storm_count": 36,
+          "b3_window_mean": 100.1911105646214,
+          "b4_window_mean": 85.64041747526383,
+          "b3_storm_mean": 111.33592089898372,
+          "b4_storm_mean": 97.26481394987461,
+          "paired_delta_b4_minus_b3": -14.071106949109144,
+          "paired_delta_ci95": [
+            -22.582593629694134,
+            -4.835111881423851
+          ],
+          "storm_win_rate_b4": 0.7777777777777778
+        },
+        "2024": {
+          "storm_count": 36,
+          "b3_window_mean": 101.58707967744746,
+          "b4_window_mean": 87.80138839936592,
+          "b3_storm_mean": 111.94958231743828,
+          "b4_storm_mean": 99.1655738685567,
+          "paired_delta_b4_minus_b3": -12.784008448881572,
+          "paired_delta_ci95": [
+            -21.01845035289788,
+            -4.3418793506953515
+          ],
+          "storm_win_rate_b4": 0.8055555555555556
+        }
+      }
+    },
+    "3": {
+      "lead_hours": 18,
+      "storm_count": 35,
+      "b3_storm_mean": 185.14019034041965,
+      "b4_storm_mean": 170.52789289130962,
+      "paired_delta_b4_minus_b3": -14.612297449110065,
+      "paired_delta_ci95": [
+        -27.5224829419526,
+        1.0694317964341349
+      ],
+      "storm_win_rate_b4": 0.7428571428571429,
+      "per_seed": {
+        "42": {
+          "storm_count": 35,
+          "b3_window_mean": 173.99282727983896,
+          "b4_window_mean": 156.69815104164763,
+          "b3_storm_mean": 182.36328218191406,
+          "b4_storm_mean": 169.06777434314307,
+          "paired_delta_b4_minus_b3": -13.295507838770963,
+          "paired_delta_ci95": [
+            -26.250378144135638,
+            0.5754300540872598
+          ],
+          "storm_win_rate_b4": 0.7142857142857143
+        },
+        "123": {
+          "storm_count": 35,
+          "b3_window_mean": 172.93669976909717,
+          "b4_window_mean": 151.3429956404035,
+          "b3_storm_mean": 187.7396174072987,
+          "b4_storm_mean": 166.60712510003427,
+          "paired_delta_b4_minus_b3": -21.132492307264425,
+          "paired_delta_ci95": [
+            -35.71710484528198,
+            -5.194965847824765
+          ],
+          "storm_win_rate_b4": 0.7714285714285715
+        },
+        "2024": {
+          "storm_count": 35,
+          "b3_window_mean": 166.03425760897335,
+          "b4_window_mean": 160.5586456024718,
+          "b3_storm_mean": 185.3176714320463,
+          "b4_storm_mean": 175.90877923075146,
+          "paired_delta_b4_minus_b3": -9.408892201294819,
+          "paired_delta_ci95": [
+            -30.132247538157625,
+            15.37821824382517
+          ],
+          "storm_win_rate_b4": 0.5714285714285714
+        }
+      }
+    },
+    "4": {
+      "lead_hours": 24,
+      "storm_count": 30,
+      "b3_storm_mean": 278.0319275321162,
+      "b4_storm_mean": 249.72292864078446,
+      "paired_delta_b4_minus_b3": -28.30899889133174,
+      "paired_delta_ci95": [
+        -51.32202255290563,
+        -0.4174859890854197
+      ],
+      "storm_win_rate_b4": 0.8333333333333334,
+      "per_seed": {
+        "42": {
+          "storm_count": 30,
+          "b3_window_mean": 266.4480093365624,
+          "b4_window_mean": 229.28643639068756,
+          "b3_storm_mean": 279.1005806562765,
+          "b4_storm_mean": 247.28447001143832,
+          "paired_delta_b4_minus_b3": -31.816110644838204,
+          "paired_delta_ci95": [
+            -57.32719990318988,
+            -0.11320779177142273
+          ],
+          "storm_win_rate_b4": 0.7666666666666667
+        },
+        "123": {
+          "storm_count": 30,
+          "b3_window_mean": 262.29336813896424,
+          "b4_window_mean": 231.88237221581596,
+          "b3_storm_mean": 283.262122795411,
+          "b4_storm_mean": 254.12167158281213,
+          "paired_delta_b4_minus_b3": -29.1404512125989,
+          "paired_delta_ci95": [
+            -53.85596587112765,
+            -1.6960432887567998
+          ],
+          "storm_win_rate_b4": 0.7333333333333333
+        },
+        "2024": {
+          "storm_count": 30,
+          "b3_window_mean": 253.42143079212732,
+          "b4_window_mean": 230.41523017731924,
+          "b3_storm_mean": 271.7330791446611,
+          "b4_storm_mean": 247.76264432810294,
+          "paired_delta_b4_minus_b3": -23.97043481655811,
+          "paired_delta_ci95": [
+            -52.98996636582687,
+            11.725311779227928
+          ],
+          "storm_win_rate_b4": 0.7666666666666667
+        }
+      }
+    }
+  }
+}
