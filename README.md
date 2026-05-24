@@ -114,7 +114,7 @@ Large generated datasets, checkpoints, run logs, and model weights are intention
 ## Installation
 
 ```bash
-git clone https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting.git
+git clone <anonymous-repository-url>
 cd TyphoFormer-for-Hurricane-Track-Forecasting
 
 python -m venv .venv
@@ -207,14 +207,14 @@ The expected paper-facing result is `total_failures = 0`. The audit checks split
 
 ## Citation
 
-If this repository supports your work, please cite the project URL for now. A paper-specific BibTeX entry will be added after the manuscript metadata is finalized.
+For double-blind review, cite the Anonymous GitHub mirror URL supplied with the submission. A paper-specific BibTeX entry can replace this placeholder after review.
 
 ```bibtex
 @misc{typhoformerpp2026,
   title        = {TyphoFormer++: Robust Hurricane Track Forecasting under Strict HURDAT2 Protocols},
   author       = {Anonymous Authors},
   year         = {2026},
-  howpublished = {\url{https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting}},
+  howpublished = {\url{<anonymous-repository-url>}},
   note         = {Research code and experiment artifacts}
 }
 ```
