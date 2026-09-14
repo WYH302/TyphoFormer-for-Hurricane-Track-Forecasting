@@ -1,5 +1,17 @@
 # TyphoFormer++: Robust Hurricane Track Forecasting
 
+**Authors:** **Yonghao Wu (吴永浩)**, Minglong Li (李明龙), Zihua Liu (刘梓华), Xiang Kong (孔祥), and Chang Liu (刘畅).
+
+**First author:** Yonghao Wu · **Corresponding author:** Chang Liu
+
+This project is now presented with public author attribution. See [AUTHORS.md](AUTHORS.md) for affiliations and [CITATION.cff](CITATION.cff) for citation metadata.
+
+## Version and research scope
+
+The code and numerical tables below document the earlier TyphoFormer++ experiments. The subsequent manuscript, *Kinematic residuals and sampling effects in short-range tropical-cyclone track prediction*, studies matched output heads, simple residual baselines, and sampling coverage. Its findings do not establish a universal advantage for adaptive dual heads. The complete revised manuscript and its reproduction package have not been uploaded in this authorship update; the earlier tables below should not be treated as the final revised paper's primary results.
+
+## Earlier implementation and experiments
+
 [![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![Data](https://img.shields.io/badge/Data-NHC%20HURDAT2-0f766e)](https://www.nhc.noaa.gov/data/)
@@ -76,7 +88,7 @@ Values are DeltaR km, mean +/- std over seeds 42 / 123 / 2024.
 | B3 + alignment/rank only | 43.047 +/- 1.205 | 106.165 +/- 2.973 | 176.821 +/- 2.943 | 281.220 +/- 8.686 |
 | B4 safe TyphoFormer++ | 34.153 +/- 0.507 | 86.712 +/- 1.081 | 156.200 +/- 4.628 | 230.528 +/- 1.302 |
 
-Interpretation: the dual CV-residual head is the dominant contributor. Positive analog memory and alignment/ranking are supporting signals, and text-template features should be interpreted as deterministic structured features rather than evidence for free-form language semantics.
+Historical interpretation: the earlier combined-design ablation suggested a benefit from the CV-residual design, but did not isolate the independent benefit of a second branch or adaptive gating. Positive analog memory and alignment/ranking are supporting signals, and text-template features should be interpreted as deterministic structured features rather than evidence for free-form language semantics.
 
 ## Repository Structure
 
@@ -114,7 +126,7 @@ Large generated datasets, checkpoints, run logs, and model weights are intention
 ## Installation
 
 ```bash
-git clone <anonymous-repository-url>
+git clone https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting.git
 cd TyphoFormer-for-Hurricane-Track-Forecasting
 
 python -m venv .venv
@@ -207,18 +219,18 @@ The expected paper-facing result is `total_failures = 0`. The audit checks split
 
 ## Citation
 
-For double-blind review, cite the Anonymous GitHub mirror URL supplied with the submission. A paper-specific BibTeX entry can replace this placeholder after review.
+Please cite this research software using the named authors below. This entry identifies the code repository; it does not assert acceptance or publication of the associated manuscript.
 
 ```bibtex
 @misc{typhoformerpp2026,
   title        = {TyphoFormer++: Robust Hurricane Track Forecasting under Strict HURDAT2 Protocols},
-  author       = {Anonymous Authors},
+  author       = {Wu, Yonghao and Li, Minglong and Liu, Zihua and Kong, Xiang and Liu, Chang},
   year         = {2026},
-  howpublished = {\url{<anonymous-repository-url>}},
+  howpublished = {\url{https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting}},
   note         = {Research code and experiment artifacts}
 }
 ```
 
 ## Acknowledgement
 
-This repository includes an original TyphoFormer reference snapshot for reproducibility and comparison. TyphoFormer++ extends the local reproduction with strict protocol audits, safe-negative analog retrieval, additional baselines, and a dual CV-residual forecasting head.
+This repository includes an [original TyphoFormer reference snapshot](https://github.com/LabRAI/TyphoFormer) for reproducibility and comparison. Original TyphoFormer code and assets remain attributed to their upstream authors. TyphoFormer++ extends the local reproduction with strict protocol audits, safe-negative analog retrieval, additional baselines, and a dual CV-residual forecasting head.

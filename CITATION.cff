@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this research software, please cite it using these metadata."
+type: software
+title: "TyphoFormer++: Robust Hurricane Track Forecasting under Strict HURDAT2 Protocols"
+authors:
+  - family-names: Wu
+    given-names: Yonghao
+    affiliation: "South China Normal University"
+  - family-names: Li
+    given-names: Minglong
+    affiliation: "Beihang University"
+  - family-names: Liu
+    given-names: Zihua
+    affiliation: "South China Normal University"
+  - family-names: Kong
+    given-names: Xiang
+    affiliation: "NARI Technology Co., Ltd."
+  - family-names: Liu
+    given-names: Chang
+    affiliation: "Guangdong Ocean University"
+repository-code: "https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting"
+url: "https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting"
