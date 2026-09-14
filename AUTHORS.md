@@ -1,16 +1,9 @@
-# Authors
+# Public maintainer
 
-The authors of the associated research are listed in the confirmed manuscript order:
+**Yonghao Wu (吴永浩)** · [WYH302](https://github.com/WYH302)
 
-| Order | Author | Affiliation |
-| --- | --- | --- |
-| 1 | **Yonghao Wu (吴永浩)** | School of Electronics and Information Engineering, South China Normal University, Foshan, Guangdong, China |
-| 2 | Minglong Li (李明龙) | Beihang University, Beijing, China |
-| 3 | Zihua Liu (刘梓华) | School of Electronics and Information Engineering, South China Normal University, Foshan, Guangdong, China |
-| 4 | Xiang Kong (孔祥) | NARI Technology Co., Ltd., Nanjing, Jiangsu, China |
-
-First author: **Yonghao Wu**. Corresponding author: **Yonghao Wu**.
+Collaborator names and contact details are omitted from this repository's metadata for privacy. This page identifies the public maintainer, not the complete authorship of the associated research. Use the author-approved manuscript for its bibliographic citation.
 
 Repository: [WYH302/TyphoFormer-for-Hurricane-Track-Forecasting](https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting).
 
-This author list identifies the associated research. It does not assign unconfirmed individual software contributions or transfer authorship of third-party components. The original TyphoFormer implementation and assets are credited to [LabRAI/TyphoFormer](https://github.com/LabRAI/TyphoFormer); existing upstream notices are retained.
+This page does not assign unconfirmed individual software contributions or transfer authorship of third-party components. The original TyphoFormer implementation and assets are credited to [LabRAI/TyphoFormer](https://github.com/LabRAI/TyphoFormer); existing upstream notices are retained.
