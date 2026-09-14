@@ -1,8 +1,8 @@
 # TyphoFormer++: Robust Hurricane Track Forecasting
 
-**Authors:** **Yonghao Wu (吴永浩)**, Minglong Li (李明龙), Zihua Liu (刘梓华), Xiang Kong (孔祥), and Chang Liu (刘畅).
+**Authors:** **Yonghao Wu (吴永浩)**, Minglong Li (李明龙), Zihua Liu (刘梓华), and Xiang Kong (孔祥).
 
-**First author:** Yonghao Wu · **Corresponding author:** Chang Liu
+**First author:** Yonghao Wu · **Corresponding author:** Yonghao Wu
 
 This project is now presented with public author attribution. See [AUTHORS.md](AUTHORS.md) for affiliations and [CITATION.cff](CITATION.cff) for citation metadata.
 
@@ -224,7 +224,7 @@ Please cite this research software using the named authors below. This entry ide
 ```bibtex
 @misc{typhoformerpp2026,
   title        = {TyphoFormer++: Robust Hurricane Track Forecasting under Strict HURDAT2 Protocols},
-  author       = {Wu, Yonghao and Li, Minglong and Liu, Zihua and Kong, Xiang and Liu, Chang},
+  author       = {Wu, Yonghao and Li, Minglong and Liu, Zihua and Kong, Xiang},
   year         = {2026},
   howpublished = {\url{https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting}},
   note         = {Research code and experiment artifacts}

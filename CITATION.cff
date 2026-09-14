@@ -15,8 +15,5 @@ authors:
   - family-names: Kong
     given-names: Xiang
     affiliation: "NARI Technology Co., Ltd."
-  - family-names: Liu
-    given-names: Chang
-    affiliation: "Guangdong Ocean University"
 repository-code: "https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting"
 url: "https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting"
