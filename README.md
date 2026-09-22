@@ -1,5 +1,41 @@
 # TyphoFormer++: Robust Hurricane Track Forecasting
 
+[Open in Colab](https://colab.research.google.com/github/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting/blob/main/demo.ipynb) · [Run locally](#interactive-results-demo) · [Source data](TyphoFormerPlus/official_leadspecific_12to1_safeneg_summary.json) · [Reproduction guide](#installation)
+
+![Interactive results explorer](docs/demo-preview.png)
+
+[Watch the recorded viewer interaction](docs/demo.webm) (result filtering, not model inference).
+
+## Interactive results demo
+
+```bash
+python demo.py
+```
+
+Requires Python 3.10+ and a browser. No package installation, GPU, model download, or API key. The command generates a self-contained HTML file and opens it locally. Use `python demo.py --no-open` on a headless machine, then open `demo_output/index.html`.
+
+Select a forecast lead to compare the earlier baseline and neural results. The table retains the stored seed standard deviation; it is not a confidence interval. The viewer does not produce live forecasts or represent the revised manuscript's final results. Download the selected rows as CSV from the page. The source filename and SHA-256 are shown below the chart.
+
+The [Colab notebook](demo.ipynb) contains the same no-install workflow. Use the Colab link above, connect a runtime and run the code cell. The notebook has not been tested in a cloud runtime. Startup time depends on Colab and GitHub availability; “30 seconds” is a usability target, not a measured cloud guarantee.
+
+### Container
+
+```bash
+docker build -f Dockerfile.demo -t typho-results .
+docker run --rm -p 127.0.0.1:7860:7860 typho-results
+```
+
+Open http://localhost:7860. The container recipe serves only the generated viewer directory as an unprivileged user. No prebuilt image or hosted Space is claimed. Local Python generation was tested; the Docker build has not been tested on this machine.
+
+### Real-world Robustness & Edge Deployment
+
+The retained experiments use strict six-hour retrospective HURDAT2 windows, storm-level time splits and train-only retrieval. Missing telemetry, irregular sampling and sensor-coordinate noise require separate stress tests; a clean benchmark does not establish those properties. No Jetson/ARM latency, peak-memory, power or ONNX parity measurements are included. Evaluate the unchanged checkpoint at batch size 1 with input length, precision, device, warm-up and sample count recorded before making an edge-deployment claim.
+
+Training checkpoints are not included in the public snapshot, so pretrained-model inference is not part of this demo.
+
+---
+
+
 **Public maintainer:** **Yonghao Wu (吴永浩)** · [WYH302](https://github.com/WYH302)
 
 Collaborator names and contact details are omitted from repository metadata for privacy. This does not assert sole authorship of the associated research. See [AUTHORS.md](AUTHORS.md) for the public-contact and attribution policy.

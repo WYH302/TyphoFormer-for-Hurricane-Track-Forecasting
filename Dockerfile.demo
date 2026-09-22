@@ -1,0 +1,8 @@
+FROM python:3.11-slim
+WORKDIR /app
+COPY demo.py demo_ui.py ./
+COPY TyphoFormerPlus/official_leadspecific_12to1_safeneg_summary.json ./TyphoFormerPlus/official_leadspecific_12to1_safeneg_summary.json
+RUN python demo.py --no-open
+USER 65534:65534
+EXPOSE 7860
+CMD ["python", "-m", "http.server", "7860", "--bind", "0.0.0.0", "--directory", "demo_output"]

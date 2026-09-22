@@ -86,3 +86,5 @@ local_artifacts/
 *.snm
 *.vrb
 *.xdv
+# Local interactive-viewer output
+demo_output/
