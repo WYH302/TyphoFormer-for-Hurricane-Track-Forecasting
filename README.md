@@ -42,7 +42,7 @@ Collaborator names and contact details are omitted from repository metadata for 
 
 ## Version and research scope
 
-The code and numerical tables below document the earlier TyphoFormer++ experiments. The subsequent manuscript, *Kinematic residuals and sampling effects in short-range tropical-cyclone track prediction*, studies matched output heads, simple residual baselines, and sampling coverage. Its findings do not establish a universal advantage for adaptive dual heads. The complete revised manuscript and its reproduction package have not been uploaded in this authorship update; the earlier tables below should not be treated as the final revised paper's primary results.
+The code and numerical tables below document the earlier TyphoFormer++ experiments. The current numerical study is reported in *Kinematic residuals and sampling effects in short-range tropical-cyclone track prediction*. All materials for this study are available in the [2026-09-24 release](https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting/releases/tag/kinematic-residuals-2026-09-24): the manuscript PDF, editable sources, Online Resources 1–3, supplementary captions, and SHA-256 manifest. Online Resource 1 reconstructs reported scores from saved predictions; it does not independently retrain the models. The repository's pre-existing result tables document earlier TyphoFormer++ experiments and are distinct from the current manuscript's primary results.
 
 ## Earlier implementation and experiments
 
