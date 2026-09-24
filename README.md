@@ -42,7 +42,7 @@ Collaborator names and contact details are omitted from repository metadata for 
 
 ## Version and research scope
 
-The code and numerical tables below document the earlier TyphoFormer++ experiments. The current numerical study is reported in *Kinematic residuals and sampling effects in short-range tropical-cyclone track prediction*. All materials for this study are available in the [2026-09-24 release](https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting/releases/tag/kinematic-residuals-2026-09-24): the manuscript PDF, editable sources, Online Resources 1–3, supplementary captions, and SHA-256 manifest. Online Resource 1 reconstructs reported scores from saved predictions; it does not independently retrain the models. The repository's pre-existing result tables document earlier TyphoFormer++ experiments and are distinct from the current manuscript's primary results.
+The code and numerical tables below document the earlier TyphoFormer++ experiments. The current numerical study is reported in *TyphoFormer++: Kinematic residual learning for short-range tropical cyclone track prediction*. All materials for this study are available in the [2026-09-24 release](https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting/releases/tag/kinematic-residuals-2026-09-24): the manuscript PDF, editable sources, Online Resources 1–3, supplementary captions, and SHA-256 manifest. Online Resource 1 reconstructs reported scores from saved predictions; it does not independently retrain the models. The repository's pre-existing result tables document earlier TyphoFormer++ experiments and are distinct from the current manuscript's primary results.
 
 ## Earlier implementation and experiments
 
