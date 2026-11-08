@@ -1,9 +1,20 @@
-# Public maintainer
+# Authors and Affiliations
 
-**Yonghao Wu (吴永浩)** · [WYH302](https://github.com/WYH302)
+**Manuscript:** *Kinematic Residual Learning and Evaluation Coverage in Short-Range Atlantic Tropical Cyclone Track Prediction*
 
-Collaborator names and contact details are omitted from this repository's metadata for privacy. This page identifies the public maintainer, not the complete authorship of the associated research. Use the author-approved manuscript for its bibliographic citation.
+- **Yonghao Wu** (Corresponding Author · `2023025071@m.scnu.edu.cn` · [@WYH302](https://github.com/WYH302))  
+  School of Electronics and Information Engineering, South China Normal University, Foshan, Guangdong 528225, China
+- **Jiayang Wu** (`jywu1@stu.jnu.edu.cn`)  
+  Westlake University, Hangzhou, Zhejiang, China
+- **Sirui He** (`swe.hesirui@gmail.com`)  
+  School of Computer Science, Xiamen University Malaysia, Sepang, Selangor 43900, Malaysia
+- **Chang Liu** (`liuchang@gdou.edu.cn`)  
+  Saint-Petersburg Institute for Shipbuilding & Marine Technology of Guangdong Ocean University, Zhanjiang, Guangdong 524088, China
+- **Vladimir Filaretov** (`filaretov@inbox.ru`)  
+  Robotics Laboratory, Institute of Automation and Control Processes, Far Eastern Branch of the Russian Academy of Sciences, Vladivostok 690041, Russia
+- **Dmitry Yukhimets** (`undim@iacp.dvo.ru`)  
+  Robotics Laboratory, Institute of Automation and Control Processes, Far Eastern Branch of the Russian Academy of Sciences, Vladivostok 690041, Russia
 
-Repository: [WYH302/TyphoFormer-for-Hurricane-Track-Forecasting](https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting).
+## Upstream Attribution
 
-This page does not assign unconfirmed individual software contributions or transfer authorship of third-party components. The original TyphoFormer implementation and assets are credited to [LabRAI/TyphoFormer](https://github.com/LabRAI/TyphoFormer); existing upstream notices are retained.
+The historical baseline snapshot in `TyphoFormer_original/` is credited to the upstream [LabRAI/TyphoFormer](https://github.com/LabRAI/TyphoFormer) authors.

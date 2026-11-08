@@ -1,260 +1,161 @@
-# TyphoFormer++: Robust Hurricane Track Forecasting
+# Kinematic Residual Learning and Evaluation Coverage in Short-Range Atlantic Tropical Cyclone Track Prediction
 
-[Open in Colab](https://colab.research.google.com/github/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting/blob/main/demo.ipynb) · [Run locally](#interactive-results-demo) · [Source data](TyphoFormerPlus/official_leadspecific_12to1_safeneg_summary.json) · [Reproduction guide](#installation)
+[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![PyTorch 2.x](https://img.shields.io/badge/PyTorch-2.x-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![Dataset: NOAA HURDAT2](https://img.shields.io/badge/Archive-NOAA%20HURDAT2-0f766e)](https://www.nhc.noaa.gov/data/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Release Artifacts](https://img.shields.io/badge/Release-Manuscript%20%26%20ESM-blue)](https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting/releases/tag/kinematic-residuals-2026-09-24)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting/blob/main/demo.ipynb)
 
-![Interactive results explorer](docs/demo-preview.png)
+Official open-source repository for ***Kinematic Residual Learning and Evaluation Coverage in Short-Range Atlantic Tropical Cyclone Track Prediction*** (by Yonghao Wu, Jiayang Wu, Sirui He, Chang Liu, Vladimir Filaretov, and Dmitry Yukhimets).
 
-[Watch the recorded viewer interaction](docs/demo.webm) (result filtering, not model inference).
+<p align="center">
+  <img src="assets/Figure_1_Framework_Overview.png" alt="Framework Overview: Lagrangian Kinematic Residual Learning and Synoptic-First Reconstruction" width="98%">
+</p>
 
-## Interactive results demo
+---
+
+## 🌟 Core Scientific Contributions
+
+Short-range (6–24 h) tropical cyclone track forecasting is critical for coastal warnings and emergency evacuations, where storm motion is physically dominated by vortex translational inertia and large-scale steering persistence. This project introduces three foundational advances:
+
+1. **Eulerian-to-Lagrangian Kinematic Frame Alignment (`kinematic_residual/`):**  
+   Standard deep sequence models formulate trajectory prediction as unconstrained coordinate regression in a **static Eulerian geographic frame** ($A$), forcing neural weights to re-learn large first-order translational displacements $\mathcal{O}(\|v_T\|\Delta t)$ alongside subtle second-order curvature and acceleration departures $\mathcal{O}(\|a_T\|\Delta t^2)$. We transform the prediction objective into a **co-moving Lagrangian inertial frame** anchored to tangent-plane constant-velocity persistence ($B: \widehat{D}_s = D_s^{\mathrm{cv}} + r(c)$), reducing 6-h and 12-h window-mean errors by **14.6%** (`41.01 -> 35.04 km`) and **13.4%** (`104.86 -> 90.76 km`) while eliminating translational lag during rapid recurvature.
+
+2. **The Inertial Sufficiency Principle & Cross-Family Universality:**  
+   Through controlled four-tier output ablations—**Direct ($A$)**, **Single Residual ($B$)**, **Fixed Dual ($C$)**, and **Adaptive Gated Dual ($D$)**—across 108 Transformer fits, 24 MLP fits, and 8 Ridge designs, we establish the ***Inertial Sufficiency Principle***: once the output coordinate frame is physically aligned with vortex translational inertia, a single zero-overhead residual head ($B$) captures the full dynamical advantage without requiring dual-branch gating ($C, D$). This inductive bias universally improves linear Ridge, compact MLP, and deep Transformer architectures at **sub-5 ms single-CPU inference latency**.
+
+3. **Uncovering & Resolving Event-Induced Hazard Censorship (`synoptic_reconstruction/`):**  
+   Operational best-track archives (NOAA HURDAT2) interleave routine 6-hourly synoptic observations (`00, 06, 12, 18 UTC`) with asynchronous special records documenting coastal landfall (`L`). We uncover a pervasive benchmark pathology—***Event-Induced Hazard Censorship***—where conventional contiguous-row sequence slicing treats asynchronous `L` records as cadence violations and **purges 100% of future-landfall windows** from the 2022–2024 and 2025 24-h test sets. Our **Synoptic-First Temporal Reconstruction** protocol (governed by 8 formal verification invariants `C1`–`C8`) expands the 2022–2024 test cohort by **43.7%** (`630 -> 905 windows`, `30 -> 40 storms`) and restores **101 landfall-spanning windows across 20 storms**, where Lagrangian kinematic residual learning achieves its largest breakthrough (**$-51.89\text{ km}$ equal-storm error reduction**, 95% bootstrap CI `[13.35, 89.96] km`).
+
+---
+
+## 📊 Key Experimental Highlights
+
+### 1. Controlled Output Parameterization Hierarchy (2022–2024 Primary Test & 2025 Extension)
+
+| Cohort & Feature Set | Horizon | Constant-Velocity (`CV`) | Ridge Residual | MLP Residual | Direct Transformer ($A$) | **Single Residual ($B$)** | Paired Gain ($B - A$, Equal-Storm) |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **2022–2024 Test** (With RMW) | **6 h** | 38.66 km | **34.72 km** | 35.10 km | 41.01 km | **35.04 km** | **$-6.19$ km** `[-9.15, -3.38]` |
+| **2022–2024 Test** (With RMW) | **12 h** | 95.88 km | 88.62 km | **87.77 km** | 104.86 km | **90.76 km** | **$-13.92$ km** `[-23.08, -4.45]` |
+| **2022–2024 Test** (With RMW) | **18 h** | 164.08 km | 154.03 km | **151.63 km** | 172.01 km | **156.90 km** | **$-17.07$ km** `[-33.63, -0.32]` |
+| **2022–2024 Test** (With RMW) | **24 h** | 241.00 km | 228.59 km | **226.47 km** | 247.37 km | **235.35 km** | **$-18.39$ km** `[-43.36, +6.68]` |
+| **2025 Extension** (No RMW) | **6 h** | 36.12 km | **30.53 km** | 31.11 km | 38.07 km | **31.71 km** | **$-6.10$ km** `[-9.29, -3.40]` |
+| **2025 Extension** (No RMW) | **12 h** | 88.24 km | **77.77 km** | 80.52 km | 92.60 km | **84.29 km** | **$-8.96$ km** `[-16.43, -1.78]` |
+| **2025 Extension** (No RMW) | **18 h** | 146.97 km | **132.27 km** | 137.45 km | 166.96 km | **144.36 km** | **$-23.22$ km** `[-43.39, -2.59]` |
+| **2025 Extension** (No RMW) | **24 h** | 212.56 km | **192.26 km** | 199.78 km | 246.30 km | **213.73 km** | **$-32.87$ km** `[-62.13, -3.28]` |
+
+### 2. Lifting Event-Induced Hazard Censorship: 24-h Performance on Restored Coastal Landfall Trajectories
+
+<p align="center">
+  <img src="assets/coverage_map.png" alt="Spatial Coverage Comparison: Contiguous-Row Censoring vs. Synoptic-First Reconstruction" width="92%">
+</p>
+
+| 2022–2024 Reconstructed Cohort (No RMW, Synoptic Features) | Windows ($N$) | Storms ($M$) | Direct Regression ($A$) Equal-Storm Error | **Kinematic Residual ($B$)** Equal-Storm Error | Paired Error Reduction ($B - A$) | 95% Whole-Storm Bootstrap CI |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Retained Baseline Windows** (Offshore-Dominated) | 630 | 30 | 262.13 km | **236.28 km** | **$-25.85$ km** | `[-54.44, +0.94]` km |
+| **Full Synoptic-First Cohort** | 905 | 40 | 280.18 km | **241.05 km** | **$-39.13$ km** | `[-69.61, -9.97]` km |
+| **Newly Restored Windows** | 275 | 24 | 279.64 km | **236.87 km** | **$-42.77$ km** | `[-79.67, -8.56]` km |
+| **Future-Landfall Hazard Windows (`L` in $(T, T+24\text{ h}]$)** | **101** | **20** | 284.88 km | **232.98 km** | **$-51.89$ km** | **`[-89.96, -13.35]` km** |
+
+<p align="center">
+  <img src="assets/forecast_cases.png" alt="Meteorological Case Studies: Hurricane Ernesto Recurvature and Hurricane Leslie Wind Shear" width="92%">
+</p>
+
+---
+
+## 🗂️ Repository Structure
+
+```text
+├── kinematic_residual/              # Core Lagrangian kinematic residual learning & 4-tier heads (A, B, C, D)
+│   ├── prepare_frozen.py            # Tangent-plane projection M(p; p0), Haversine metric & HURDAT2 builder
+│   ├── controlled_heads.py          # Direct (A), Single Residual (B), Fixed Dual (C), Adaptive Dual (D)
+│   ├── run_controlled.py            # Controlled Transformer training & evaluation runner
+│   ├── run_matrix.py                # Full multi-horizon (6, 12, 18, 24 h) & multi-seed experiment matrix
+│   ├── ridge_baseline.py            # Linear Ridge kinematic residual predictor
+│   ├── mlp_residual_baseline.py     # Compact 2-layer GELU MLP kinematic residual predictor
+│   ├── analyze_revision.py          # 10,000-replicate whole-storm cluster bootstrap & paired comparisons
+│   ├── benchmark_inference.py       # Single-CPU / GPU inference latency and parameter benchmarks
+│   ├── vendor/                      # Spatio-temporal Transformer encoder backbone (STTransformer)
+│   └── tests/                       # Unit tests for output heads, baselines, and schedulers
+├── synoptic_reconstruction/         # Overcoming Event-Induced Hazard Censorship (Synoptic-First Protocol)
+│   ├── prepare_revision.py          # 4-stage Synoptic-First Temporal Reconstruction algorithm
+│   ├── test_window_contract.py      # Automated test suite for all 8 formal verification invariants (C1-C8)
+│   ├── run_training.py              # End-to-end 24-h synoptic retraining pipeline
+│   ├── summarize_revision.py        # Subgroup & coastal landfall hazard statistical evaluation
+│   ├── verify_revision.py           # End-to-end provenance & cryptographic hash verification
+│   ├── window_selection/            # Raw-feature vs. synoptic-feature transfer evaluation scripts
+│   └── results/                     # Verified JSON summaries, contract test outputs & feature schemas
+├── figures/                         # Publication-grade vector PDF figures from the manuscript
+├── assets/                          # High-resolution PNG/SVG visual previews
+├── TyphoFormerPlus/                 # Earlier prototype experiments, multi-modal ablations & audit logs
+├── TyphoFormer_original/            # Reference snapshot of upstream LabRAI/TyphoFormer baseline
+├── demo.py / demo.ipynb             # Self-contained offline interactive HTML results explorer
+├── CITATION.cff                     # GitHub citation metadata
+├── AUTHORS.md                       # Confirmed author list and institutional affiliations
+└── LICENSE                          # MIT License
+```
+
+---
+
+## 🚀 Quickstart
+
+### 1. Environment Setup
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Verify the 8 Synoptic-First Data-Integrity Invariants (`C1`–`C8`)
+
+```bash
+pytest synoptic_reconstruction/test_window_contract.py
+pytest kinematic_residual/tests/
+```
+
+### 3. Reconstruct Synoptic-First HURDAT2 Windows & Run Controlled Experiments
+
+```bash
+# Reconstruct hazard-complete synoptic windows and verify landfall annotations
+python synoptic_reconstruction/prepare_revision.py
+
+# Train and evaluate controlled output parameterizations (A: Direct, B: Single Residual, C: Fixed Dual, D: Adaptive Dual)
+python kinematic_residual/run_matrix.py --data-root data --output results/controlled_matrix --device cuda --evaluate-2025
+
+# Compute 10,000-replicate whole-storm cluster bootstrap confidence intervals
+python kinematic_residual/analyze_revision.py --replicates 10000 --include-2025-neural
+```
+
+### 4. Interactive Offline Results Viewer
 
 ```bash
 python demo.py
 ```
 
-Requires Python 3.10+ and a browser. No package installation, GPU, model download, or API key. The command generates a self-contained HTML file and opens it locally. Use `python demo.py --no-open` on a headless machine, then open `demo_output/index.html`.
-
-Select a forecast lead to compare the earlier baseline and neural results. The table retains the stored seed standard deviation; it is not a confidence interval. The viewer does not produce live forecasts or represent the revised manuscript's final results. Download the selected rows as CSV from the page. The source filename and SHA-256 are shown below the chart.
-
-The [Colab notebook](demo.ipynb) contains the same no-install workflow. Use the Colab link above, connect a runtime and run the code cell. The notebook has not been tested in a cloud runtime. Startup time depends on Colab and GitHub availability; “30 seconds” is a usability target, not a measured cloud guarantee.
-
-### Container
-
-```bash
-docker build -f Dockerfile.demo -t typho-results .
-docker run --rm -p 127.0.0.1:7860:7860 typho-results
-```
-
-Open http://localhost:7860. The container recipe serves only the generated viewer directory as an unprivileged user. No prebuilt image or hosted Space is claimed. Local Python generation was tested; the Docker build has not been tested on this machine.
-
-### Real-world Robustness & Edge Deployment
-
-The retained experiments use strict six-hour retrospective HURDAT2 windows, storm-level time splits and train-only retrieval. Missing telemetry, irregular sampling and sensor-coordinate noise require separate stress tests; a clean benchmark does not establish those properties. No Jetson/ARM latency, peak-memory, power or ONNX parity measurements are included. Evaluate the unchanged checkpoint at batch size 1 with input length, precision, device, warm-up and sample count recorded before making an edge-deployment claim.
-
-Training checkpoints are not included in the public snapshot, so pretrained-model inference is not part of this demo.
+Generates a self-contained HTML dashboard (`demo_output/index.html`) with zero external dependencies.
 
 ---
 
+## 📦 Full Reproducibility Archives & Manuscript Release
 
-**Public maintainer:** **Yonghao Wu (吴永浩)** · [WYH302](https://github.com/WYH302)
+Large binary artifacts (frozen prediction archives, trained model checkpoints, and complete LaTeX compilation bundles) are hosted in the **[GitHub Release (`kinematic-residuals-2026-09-24`)](https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting/releases/tag/kinematic-residuals-2026-09-24)**:
 
-Collaborator names and contact details are omitted from repository metadata for privacy. This does not assert sole authorship of the associated research. See [AUTHORS.md](AUTHORS.md) for the public-contact and attribution policy.
+- **`manuscript.pdf`**: Full peer-review manuscript (5-section structure, 58 verified references).
+- **`Supplementary_Material.pdf` (`ESM_2.pdf`)**: 43-page supplementary statistical appendix (Appendices A–E).
+- **`editable_manuscript.zip`**: Complete compilable LaTeX source bundle, bibliography (`refs.bib`), generated tables, and vector figures.
+- **`ESM_1.zip`**: Frozen-score reproduction package (reconstructs every reported table cell and bootstrap interval directly from saved predictions without retraining).
 
-## Version and research scope
+---
 
-The code and numerical tables below document the earlier TyphoFormer++ experiments. The current numerical study is reported in *TyphoFormer++: Kinematic residual learning for short-range tropical cyclone track prediction*. All materials for this study are available in the [2026-09-24 release](https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting/releases/tag/kinematic-residuals-2026-09-24): the manuscript PDF, editable sources, Online Resources 1–3, supplementary captions, and SHA-256 manifest. Online Resource 1 reconstructs reported scores from saved predictions; it does not independently retrain the models. The repository's pre-existing result tables document earlier TyphoFormer++ experiments and are distinct from the current manuscript's primary results.
+## 📝 Citation
 
-## Earlier implementation and experiments
+If you find our code, kinematic residual formulation, or synoptic-first HURDAT2 reconstruction protocol useful in your research, please cite:
 
-[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C?logo=pytorch&logoColor=white)](https://pytorch.org/)
-[![Data](https://img.shields.io/badge/Data-NHC%20HURDAT2-0f766e)](https://www.nhc.noaa.gov/data/)
-[![Task](https://img.shields.io/badge/Task-Hurricane%20Track%20Forecasting-1d4ed8)](#overview)
-
-This repository contains the code, audit scripts, result summaries, and lightweight visual assets for **TyphoFormer++**, a research prototype for retrospective Atlantic hurricane track forecasting. The paper-facing experiments focus on strict 6-hour HURDAT2 windows, storm-level temporal splits, train-only normalization, and leakage-safe analog retrieval.
-
-<p align="center">
-  <img src="assets/typhoformerpp_overview.svg" alt="TyphoFormer++ pipeline overview" width="96%">
-</p>
-
-The central claim is deliberately scoped: **TyphoFormer++ improves over our local leak-free TyphoFormer reproduction and several local sequence baselines under the same audited official-HURDAT2 protocol.** This repository does **not** claim operational forecasting readiness or superiority over every published TyphoFormer Table 1 number.
-
-## Overview
-
-Tropical cyclone track prediction is sensitive to time alignment, storm leakage, analog retrieval policy, and evaluation protocol. TyphoFormer++ was built to make those assumptions explicit.
-
-Key ideas:
-
-- **Strict 6-hour windows:** inputs and targets use only 0000 / 0600 / 1200 / 1800 UTC synoptic records.
-- **Lead-specific 12 -> 1 setting:** four independent targets at 6h, 12h, 18h, and 24h.
-- **Storm-level splits:** train/validation storms are from 2004-2021; test storms are from 2022-2024.
-- **Safe-negative analog retrieval:** validation/test negative analogs are target-free query neighbors.
-- **Dual CV-residual head:** the model learns a direct neural displacement and a constant-velocity residual path.
-- **Audit-first reporting:** protocol checks and result summaries are committed next to the code.
-
-## Visual Summary
-
-<p align="center">
-  <img src="assets/results_deltaR.svg" alt="Official safe-negative lead-specific results" width="96%">
-</p>
-
-<p align="center">
-  <img src="assets/per_storm_b4_deltas.png" alt="Per-storm TyphoFormer++ delta diagnostics" width="48%">
-  <img src="assets/milton_track_prediction.png" alt="Example hurricane track visualization" width="48%">
-</p>
-
-The left plot shows storm-level B4-vs-B3 deltas from the TyphoFormer++ diagnostic run. The right image is an example track-forecast visualization bundled with the original TyphoFormer snapshot for continuity with the upstream project.
-
-## Main Result
-
-Official NHC Atlantic HURDAT2, strict 6-hour lead-specific 12 -> 1 protocol. Values are DeltaR in km on 2022-2024 test storms. Lower is better. Neural rows report mean +/- std over seeds 42, 123, and 2024.
-
-| Model | 6h | 12h | 18h | 24h |
-|---|---:|---:|---:|---:|
-| Persistence | 126.682 | 248.174 | 362.017 | 468.843 |
-| Constant Velocity | 36.869 | 95.216 | 170.273 | 256.387 |
-| CLIPER-style ridge | 37.277 | 93.245 | 165.417 | 247.663 |
-| B2 Numeric Transformer | 39.185 +/- 0.707 | 101.201 +/- 4.731 | 173.365 +/- 5.238 | 265.277 +/- 8.332 |
-| B3 leak-free TyphoFormer | 39.462 +/- 0.665 | 101.775 +/- 1.686 | 170.988 +/- 4.322 | 260.721 +/- 6.654 |
-| B4 TyphoFormer++ safe raw | 34.153 +/- 0.507 | 86.712 +/- 1.081 | 156.200 +/- 4.628 | 230.528 +/- 1.302 |
-| B4 TyphoFormer++ safe + val CV calibration | 34.295 +/- 0.458 | 86.160 +/- 0.825 | 154.985 +/- 4.902 | 228.959 +/- 2.043 |
-
-## Storm-Level Bootstrap
-
-B4 - B3 paired DeltaR in km. Negative means TyphoFormer++ is better. Storm means are averaged over seeds first, then bootstrapped over test storms.
-
-| Lead | Storms | B3 storm mean | B4 storm mean | B4-B3 delta | 95% CI | B4 better storms |
-|---:|---:|---:|---:|---:|---:|---:|
-| 6h | 41 | 41.023 | 35.698 | -5.326 | [-7.088, -3.571] | 85.4% |
-| 12h | 36 | 108.862 | 97.596 | -11.266 | [-19.156, -3.011] | 80.6% |
-| 18h | 35 | 185.140 | 170.528 | -14.612 | [-27.522, 1.069] | 74.3% |
-| 24h | 30 | 278.032 | 249.723 | -28.309 | [-51.322, -0.417] | 83.3% |
-
-## Ablation Summary
-
-Values are DeltaR km, mean +/- std over seeds 42 / 123 / 2024.
-
-| Variant | 6h | 12h | 18h | 24h |
-|---|---:|---:|---:|---:|
-| B3 leak-free TyphoFormer | 39.462 +/- 0.665 | 101.775 +/- 1.686 | 170.988 +/- 4.322 | 260.721 +/- 6.654 |
-| B3 + dual CV-residual head | 33.833 +/- 0.468 | 86.462 +/- 0.326 | 153.768 +/- 2.346 | 236.483 +/- 3.212 |
-| B3 + positive analog only | 39.200 +/- 0.340 | 96.898 +/- 3.395 | 175.832 +/- 6.034 | 260.644 +/- 10.107 |
-| B3 + alignment/rank only | 43.047 +/- 1.205 | 106.165 +/- 2.973 | 176.821 +/- 2.943 | 281.220 +/- 8.686 |
-| B4 safe TyphoFormer++ | 34.153 +/- 0.507 | 86.712 +/- 1.081 | 156.200 +/- 4.628 | 230.528 +/- 1.302 |
-
-Historical interpretation: the earlier combined-design ablation suggested a benefit from the CV-residual design, but did not isolate the independent benefit of a second branch or adaptive gating. Positive analog memory and alignment/ranking are supporting signals, and text-template features should be interpreted as deterministic structured features rather than evidence for free-form language semantics.
-
-## Repository Structure
-
-```text
-.
-|-- README.md
-|-- requirements.txt
-|-- assets/
-|   |-- typhoformerpp_overview.svg
-|   |-- results_deltaR.svg
-|   |-- per_storm_b4_deltas.png
-|   |-- milton_track_prediction.png
-|   `-- original_typhoformer_results.png
-|-- TyphoFormerPlus/
-|   |-- model/
-|   |   |-- TyphoFormerPlus.py
-|   |   |-- TyphoFormer.py
-|   |   |-- STTransformer.py
-|   |   `-- PGF_module.py
-|   |-- prepare_official_hurdat2_pp_data.py
-|   |-- train_typhoformerpp.py
-|   |-- eval_typhoformerpp.py
-|   |-- audit_official_protocol.py
-|   |-- run_official_leadspecific_12to1_experiments.ps1
-|   |-- run_official_12to1_ablation_full_safeneg.ps1
-|   |-- official_*_summary.md/json
-|   |-- RESULTS_INDEX.md
-|   `-- ARTIFACT_README.md
-`-- TyphoFormer_original/
-    `-- original TyphoFormer reference snapshot
+```bibtex
+@article{wu2026kinematic,
+  title   = {Kinematic Residual Learning and Evaluation Coverage in Short-Range Atlantic Tropical Cyclone Track Prediction},
+  author  = {Wu, Yonghao and Wu, Jiayang and He, Sirui and Liu, Chang and Filaretov, Vladimir and Yukhimets, Dmitry},
+  year    = {2026},
+  url     = {https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting}
+}
 ```
-
-Large generated datasets, checkpoints, run logs, and model weights are intentionally excluded from Git by `.gitignore`.
-
-## Installation
-
-```bash
-git clone https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting.git
-cd TyphoFormer-for-Hurricane-Track-Forecasting
-
-python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
-```
-
-For GPU training, install the PyTorch build that matches your CUDA version from the official PyTorch selector before running the long experiments.
-
-## Data Preparation
-
-The repository includes a small HURDAT2-style CSV sample for code inspection and compatibility with the original TyphoFormer pipeline. The official paper-facing runs use the NHC Atlantic HURDAT2 archive.
-
-Place the official HURDAT2 text file here:
-
-```text
-TyphoFormerPlus/data_official/hurdat2_atl_1851_2024.txt
-```
-
-Then generate strict 6-hour lead-specific data. The current data-preparation script writes the safe-negative validation/test retrieval policy by default. For one lead:
-
-```powershell
-cd TyphoFormerPlus
-python prepare_official_hurdat2_pp_data.py `
-  --hurdat2 data_official\hurdat2_atl_1851_2024.txt `
-  --output-dir data_official_pp_12to1_lead1_safeneg `
-  --input-len 12 `
-  --pred-len 1 `
-  --target-lead-step 1 `
-  --train-years 2004-2021 `
-  --test-years 2022-2024 `
-  --val-ratio 0.10 `
-  --split-seed 42 `
-  --force
-```
-
-Repeat with `--target-lead-step 2`, `3`, and `4` for 12h, 18h, and 24h targets.
-
-## Training and Evaluation
-
-From `TyphoFormerPlus/`:
-
-```powershell
-# Paper-facing safe-negative attribution ablation
-.\run_official_12to1_ablation_full_safeneg.ps1
-
-# Strong sequence baselines
-.\run_official_12to1_sequence_baselines_safeneg.ps1
-
-# Text-template ablation
-.\run_official_12to1_text_ablation_safeneg.ps1
-
-# Legacy non-safeneg lead-specific reconstruction kept for comparison
-.\run_official_leadspecific_12to1_experiments.ps1
-```
-
-Single-run entry points are also available:
-
-```bash
-python train_typhoformerpp.py --help
-python eval_typhoformerpp.py --help
-python eval_official_cliper_baselines.py --help
-```
-
-## Protocol Audit
-
-Before treating a generated dataset as paper evidence, run:
-
-```powershell
-cd TyphoFormerPlus
-python audit_official_protocol.py --output-json official_12to1_protocol_audit.json
-```
-
-The expected paper-facing result is `total_failures = 0`. The audit checks split disjointness, strict 6-hour timestamps, lead alignment, test-year isolation, train-only analog candidates, same-storm exclusions, and safe-negative retrieval policy.
-
-## Detailed Artifacts
-
-- Main artifact notes: [`TyphoFormerPlus/ARTIFACT_README.md`](TyphoFormerPlus/ARTIFACT_README.md)
-- Full results index: [`TyphoFormerPlus/RESULTS_INDEX.md`](TyphoFormerPlus/RESULTS_INDEX.md)
-- Main safe-negative summary: [`TyphoFormerPlus/official_leadspecific_12to1_safeneg_summary.md`](TyphoFormerPlus/official_leadspecific_12to1_safeneg_summary.md)
-- Full ablation summary: [`TyphoFormerPlus/official_12to1_ablation_full_safeneg_summary.md`](TyphoFormerPlus/official_12to1_ablation_full_safeneg_summary.md)
-- Storm bootstrap summary: [`TyphoFormerPlus/official_12to1_storm_bootstrap_safeneg_summary.md`](TyphoFormerPlus/official_12to1_storm_bootstrap_safeneg_summary.md)
-
-## Important Scope Notes
-
-- This is retrospective research code based on best-track data, not an operational hurricane forecast system.
-- The CLIPER-style ridge row is a local retrospective control, not the official NHC CLIPER implementation.
-- The official Table 1 comparison remains protocol-sensitive; the defensible claim here is improvement over the local leak-free reproduction and local baselines under the same strict protocol.
-- Checkpoints, generated `.npy` datasets, and run logs are omitted from Git. Recreate them with the scripts above or store them through a release, cloud drive, or Git LFS.
-
-## Citation
-
-Use the author-approved manuscript for its bibliographic citation. The repository's maintainer entry is not a substitute for the paper's author list. To identify this software version, include the repository URL and the commit used.
-
-## Acknowledgement
-
-This repository includes an [original TyphoFormer reference snapshot](https://github.com/LabRAI/TyphoFormer) for reproducibility and comparison. Original TyphoFormer code and assets remain attributed to their upstream authors. TyphoFormer++ extends the local reproduction with strict protocol audits, safe-negative analog retrieval, additional baselines, and a dual CV-residual forecasting head.

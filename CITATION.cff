@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software or benchmark reconstruction protocol, please cite our paper."
+title: "Kinematic Residual Learning and Evaluation Coverage in Short-Range Atlantic Tropical Cyclone Track Prediction"
+type: software
+repository-code: "https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting"
+license: MIT
+authors:
+  - family-names: "Wu"
+    given-names: "Yonghao"
+    affiliation: "School of Electronics and Information Engineering, South China Normal University"
+    email: "2023025071@m.scnu.edu.cn"
+  - family-names: "Wu"
+    given-names: "Jiayang"
+    affiliation: "Westlake University"
+  - family-names: "He"
+    given-names: "Sirui"
+    affiliation: "School of Computer Science, Xiamen University Malaysia"
+  - family-names: "Liu"
+    given-names: "Chang"
+    affiliation: "Saint-Petersburg Institute for Shipbuilding & Marine Technology of Guangdong Ocean University"
+  - family-names: "Filaretov"
+    given-names: "Vladimir"
+    affiliation: "Robotics Laboratory, Institute of Automation and Control Processes, Far Eastern Branch of the Russian Academy of Sciences"
+  - family-names: "Yukhimets"
+    given-names: "Dmitry"
+    affiliation: "Robotics Laboratory, Institute of Automation and Control Processes, Far Eastern Branch of the Russian Academy of Sciences"
+keywords:
+  - tropical cyclone track forecasting
+  - kinematic residual learning
+  - physics-guided machine learning
+  - HURDAT2 best-track archive
+  - coastal landfall hazard
+  - sequence modeling
