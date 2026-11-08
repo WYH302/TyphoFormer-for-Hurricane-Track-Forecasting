@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "fits": 6,
+  "test_visibility": "Post-review sensitivity, not a first blind test",
+  "runs": [
+    "runs\\direct_seed42",
+    "runs\\direct_seed123",
+    "runs\\direct_seed2024",
+    "runs\\residual_seed42",
+    "runs\\residual_seed123",
+    "runs\\residual_seed2024"
+  ]
+}

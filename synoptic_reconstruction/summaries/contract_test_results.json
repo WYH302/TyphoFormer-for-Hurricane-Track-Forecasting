@@ -1,0 +1,9 @@
+{
+  "tests_run": 8,
+  "failures": 0,
+  "errors": 0,
+  "passed": true,
+  "source_sha256": "1b9b0c7beed5b4505838658b1d30e159fc84330c60891a58cfcf43ae55c37202",
+  "test_script_sha256": "b3e30f31698a53ca3859caed158617221270324d0aac42404bf942081e249a4a",
+  "scope": "Tests establish the stated implementation contract, not validity for all geoscience data."
+}

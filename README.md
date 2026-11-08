@@ -85,7 +85,7 @@ Short-range (6–24 h) tropical cyclone track forecasting is critical for coasta
 │   ├── summarize_revision.py        # Subgroup & coastal landfall hazard statistical evaluation
 │   ├── verify_revision.py           # End-to-end provenance & cryptographic hash verification
 │   ├── window_selection/            # Raw-feature vs. synoptic-feature transfer evaluation scripts
-│   └── results/                     # Verified JSON summaries, contract test outputs & feature schemas
+│   └── summaries/                   # Verified JSON summaries, contract test outputs & feature schemas
 ├── figures/                         # Publication-grade vector PDF figures from the manuscript
 ├── assets/                          # High-resolution PNG/SVG visual previews
 ├── TyphoFormerPlus/                 # Earlier prototype experiments, multi-modal ablations & audit logs

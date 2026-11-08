@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "window_id": "AL012022_ALEX:459564:24h:synoptic_actual_dt_v1",
+  "source_sha256": "1b9b0c7beed5b4505838658b1d30e159fc84330c60891a58cfcf43ae55c37202",
+  "policy": "Select standard times first; speed uses actual adjacent selected timestamp delta; accel6 is speed increment.",
+  "input_shape_RMW_off": [
+    12,
+    39
+  ],
+  "all_40_saved_channels_exact": true,
+  "history_timestamps_epoch_hours": [
+    459498,
+    459504,
+    459510,
+    459516,
+    459522,
+    459528,
+    459534,
+    459540,
+    459546,
+    459552,
+    459558,
+    459564
+  ],
+  "target_timestamps_epoch_hours": [
+    459588
+  ],
+  "recorded_future_landfall": false,
+  "prediction_file": "runs/residual_seed42/test_predictions.npz",
+  "prediction_index": 0,
+  "prediction_latlon_degrees": [
+    34.22804260253906,
+    -66.51422882080078
+  ],
+  "observed_target_latlon_degrees": [
+    33.79999923706055,
+    -65.19999694824219
+  ],
+  "recomputed_haversine_km": 130.14623149195785,
+  "saved_float32_error_km": 130.14605712890625,
+  "absolute_difference_km": 0.00017436305159890253,
+  "error_tolerance_km": 0.01,
+  "features_file": "generated/one_window_standardized_features.csv"
+}

@@ -1,0 +1,11 @@
+{
+  "period": "1980-2003",
+  "source_sha256": "1b9b0c7beed5b4505838658b1d30e159fc84330c60891a58cfcf43ae55c37202",
+  "raw_windows": 3642,
+  "synoptic_windows": 4624,
+  "raw_storms": 206,
+  "synoptic_storms": 235,
+  "future_L_windows": 395,
+  "future_L_storms": 73,
+  "scope": "Independent historical-period application in the same Atlantic archive and format; not a second basin/source, not a neural transfer test."
+}

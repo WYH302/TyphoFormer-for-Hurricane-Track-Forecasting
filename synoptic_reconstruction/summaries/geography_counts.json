@@ -1,0 +1,12 @@
+{
+  "test2022_2024": {
+    "windows": 905,
+    "storms": 40,
+    "L_records": 44
+  },
+  "extension2025": {
+    "windows": 187,
+    "storms": 8,
+    "L_records": 6
+  }
+}

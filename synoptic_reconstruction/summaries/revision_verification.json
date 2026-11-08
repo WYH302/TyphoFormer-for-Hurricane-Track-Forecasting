@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "numeric_windows_rebuilt": 6145,
+  "all_numeric_inputs_and_targets_exact": true,
+  "original_storm_split_assignments_preserved": true,
+  "minute_precise_event_annotations_recovered": true,
+  "new_scores_reproduced_exactly": true,
+  "current_preparation_sha256": "e2028651164727d64862b4d4bc88800358f7b5d47e71933b5c00e008b5698d79",
+  "source_sha256": "1b9b0c7beed5b4505838658b1d30e159fc84330c60891a58cfcf43ae55c37202",
+  "score_script_sha256": "7b1e6e6e91a6a272fd208f97437046dd30cf34da8dcd1030d1d6b0c1224df058"
+}

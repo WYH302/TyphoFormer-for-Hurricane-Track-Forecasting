@@ -1,0 +1,78 @@
+{
+  "status": "prepared",
+  "source_sha256": "1b9b0c7beed5b4505838658b1d30e159fc84330c60891a58cfcf43ae55c37202",
+  "preparation_sha256": "13cca3c9a7d3ea698a826d2d409028b42215db41c7ba38ebdac0c5cdef2f06e4",
+  "scope": "Post-review sensitivity after 2022-2025 results had been examined. Not a first blind evaluation.",
+  "designs": {
+    "neural_heads": [
+      "direct",
+      "residual"
+    ],
+    "seeds": [
+      42,
+      123,
+      2024
+    ],
+    "rmw": "off",
+    "lead_hours": 24,
+    "epochs": 40,
+    "encoder": "original full-size",
+    "selection": "minimum validation endpoint error",
+    "ridge_alphas": [
+      0.0001,
+      0.00031622776601683794,
+      0.001,
+      0.0031622776601683794,
+      0.01,
+      0.03162277660168379,
+      0.1,
+      0.31622776601683794,
+      1.0,
+      3.1622776601683795,
+      10.0,
+      31.622776601683793,
+      100.0,
+      316.22776601683796,
+      1000.0,
+      3162.2776601683795,
+      10000.0,
+      31622.776601683792,
+      100000.0,
+      316227.7660168379,
+      1000000.0,
+      3162277.6601683795,
+      10000000.0,
+      31622776.60168379,
+      100000000.0,
+      316227766.01683795,
+      1000000000.0,
+      3162277660.1683793,
+      10000000000.0
+    ]
+  },
+  "split_seed": 42,
+  "counts": {
+    "train": {
+      "samples": 4643,
+      "storms": 218
+    },
+    "val": {
+      "samples": 410,
+      "storms": 23
+    },
+    "test": {
+      "samples": 905,
+      "storms": 40
+    },
+    "extension": {
+      "samples": 187,
+      "storms": 8
+    }
+  },
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 20260913,
+    "unit": "storm"
+  },
+  "reason": "Check corrected training and evaluation without split-dependent RMW reporting."
+}

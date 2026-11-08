@@ -1,0 +1,33 @@
+{
+  "policy": "For fixed display seed 42, partition storms by sign of storm-mean single-residual-minus-direct error. Select lower median storm in each stratum; select lower median window among sign-consistent windows in that storm. RMW on, frozen synoptic-feature policy; only 24 h endpoints. Descriptive retrospective selection, not evidence of prevalence.",
+  "cases": [
+    {
+      "storm_id": "AL052024_ERNESTO",
+      "window": 14,
+      "initialization_epoch_hour": 478854,
+      "selection_storm_delta_km": -55.32548522949219,
+      "selection_window_delta_km": -171.03773498535156,
+      "display_seed": 42,
+      "endpoint_errors_km": {
+        "CV": 134.49169921875,
+        "Ridge": 127.02947235107422,
+        "Direct": 387.3097839355469,
+        "Single residual": 216.2720489501953
+      }
+    },
+    {
+      "storm_id": "AL132024_LESLIE",
+      "window": 18,
+      "initialization_epoch_hour": 480102,
+      "selection_storm_delta_km": 30.09465217590332,
+      "selection_window_delta_km": 39.29376220703125,
+      "display_seed": 42,
+      "endpoint_errors_km": {
+        "CV": 57.98570251464844,
+        "Ridge": 17.6219425201416,
+        "Direct": 70.44239044189453,
+        "Single residual": 109.73615264892578
+      }
+    }
+  ]
+}

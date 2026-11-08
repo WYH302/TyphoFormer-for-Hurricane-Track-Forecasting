@@ -1,0 +1,97 @@
+{
+  "analysis": "Post-test-visible synoptic-first retraining; RMW off, 24 h only",
+  "periods": {
+    "test": {
+      "windows": 905,
+      "storms": 40,
+      "models": {
+        "direct": {
+          "window_mean_km": 252.56072969823035,
+          "storm_mean_km": 259.4597758207386
+        },
+        "residual": {
+          "window_mean_km": 233.9305023461196,
+          "storm_mean_km": 244.519865233062
+        },
+        "ridge": {
+          "window_mean_km": 226.5942051397674,
+          "storm_mean_km": 235.60032251543709
+        },
+        "cv": {
+          "window_mean_km": 249.80395368278357,
+          "storm_mean_km": 255.70603329810584
+        }
+      },
+      "pairs": {
+        "residual_minus_direct": {
+          "delta_km": -14.939910587676678,
+          "ci_low": -39.325795820412,
+          "ci_high": 12.294013085458595,
+          "improved_storms": 26,
+          "storms": 40
+        },
+        "residual_minus_ridge": {
+          "delta_km": 8.919542717624909,
+          "ci_low": 0.25037632612255595,
+          "ci_high": 18.114854131307375,
+          "improved_storms": 13,
+          "storms": 40
+        },
+        "ridge_minus_cv": {
+          "delta_km": -20.105710782668744,
+          "ci_low": -29.30384372949292,
+          "ci_high": -10.40594731520825,
+          "improved_storms": 31,
+          "storms": 40
+        }
+      }
+    },
+    "extension": {
+      "windows": 187,
+      "storms": 8,
+      "models": {
+        "direct": {
+          "window_mean_km": 262.2920016332956,
+          "storm_mean_km": 256.0149936292249
+        },
+        "residual": {
+          "window_mean_km": 220.33955007780898,
+          "storm_mean_km": 210.80894409008582
+        },
+        "ridge": {
+          "window_mean_km": 217.5425286596375,
+          "storm_mean_km": 216.2605026648618
+        },
+        "cv": {
+          "window_mean_km": 253.87531657631877,
+          "storm_mean_km": 257.83164765901347
+        }
+      },
+      "pairs": {
+        "residual_minus_direct": {
+          "delta_km": -45.20604953913909,
+          "ci_low": -61.044684071393576,
+          "ci_high": -30.971678158344435,
+          "improved_storms": 8,
+          "storms": 8
+        },
+        "residual_minus_ridge": {
+          "delta_km": -5.4515585747759845,
+          "ci_low": -22.549837145386093,
+          "ci_high": 7.236404955114507,
+          "improved_storms": 5,
+          "storms": 8
+        },
+        "ridge_minus_cv": {
+          "delta_km": -41.57114499415165,
+          "ci_low": -56.535513036053835,
+          "ci_high": -25.09702268903747,
+          "improved_storms": 7,
+          "storms": 8
+        }
+      }
+    }
+  },
+  "ridge_alpha": 10000.0,
+  "intervals": "Pointwise percentile intervals, 10000 paired whole-storm draws, seed 20260913; neural errors averaged over seeds before resampling."
+}
