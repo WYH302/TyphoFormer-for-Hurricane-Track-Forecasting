@@ -1,14 +1,13 @@
 cff-version: 1.2.0
-message: "If you use this software or benchmark reconstruction protocol, please cite our paper."
-title: "Kinematic Residual Learning and Evaluation Coverage in Short-Range Atlantic Tropical Cyclone Track Prediction"
+message: "If you find this open-source toolkit or benchmark reconstruction protocol helpful, please cite our study."
+title: "Beyond Static Coordinates: Physics-Guided Kinematic Residual Learning for Landfall-Complete Tropical Cyclone Track Forecasting"
 type: software
 repository-code: "https://github.com/WYH302/TyphoFormer-for-Hurricane-Track-Forecasting"
 license: MIT
 authors:
   - family-names: "Wu"
     given-names: "Yonghao"
-    affiliation: "School of Electronics and Information Engineering, South China Normal University"
-    email: "2023025071@m.scnu.edu.cn"
+    affiliation: "School of Electronic Science and Engineering (School of Microelectronics), South China Normal University"
   - family-names: "Wu"
     given-names: "Jiayang"
     affiliation: "Westlake University"
