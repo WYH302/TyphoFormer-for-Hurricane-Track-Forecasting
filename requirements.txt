@@ -1,11 +1,10 @@
-numpy
-pandas
-scikit-learn
-tqdm
-matplotlib
-torch
-torchinfo
-sentence-transformers
-transformers
-openai
-backoff
+# Core scientific & deep-learning dependencies verified on Python 3.10--3.12
+# (tested on PyTorch 2.8.0+cu128 RTX 3090 and PyTorch 2.12.1 CPU)
+torch>=2.1.0
+numpy>=1.26.0
+scipy>=1.11.0
+pandas>=2.1.0
+scikit-learn>=1.4.0
+matplotlib>=3.8.0
+pytest>=8.0.0
+python-pptx>=1.0.0

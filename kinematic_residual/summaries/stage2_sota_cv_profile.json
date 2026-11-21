@@ -1,0 +1,554 @@
+{
+  "wall_seconds_part4": 1132.17,
+  "profiling": {
+    "Ridge Residual": {
+      "params": 962,
+      "mflops": 0.0019,
+      "weight_mb": 0.0037,
+      "train_state_mb": 0.0037,
+      "cpu_b1_ms": 0.002,
+      "cpu_b1_fps": 552486.2
+    },
+    "MLP Residual": {
+      "params": 78338,
+      "mflops": 0.156,
+      "weight_mb": 0.3,
+      "adamw_state_mb": 1.2,
+      "cpu_b1_ms": 0.083,
+      "cpu_b1_fps": 12043.8
+    },
+    "LSTM (+Res B)": {
+      "params": 227778,
+      "mflops": 5.227,
+      "weight_mb": 0.87,
+      "adamw_state_mb": 3.48,
+      "cpu_b1_ms": 0.604,
+      "cpu_b1_fps": 1655.3
+    },
+    "GRU (+Res B)": {
+      "params": 172994,
+      "mflops": 3.924,
+      "weight_mb": 0.66,
+      "adamw_state_mb": 2.64,
+      "cpu_b1_ms": 0.927,
+      "cpu_b1_fps": 1078.8
+    },
+    "TSMixer (+Res B)": {
+      "params": 102382,
+      "mflops": 0.911,
+      "weight_mb": 0.39,
+      "adamw_state_mb": 1.56,
+      "cpu_b1_ms": 0.785,
+      "cpu_b1_fps": 1273.7
+    },
+    "PatchTST (+Res B)": {
+      "params": 421186,
+      "mflops": 3.302,
+      "weight_mb": 1.61,
+      "adamw_state_mb": 6.43,
+      "cpu_b1_ms": 0.659,
+      "cpu_b1_fps": 1516.8
+    },
+    "iTransformer (+Res B)": {
+      "params": 428482,
+      "mflops": 33.268,
+      "weight_mb": 1.63,
+      "adamw_state_mb": 6.54,
+      "cpu_b1_ms": 1.051,
+      "cpu_b1_fps": 951.6
+    },
+    "ModernTCN (+Res B)": {
+      "params": 280898,
+      "mflops": 6.474,
+      "weight_mb": 1.07,
+      "adamw_state_mb": 4.29,
+      "cpu_b1_ms": 0.973,
+      "cpu_b1_fps": 1027.7
+    },
+    "TimeMixer (+Res B)": {
+      "params": 461408,
+      "mflops": 5.835,
+      "weight_mb": 1.76,
+      "adamw_state_mb": 7.04,
+      "cpu_b1_ms": 2.279,
+      "cpu_b1_fps": 438.9
+    },
+    "ST-Trans Full Direct (A)": {
+      "params": 4099586,
+      "mflops": 95.619,
+      "weight_mb": 15.64,
+      "adamw_state_mb": 62.55,
+      "cpu_b1_ms": 3.8,
+      "cpu_b1_fps": 263.2
+    },
+    "ST-Trans Full Residual (B)": {
+      "params": 4099586,
+      "mflops": 95.619,
+      "weight_mb": 15.64,
+      "adamw_state_mb": 62.55,
+      "cpu_b1_ms": 3.565,
+      "cpu_b1_fps": 280.5
+    },
+    "ST-Trans Compact Residual (B64)": {
+      "params": 163074,
+      "mflops": 3.728,
+      "weight_mb": 0.62,
+      "adamw_state_mb": 2.49,
+      "cpu_b1_ms": 0.904,
+      "cpu_b1_fps": 1106.1
+    },
+    "ST-Trans Compact Adaptive (D64)": {
+      "params": 175877,
+      "mflops": 3.753,
+      "weight_mb": 0.67,
+      "adamw_state_mb": 2.68,
+      "cpu_b1_ms": 1.175,
+      "cpu_b1_fps": 850.8
+    }
+  },
+  "atlantic_iclr2024_sota": {
+    "moderntcn": {
+      "n_params": 280898,
+      "6": {
+        "direct_22_24_mean": 36.03,
+        "direct_22_24_sd": 0.73,
+        "residual_22_24_mean": 34.54,
+        "residual_22_24_sd": 0.09,
+        "direct_25_mean": 39.08,
+        "direct_25_sd": 1.33,
+        "residual_25_mean": 35.43,
+        "residual_25_sd": 0.31
+      },
+      "12": {
+        "direct_22_24_mean": 89.6,
+        "direct_22_24_sd": 0.88,
+        "residual_22_24_mean": 87.36,
+        "residual_22_24_sd": 1.22,
+        "direct_25_mean": 87.05,
+        "direct_25_sd": 0.38,
+        "residual_25_mean": 83.28,
+        "residual_25_sd": 2.25
+      },
+      "18": {
+        "direct_22_24_mean": 162.54,
+        "direct_22_24_sd": 4.61,
+        "residual_22_24_mean": 153.99,
+        "residual_22_24_sd": 0.82,
+        "direct_25_mean": 149.94,
+        "direct_25_sd": 3.13,
+        "residual_25_mean": 141.71,
+        "residual_25_sd": 1.07
+      },
+      "24": {
+        "direct_22_24_mean": 234.79,
+        "direct_22_24_sd": 5.32,
+        "residual_22_24_mean": 225.96,
+        "residual_22_24_sd": 2.99,
+        "direct_25_mean": 205.06,
+        "direct_25_sd": 4.05,
+        "residual_25_mean": 203.77,
+        "residual_25_sd": 1.66
+      }
+    },
+    "timemixer": {
+      "n_params": 461408,
+      "6": {
+        "direct_22_24_mean": 37.83,
+        "direct_22_24_sd": 0.52,
+        "residual_22_24_mean": 35.17,
+        "residual_22_24_sd": 0.42,
+        "direct_25_mean": 39.82,
+        "direct_25_sd": 1.1,
+        "residual_25_mean": 36.48,
+        "residual_25_sd": 1.0
+      },
+      "12": {
+        "direct_22_24_mean": 92.37,
+        "direct_22_24_sd": 1.0,
+        "residual_22_24_mean": 90.12,
+        "residual_22_24_sd": 1.79,
+        "direct_25_mean": 92.89,
+        "direct_25_sd": 6.41,
+        "residual_25_mean": 84.46,
+        "residual_25_sd": 2.43
+      },
+      "18": {
+        "direct_22_24_mean": 159.28,
+        "direct_22_24_sd": 3.36,
+        "residual_22_24_mean": 157.26,
+        "residual_22_24_sd": 1.36,
+        "direct_25_mean": 152.72,
+        "direct_25_sd": 4.96,
+        "residual_25_mean": 139.96,
+        "residual_25_sd": 4.19
+      },
+      "24": {
+        "direct_22_24_mean": 238.58,
+        "direct_22_24_sd": 6.15,
+        "residual_22_24_mean": 233.47,
+        "residual_22_24_sd": 1.88,
+        "direct_25_mean": 215.97,
+        "direct_25_sd": 11.08,
+        "residual_25_mean": 198.79,
+        "residual_25_sd": 5.15
+      }
+    }
+  },
+  "pacific_iclr2024_sota": {
+    "moderntcn": {
+      "n_params": 280770,
+      "direct_2022_2024_mean_km": 118.24,
+      "direct_2022_2024_sd_km": 0.84,
+      "residual_2022_2024_mean_km": 114.28,
+      "residual_2022_2024_sd_km": 1.4,
+      "direct_2025_mean_km": 116.48,
+      "direct_2025_sd_km": 2.19,
+      "residual_2025_mean_km": 117.88,
+      "residual_2025_sd_km": 1.23
+    },
+    "timemixer": {
+      "n_params": 461280,
+      "direct_2022_2024_mean_km": 119.3,
+      "direct_2022_2024_sd_km": 1.32,
+      "residual_2022_2024_mean_km": 116.34,
+      "residual_2022_2024_sd_km": 1.11,
+      "direct_2025_mean_km": 114.62,
+      "direct_2025_sd_km": 3.55,
+      "residual_2025_mean_km": 117.28,
+      "residual_2025_sd_km": 1.9
+    }
+  },
+  "five_fold_storm_grouped_cv": {
+    "n_folds": 5,
+    "total_dev_windows": 3634,
+    "total_dev_storms": 208,
+    "folds": [
+      {
+        "fold": 1,
+        "test_windows": 727,
+        "test_storms": 41
+      },
+      {
+        "fold": 2,
+        "test_windows": 727,
+        "test_storms": 42
+      },
+      {
+        "fold": 3,
+        "test_windows": 727,
+        "test_storms": 42
+      },
+      {
+        "fold": 4,
+        "test_windows": 727,
+        "test_storms": 42
+      },
+      {
+        "fold": 5,
+        "test_windows": 726,
+        "test_storms": 41
+      }
+    ],
+    "cv_baseline": {
+      "fold_means_km": [
+        258.0,
+        253.89,
+        219.64,
+        231.3,
+        262.02
+      ],
+      "mean_km": 244.97,
+      "sd_km": 18.5
+    },
+    "ridge_kr": {
+      "fold_means_km": [
+        236.15,
+        228.52,
+        207.74,
+        218.35,
+        236.95
+      ],
+      "mean_km": 225.54,
+      "sd_km": 12.45
+    },
+    "architectures": {
+      "lstm": {
+        "direct_folds_km": [
+          291.92,
+          264.88,
+          234.83,
+          257.42,
+          265.7
+        ],
+        "direct_mean_km": 262.95,
+        "direct_sd_km": 20.45,
+        "residual_folds_km": [
+          236.34,
+          231.56,
+          216.73,
+          223.84,
+          236.06
+        ],
+        "residual_mean_km": 228.9,
+        "residual_sd_km": 8.48,
+        "mean_gain_km": -34.04,
+        "folds_won": 5
+      },
+      "gru": {
+        "direct_folds_km": [
+          266.07,
+          254.43,
+          230.6,
+          244.71,
+          258.37
+        ],
+        "direct_mean_km": 250.84,
+        "direct_sd_km": 13.68,
+        "residual_folds_km": [
+          238.38,
+          231.04,
+          209.48,
+          231.66,
+          241.7
+        ],
+        "residual_mean_km": 230.45,
+        "residual_sd_km": 12.56,
+        "mean_gain_km": -20.38,
+        "folds_won": 5
+      },
+      "tsmixer": {
+        "direct_folds_km": [
+          319.91,
+          295.02,
+          245.47,
+          257.59,
+          298.75
+        ],
+        "direct_mean_km": 283.35,
+        "direct_sd_km": 30.86,
+        "residual_folds_km": [
+          248.27,
+          234.46,
+          217.47,
+          224.71,
+          243.79
+        ],
+        "residual_mean_km": 233.74,
+        "residual_sd_km": 12.84,
+        "mean_gain_km": -49.61,
+        "folds_won": 5
+      },
+      "patchtst": {
+        "direct_folds_km": [
+          264.75,
+          256.38,
+          241.0,
+          248.17,
+          266.76
+        ],
+        "direct_mean_km": 255.41,
+        "direct_sd_km": 10.92,
+        "residual_folds_km": [
+          239.58,
+          231.72,
+          213.04,
+          229.28,
+          239.18
+        ],
+        "residual_mean_km": 230.56,
+        "residual_sd_km": 10.79,
+        "mean_gain_km": -24.85,
+        "folds_won": 5
+      },
+      "moderntcn": {
+        "direct_folds_km": [
+          240.59,
+          225.37,
+          215.99,
+          229.82,
+          223.84
+        ],
+        "direct_mean_km": 227.12,
+        "direct_sd_km": 9.03,
+        "residual_folds_km": [
+          234.95,
+          219.26,
+          217.67,
+          224.81,
+          230.66
+        ],
+        "residual_mean_km": 225.47,
+        "residual_sd_km": 7.36,
+        "mean_gain_km": -1.65,
+        "folds_won": 3
+      },
+      "compact_st_transformer": {
+        "direct_folds_km": [
+          275.78,
+          251.18,
+          237.16,
+          250.11,
+          284.84
+        ],
+        "direct_mean_km": 259.81,
+        "direct_sd_km": 19.77,
+        "residual_folds_km": [
+          238.15,
+          230.58,
+          206.79,
+          226.28,
+          250.52
+        ],
+        "residual_mean_km": 230.46,
+        "residual_sd_km": 16.12,
+        "mean_gain_km": -29.35,
+        "folds_won": 5
+      }
+    }
+  },
+  "sota_case_trajectories": {
+    "atlantic_ernesto": null,
+    "pacific_major_case": {
+      "storm_id": "EP182023_OTIS",
+      "window_ts_hours": 471714,
+      "init_utc": "2023-10-24 18:00:00",
+      "history_latlon": [
+        [
+          9.5,
+          -96.69999694824219
+        ],
+        [
+          9.600000381469727,
+          -96.5999984741211
+        ],
+        [
+          9.800000190734863,
+          -96.69999694824219
+        ],
+        [
+          10.199999809265137,
+          -96.9000015258789
+        ],
+        [
+          10.800000190734863,
+          -97.0999984741211
+        ],
+        [
+          11.399999618530273,
+          -97.19999694824219
+        ],
+        [
+          11.899999618530273,
+          -97.30000305175781
+        ],
+        [
+          12.600000381469727,
+          -97.5999984741211
+        ],
+        [
+          13.300000190734863,
+          -98.0
+        ],
+        [
+          13.800000190734863,
+          -98.5
+        ],
+        [
+          14.199999809265137,
+          -98.9000015258789
+        ],
+        [
+          14.899999618530273,
+          -99.4000015258789
+        ]
+      ],
+      "origin_latlon": [
+        14.899999618530273,
+        -99.4000015258789
+      ],
+      "future_latlon": [
+        18.600000381469727,
+        -100.69999694824219
+      ],
+      "predictions": {
+        "cv": {
+          "latlon": [
+            17.699996948242188,
+            -101.40635681152344
+          ],
+          "err_km": 124.84
+        },
+        "lstm_direct": {
+          "latlon": [
+            16.615577697753906,
+            -101.39828491210938
+          ],
+          "err_km": 232.74
+        },
+        "lstm_residual": {
+          "latlon": [
+            16.974489212036133,
+            -101.28713989257812
+          ],
+          "err_km": 191.14
+        },
+        "patchtst_direct": {
+          "latlon": [
+            17.148784637451172,
+            -101.00536346435547
+          ],
+          "err_km": 164.57
+        },
+        "patchtst_residual": {
+          "latlon": [
+            17.381927490234375,
+            -101.68457794189453
+          ],
+          "err_km": 170.84
+        },
+        "itransformer_direct": {
+          "latlon": [
+            16.64719581604004,
+            -100.77094268798828
+          ],
+          "err_km": 217.27
+        },
+        "itransformer_residual": {
+          "latlon": [
+            17.71538543701172,
+            -100.83460235595703
+          ],
+          "err_km": 99.39
+        },
+        "moderntcn_direct": {
+          "latlon": [
+            16.815397262573242,
+            -100.72947692871094
+          ],
+          "err_km": 198.46
+        },
+        "moderntcn_residual": {
+          "latlon": [
+            17.242366790771484,
+            -100.90470123291016
+          ],
+          "err_km": 152.51
+        },
+        "compact_st_transformer_direct": {
+          "latlon": [
+            16.805622100830078,
+            -101.78022766113281
+          ],
+          "err_km": 230.01
+        },
+        "compact_st_transformer_residual": {
+          "latlon": [
+            17.253633499145508,
+            -101.50576782226562
+          ],
+          "err_km": 172.28
+        }
+      }
+    }
+  }
+}
