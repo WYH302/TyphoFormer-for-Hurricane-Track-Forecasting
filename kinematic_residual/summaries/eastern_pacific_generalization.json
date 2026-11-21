@@ -1,0 +1,841 @@
+{
+  "basin": "Eastern and Central North Pacific (NOAA NHC HURDAT2, EP/CP)",
+  "lead_hours": 24,
+  "seeds": [
+    42,
+    123,
+    2024
+  ],
+  "total_wall_seconds": 1904.33,
+  "landfall_reconstruction_audit": {
+    "source_file": "hurdat2-nepac-1949-2025-092926.txt",
+    "source_sha256": "caece626f7038db64a803a73f5985b563693f0130f3ff16b4b0a0a93c7aa0507",
+    "full_archive_1949_2025": {
+      "total_storms": 1262,
+      "total_L_rows": 140,
+      "off_hour_L_rows": 105,
+      "off_hour_L_pct": 75.0
+    },
+    "modern_cohort_2004_2025": {
+      "total_storms": 438,
+      "total_L_rows": 94,
+      "off_hour_L_rows": 76,
+      "off_hour_L_pct": 80.85,
+      "strict_contiguous_total_windows": 5838,
+      "synoptic_first_total_windows": 6079,
+      "restored_windows_total": 241,
+      "strict_future_L_windows": 11,
+      "synoptic_future_L_windows": 118,
+      "restored_future_L_windows": 107,
+      "off_hour_L_retention_strict_pct": 0.0,
+      "off_hour_L_retention_synoptic_pct": 100.0,
+      "notable_off_hour_landfalls_restored": [
+        {
+          "typhoon_id": "EP182023_OTIS",
+          "date": 20231025,
+          "time_utc": "0645",
+          "max_wind_kt": 140,
+          "lat": 16.8,
+          "lon": -99.9
+        },
+        {
+          "typhoon_id": "EP202015_PATRICIA",
+          "date": 20151023,
+          "time_utc": "2300",
+          "max_wind_kt": 130,
+          "lat": 19.4,
+          "lon": -105.0
+        },
+        {
+          "typhoon_id": "CP012018_WALAKA",
+          "date": 20181004,
+          "time_utc": "0620",
+          "max_wind_kt": 110,
+          "lat": 24.1,
+          "lon": -166.8
+        },
+        {
+          "typhoon_id": "EP052025_ERICK",
+          "date": 20250619,
+          "time_utc": "1130",
+          "max_wind_kt": 110,
+          "lat": 16.3,
+          "lon": -98.3
+        },
+        {
+          "typhoon_id": "EP132006_LANE",
+          "date": 20060916,
+          "time_utc": "1915",
+          "max_wind_kt": 110,
+          "lat": 24.1,
+          "lon": -107.2
+        },
+        {
+          "typhoon_id": "EP152014_ODILE",
+          "date": 20140915,
+          "time_utc": "0445",
+          "max_wind_kt": 110,
+          "lat": 22.9,
+          "lon": -109.9
+        },
+        {
+          "typhoon_id": "EP192022_ROSLYN",
+          "date": 20221023,
+          "time_utc": "1120",
+          "max_wind_kt": 105,
+          "lat": 21.9,
+          "lon": -105.6
+        },
+        {
+          "typhoon_id": "EP102024_JOHN",
+          "date": 20240924,
+          "time_utc": "0315",
+          "max_wind_kt": 105,
+          "lat": 16.6,
+          "lon": -98.9
+        }
+      ]
+    },
+    "splits_synoptic_first": {
+      "train": {
+        "windows": 4587,
+        "storms": 254,
+        "future_L_windows": 84
+      },
+      "val": {
+        "windows": 558,
+        "storms": 27,
+        "future_L_windows": 7
+      },
+      "test": {
+        "windows": 732,
+        "storms": 44,
+        "future_L_windows": 27
+      },
+      "extension": {
+        "windows": 202,
+        "storms": 14,
+        "future_L_windows": 0
+      }
+    },
+    "splits_strict_contiguous": {
+      "train": {
+        "windows": 4437,
+        "storms": 249,
+        "future_L_windows": 8
+      },
+      "val": {
+        "windows": 536,
+        "storms": 27,
+        "future_L_windows": 0
+      },
+      "test": {
+        "windows": 675,
+        "storms": 40,
+        "future_L_windows": 3
+      },
+      "extension": {
+        "windows": 190,
+        "storms": 13,
+        "future_L_windows": 0
+      }
+    }
+  },
+  "deterministic_baselines": {
+    "cv": {
+      "test_2022_2024_km": 125.16,
+      "test_storm_equal_km": 141.35,
+      "ext_2025_km": 119.39,
+      "ext_storm_equal_km": 124.47
+    },
+    "ridge_kr": {
+      "alpha": 10000.0,
+      "test_2022_2024_km": 114.43,
+      "test_storm_equal_km": 131.02,
+      "ext_2025_km": 114.76,
+      "ext_storm_equal_km": 115.5
+    }
+  },
+  "neural_architectures": {
+    "lstm": {
+      "n_params": 227266,
+      "direct_2022_2024_mean_km": 124.99,
+      "direct_2022_2024_sd_km": 0.95,
+      "residual_2022_2024_mean_km": 114.04,
+      "residual_2022_2024_sd_km": 0.77,
+      "gain_2022_2024_km": -10.95,
+      "gain_2022_2024_pct": 8.8,
+      "bootstrap_B_minus_A_2022_2024": {
+        "diff_km": -10.95,
+        "ci95_lo": -18.01,
+        "ci95_hi": -5.04
+      },
+      "bootstrap_B_minus_CV_2022_2024": {
+        "diff_km": -11.12,
+        "ci95_lo": -16.17,
+        "ci95_hi": -6.9
+      },
+      "direct_2025_mean_km": 120.51,
+      "direct_2025_sd_km": 1.71,
+      "residual_2025_mean_km": 115.56,
+      "residual_2025_sd_km": 1.04,
+      "gain_2025_km": -4.95,
+      "gain_2025_pct": 4.1,
+      "bootstrap_B_minus_A_2025": {
+        "diff_km": -4.95,
+        "ci95_lo": -11.43,
+        "ci95_hi": -0.18
+      },
+      "bootstrap_B_minus_CV_2025": {
+        "diff_km": -3.83,
+        "ci95_lo": -23.36,
+        "ci95_hi": 16.41
+      }
+    },
+    "gru": {
+      "n_params": 172610,
+      "direct_2022_2024_mean_km": 122.96,
+      "direct_2022_2024_sd_km": 1.27,
+      "residual_2022_2024_mean_km": 114.85,
+      "residual_2022_2024_sd_km": 1.28,
+      "gain_2022_2024_km": -8.11,
+      "gain_2022_2024_pct": 6.6,
+      "bootstrap_B_minus_A_2022_2024": {
+        "diff_km": -8.11,
+        "ci95_lo": -16.36,
+        "ci95_hi": -1.8
+      },
+      "bootstrap_B_minus_CV_2022_2024": {
+        "diff_km": -10.31,
+        "ci95_lo": -14.96,
+        "ci95_hi": -6.39
+      },
+      "direct_2025_mean_km": 121.64,
+      "direct_2025_sd_km": 4.71,
+      "residual_2025_mean_km": 115.11,
+      "residual_2025_sd_km": 1.79,
+      "gain_2025_km": -6.53,
+      "gain_2025_pct": 5.4,
+      "bootstrap_B_minus_A_2025": {
+        "diff_km": -6.53,
+        "ci95_lo": -12.28,
+        "ci95_hi": -1.81
+      },
+      "bootstrap_B_minus_CV_2025": {
+        "diff_km": -4.27,
+        "ci95_lo": -22.2,
+        "ci95_hi": 13.36
+      }
+    },
+    "tsmixer": {
+      "n_params": 100063,
+      "direct_2022_2024_mean_km": 129.72,
+      "direct_2022_2024_sd_km": 4.06,
+      "residual_2022_2024_mean_km": 117.69,
+      "residual_2022_2024_sd_km": 0.72,
+      "gain_2022_2024_km": -12.03,
+      "gain_2022_2024_pct": 9.3,
+      "bootstrap_B_minus_A_2022_2024": {
+        "diff_km": -12.03,
+        "ci95_lo": -19.48,
+        "ci95_hi": -5.34
+      },
+      "bootstrap_B_minus_CV_2022_2024": {
+        "diff_km": -7.48,
+        "ci95_lo": -12.44,
+        "ci95_hi": -3.35
+      },
+      "direct_2025_mean_km": 127.25,
+      "direct_2025_sd_km": 8.79,
+      "residual_2025_mean_km": 117.03,
+      "residual_2025_sd_km": 1.66,
+      "gain_2025_km": -10.22,
+      "gain_2025_pct": 8.0,
+      "bootstrap_B_minus_A_2025": {
+        "diff_km": -10.22,
+        "ci95_lo": -18.26,
+        "ci95_hi": -2.63
+      },
+      "bootstrap_B_minus_CV_2025": {
+        "diff_km": -2.36,
+        "ci95_lo": -17.72,
+        "ci95_hi": 12.99
+      }
+    },
+    "patchtst": {
+      "n_params": 420802,
+      "direct_2022_2024_mean_km": 121.74,
+      "direct_2022_2024_sd_km": 0.9,
+      "residual_2022_2024_mean_km": 115.88,
+      "residual_2022_2024_sd_km": 0.22,
+      "gain_2022_2024_km": -5.86,
+      "gain_2022_2024_pct": 4.8,
+      "bootstrap_B_minus_A_2022_2024": {
+        "diff_km": -5.86,
+        "ci95_lo": -11.28,
+        "ci95_hi": -0.44
+      },
+      "bootstrap_B_minus_CV_2022_2024": {
+        "diff_km": -9.29,
+        "ci95_lo": -14.02,
+        "ci95_hi": -5.23
+      },
+      "direct_2025_mean_km": 117.61,
+      "direct_2025_sd_km": 1.29,
+      "residual_2025_mean_km": 115.81,
+      "residual_2025_sd_km": 1.32,
+      "gain_2025_km": -1.79,
+      "gain_2025_pct": 1.5,
+      "bootstrap_B_minus_A_2025": {
+        "diff_km": -1.79,
+        "ci95_lo": -8.11,
+        "ci95_hi": 4.15
+      },
+      "bootstrap_B_minus_CV_2025": {
+        "diff_km": -3.57,
+        "ci95_lo": -21.73,
+        "ci95_hi": 13.57
+      }
+    },
+    "itransformer": {
+      "n_params": 428354,
+      "direct_2022_2024_mean_km": 135.59,
+      "direct_2022_2024_sd_km": 3.79,
+      "residual_2022_2024_mean_km": 121.88,
+      "residual_2022_2024_sd_km": 1.28,
+      "gain_2022_2024_km": -13.71,
+      "gain_2022_2024_pct": 10.1,
+      "bootstrap_B_minus_A_2022_2024": {
+        "diff_km": -13.71,
+        "ci95_lo": -24.12,
+        "ci95_hi": -4.72
+      },
+      "bootstrap_B_minus_CV_2022_2024": {
+        "diff_km": -3.28,
+        "ci95_lo": -7.52,
+        "ci95_hi": 0.46
+      },
+      "direct_2025_mean_km": 130.68,
+      "direct_2025_sd_km": 7.32,
+      "residual_2025_mean_km": 117.66,
+      "residual_2025_sd_km": 1.88,
+      "gain_2025_km": -13.02,
+      "gain_2025_pct": 10.0,
+      "bootstrap_B_minus_A_2025": {
+        "diff_km": -13.02,
+        "ci95_lo": -23.52,
+        "ci95_hi": -2.08
+      },
+      "bootstrap_B_minus_CV_2025": {
+        "diff_km": -1.73,
+        "ci95_lo": -12.86,
+        "ci95_hi": 10.82
+      }
+    },
+    "compact_st_transformer": {
+      "n_params": 163010,
+      "direct_2022_2024_mean_km": 124.0,
+      "direct_2022_2024_sd_km": 1.91,
+      "residual_2022_2024_mean_km": 116.84,
+      "residual_2022_2024_sd_km": 0.79,
+      "gain_2022_2024_km": -7.16,
+      "gain_2022_2024_pct": 5.8,
+      "bootstrap_B_minus_A_2022_2024": {
+        "diff_km": -7.16,
+        "ci95_lo": -13.91,
+        "ci95_hi": -0.8
+      },
+      "bootstrap_B_minus_CV_2022_2024": {
+        "diff_km": -8.32,
+        "ci95_lo": -12.89,
+        "ci95_hi": -4.23
+      },
+      "direct_2025_mean_km": 120.08,
+      "direct_2025_sd_km": 1.88,
+      "residual_2025_mean_km": 114.17,
+      "residual_2025_sd_km": 3.2,
+      "gain_2025_km": -5.91,
+      "gain_2025_pct": 4.9,
+      "bootstrap_B_minus_A_2025": {
+        "diff_km": -5.91,
+        "ci95_lo": -12.18,
+        "ci95_hi": -0.34
+      },
+      "bootstrap_B_minus_CV_2025": {
+        "diff_km": -5.21,
+        "ci95_lo": -20.27,
+        "ci95_hi": 9.69
+      }
+    }
+  },
+  "per_seed_runs": [
+    {
+      "arch": "lstm",
+      "head": "direct",
+      "seed": 42,
+      "n_params": 227266,
+      "best_epoch": 5,
+      "val_km": 119.81989288330078,
+      "test_2022_2024_km": 125.400634765625,
+      "test_storm_equal_km": 144.14913940429688,
+      "ext_2025_km": 122.47069549560547,
+      "ext_storm_equal_km": 121.79412841796875,
+      "elapsed_s": 124.74
+    },
+    {
+      "arch": "lstm",
+      "head": "direct",
+      "seed": 123,
+      "n_params": 227266,
+      "best_epoch": 6,
+      "val_km": 119.9432373046875,
+      "test_2022_2024_km": 125.66907501220703,
+      "test_storm_equal_km": 143.19569396972656,
+      "ext_2025_km": 119.70223236083984,
+      "ext_storm_equal_km": 120.46852111816406,
+      "elapsed_s": 124.22
+    },
+    {
+      "arch": "lstm",
+      "head": "direct",
+      "seed": 2024,
+      "n_params": 227266,
+      "best_epoch": 6,
+      "val_km": 117.9044189453125,
+      "test_2022_2024_km": 123.90081787109375,
+      "test_storm_equal_km": 141.30734252929688,
+      "ext_2025_km": 119.34817504882812,
+      "ext_storm_equal_km": 118.64363098144531,
+      "elapsed_s": 123.42
+    },
+    {
+      "arch": "lstm",
+      "head": "residual",
+      "seed": 42,
+      "n_params": 227266,
+      "best_epoch": 2,
+      "val_km": 108.01888275146484,
+      "test_2022_2024_km": 114.01126861572266,
+      "test_storm_equal_km": 131.28684997558594,
+      "ext_2025_km": 116.01235961914062,
+      "ext_storm_equal_km": 115.82416534423828,
+      "elapsed_s": 123.66
+    },
+    {
+      "arch": "lstm",
+      "head": "residual",
+      "seed": 123,
+      "n_params": 227266,
+      "best_epoch": 4,
+      "val_km": 108.70655822753906,
+      "test_2022_2024_km": 113.29048156738281,
+      "test_storm_equal_km": 131.25111389160156,
+      "ext_2025_km": 114.36820983886719,
+      "ext_storm_equal_km": 112.66584777832031,
+      "elapsed_s": 124.44
+    },
+    {
+      "arch": "lstm",
+      "head": "residual",
+      "seed": 2024,
+      "n_params": 227266,
+      "best_epoch": 2,
+      "val_km": 106.91181182861328,
+      "test_2022_2024_km": 114.82908630371094,
+      "test_storm_equal_km": 131.84552001953125,
+      "ext_2025_km": 116.28699493408203,
+      "ext_storm_equal_km": 114.35359954833984,
+      "elapsed_s": 124.04
+    },
+    {
+      "arch": "gru",
+      "head": "direct",
+      "seed": 42,
+      "n_params": 172610,
+      "best_epoch": 5,
+      "val_km": 115.1845703125,
+      "test_2022_2024_km": 124.42724609375,
+      "test_storm_equal_km": 140.78883361816406,
+      "ext_2025_km": 125.8390121459961,
+      "ext_storm_equal_km": 126.58325958251953,
+      "elapsed_s": 157.6
+    },
+    {
+      "arch": "gru",
+      "head": "direct",
+      "seed": 123,
+      "n_params": 172610,
+      "best_epoch": 6,
+      "val_km": 116.61854553222656,
+      "test_2022_2024_km": 122.26947784423828,
+      "test_storm_equal_km": 136.57327270507812,
+      "ext_2025_km": 116.54224395751953,
+      "ext_storm_equal_km": 118.06159973144531,
+      "elapsed_s": 158.15
+    },
+    {
+      "arch": "gru",
+      "head": "direct",
+      "seed": 2024,
+      "n_params": 172610,
+      "best_epoch": 6,
+      "val_km": 114.80167388916016,
+      "test_2022_2024_km": 122.18600463867188,
+      "test_storm_equal_km": 136.22410583496094,
+      "ext_2025_km": 122.53717041015625,
+      "ext_storm_equal_km": 123.08888244628906,
+      "elapsed_s": 157.2
+    },
+    {
+      "arch": "gru",
+      "head": "residual",
+      "seed": 42,
+      "n_params": 172610,
+      "best_epoch": 2,
+      "val_km": 107.09416961669922,
+      "test_2022_2024_km": 114.4232177734375,
+      "test_storm_equal_km": 131.0035400390625,
+      "ext_2025_km": 117.17342376708984,
+      "ext_storm_equal_km": 116.74007415771484,
+      "elapsed_s": 157.04
+    },
+    {
+      "arch": "gru",
+      "head": "residual",
+      "seed": 123,
+      "n_params": 172610,
+      "best_epoch": 4,
+      "val_km": 107.8040542602539,
+      "test_2022_2024_km": 113.84562683105469,
+      "test_storm_equal_km": 131.12315368652344,
+      "ext_2025_km": 114.22012329101562,
+      "ext_storm_equal_km": 113.0545883178711,
+      "elapsed_s": 157.45
+    },
+    {
+      "arch": "gru",
+      "head": "residual",
+      "seed": 2024,
+      "n_params": 172610,
+      "best_epoch": 6,
+      "val_km": 108.18351745605469,
+      "test_2022_2024_km": 116.29270935058594,
+      "test_storm_equal_km": 133.71676635742188,
+      "ext_2025_km": 113.94853973388672,
+      "ext_storm_equal_km": 114.28234100341797,
+      "elapsed_s": 157.81
+    },
+    {
+      "arch": "tsmixer",
+      "head": "direct",
+      "seed": 42,
+      "n_params": 100063,
+      "best_epoch": 6,
+      "val_km": 126.3780517578125,
+      "test_2022_2024_km": 127.52090454101562,
+      "test_storm_equal_km": 147.539306640625,
+      "ext_2025_km": 123.86658477783203,
+      "ext_storm_equal_km": 123.0899429321289,
+      "elapsed_s": 130.57
+    },
+    {
+      "arch": "tsmixer",
+      "head": "direct",
+      "seed": 123,
+      "n_params": 100063,
+      "best_epoch": 5,
+      "val_km": 125.83757781982422,
+      "test_2022_2024_km": 127.23383331298828,
+      "test_storm_equal_km": 147.66880798339844,
+      "ext_2025_km": 120.64412689208984,
+      "ext_storm_equal_km": 119.40619659423828,
+      "elapsed_s": 130.04
+    },
+    {
+      "arch": "tsmixer",
+      "head": "direct",
+      "seed": 2024,
+      "n_params": 100063,
+      "best_epoch": 6,
+      "val_km": 132.17140197753906,
+      "test_2022_2024_km": 134.3968505859375,
+      "test_storm_equal_km": 155.39517211914062,
+      "ext_2025_km": 137.22943115234375,
+      "ext_storm_equal_km": 134.2998809814453,
+      "elapsed_s": 130.49
+    },
+    {
+      "arch": "tsmixer",
+      "head": "residual",
+      "seed": 42,
+      "n_params": 100063,
+      "best_epoch": 2,
+      "val_km": 113.45875549316406,
+      "test_2022_2024_km": 116.8970947265625,
+      "test_storm_equal_km": 130.62384033203125,
+      "ext_2025_km": 116.55399322509766,
+      "ext_storm_equal_km": 115.2947998046875,
+      "elapsed_s": 129.9
+    },
+    {
+      "arch": "tsmixer",
+      "head": "residual",
+      "seed": 123,
+      "n_params": 100063,
+      "best_epoch": 1,
+      "val_km": 113.60466766357422,
+      "test_2022_2024_km": 118.31025695800781,
+      "test_storm_equal_km": 134.41307067871094,
+      "ext_2025_km": 115.6558837890625,
+      "ext_storm_equal_km": 113.98787689208984,
+      "elapsed_s": 130.43
+    },
+    {
+      "arch": "tsmixer",
+      "head": "residual",
+      "seed": 2024,
+      "n_params": 100063,
+      "best_epoch": 2,
+      "val_km": 111.02989196777344,
+      "test_2022_2024_km": 117.8554916381836,
+      "test_storm_equal_km": 134.00796508789062,
+      "ext_2025_km": 118.88029479980469,
+      "ext_storm_equal_km": 118.35231018066406,
+      "elapsed_s": 130.06
+    },
+    {
+      "arch": "patchtst",
+      "head": "direct",
+      "seed": 42,
+      "n_params": 420802,
+      "best_epoch": 4,
+      "val_km": 122.09820556640625,
+      "test_2022_2024_km": 122.54727935791016,
+      "test_storm_equal_km": 137.54119873046875,
+      "ext_2025_km": 117.74993896484375,
+      "ext_storm_equal_km": 117.48436737060547,
+      "elapsed_s": 164.11
+    },
+    {
+      "arch": "patchtst",
+      "head": "direct",
+      "seed": 123,
+      "n_params": 420802,
+      "best_epoch": 5,
+      "val_km": 117.87593841552734,
+      "test_2022_2024_km": 120.7737808227539,
+      "test_storm_equal_km": 134.88755798339844,
+      "ext_2025_km": 118.82110595703125,
+      "ext_storm_equal_km": 118.77284240722656,
+      "elapsed_s": 167.53
+    },
+    {
+      "arch": "patchtst",
+      "head": "direct",
+      "seed": 2024,
+      "n_params": 420802,
+      "best_epoch": 6,
+      "val_km": 118.47525787353516,
+      "test_2022_2024_km": 121.8863525390625,
+      "test_storm_equal_km": 134.28541564941406,
+      "ext_2025_km": 116.24932098388672,
+      "ext_storm_equal_km": 114.61852264404297,
+      "elapsed_s": 169.0
+    },
+    {
+      "arch": "patchtst",
+      "head": "residual",
+      "seed": 42,
+      "n_params": 420802,
+      "best_epoch": 2,
+      "val_km": 109.32721710205078,
+      "test_2022_2024_km": 115.63888549804688,
+      "test_storm_equal_km": 132.56634521484375,
+      "ext_2025_km": 117.31427764892578,
+      "ext_storm_equal_km": 114.48138427734375,
+      "elapsed_s": 171.88
+    },
+    {
+      "arch": "patchtst",
+      "head": "residual",
+      "seed": 123,
+      "n_params": 420802,
+      "best_epoch": 4,
+      "val_km": 110.46234130859375,
+      "test_2022_2024_km": 116.07703399658203,
+      "test_storm_equal_km": 135.92808532714844,
+      "ext_2025_km": 115.28500366210938,
+      "ext_storm_equal_km": 112.46062469482422,
+      "elapsed_s": 171.04
+    },
+    {
+      "arch": "patchtst",
+      "head": "residual",
+      "seed": 2024,
+      "n_params": 420802,
+      "best_epoch": 2,
+      "val_km": 109.3178939819336,
+      "test_2022_2024_km": 115.91284942626953,
+      "test_storm_equal_km": 133.31472778320312,
+      "ext_2025_km": 114.8398208618164,
+      "ext_storm_equal_km": 112.63409423828125,
+      "elapsed_s": 167.22
+    },
+    {
+      "arch": "itransformer",
+      "head": "direct",
+      "seed": 42,
+      "n_params": 428354,
+      "best_epoch": 24,
+      "val_km": 131.71389770507812,
+      "test_2022_2024_km": 138.7310028076172,
+      "test_storm_equal_km": 154.66493225097656,
+      "ext_2025_km": 136.8473663330078,
+      "ext_storm_equal_km": 138.32752990722656,
+      "elapsed_s": 988.61
+    },
+    {
+      "arch": "itransformer",
+      "head": "direct",
+      "seed": 123,
+      "n_params": 428354,
+      "best_epoch": 36,
+      "val_km": 114.58563995361328,
+      "test_2022_2024_km": 136.6573028564453,
+      "test_storm_equal_km": 152.88270568847656,
+      "ext_2025_km": 132.5989227294922,
+      "ext_storm_equal_km": 132.0486602783203,
+      "elapsed_s": 1032.63
+    },
+    {
+      "arch": "itransformer",
+      "head": "direct",
+      "seed": 2024,
+      "n_params": 428354,
+      "best_epoch": 19,
+      "val_km": 116.31768035888672,
+      "test_2022_2024_km": 131.38858032226562,
+      "test_storm_equal_km": 144.45361328125,
+      "ext_2025_km": 122.5925521850586,
+      "ext_storm_equal_km": 118.36768341064453,
+      "elapsed_s": 977.89
+    },
+    {
+      "arch": "itransformer",
+      "head": "residual",
+      "seed": 42,
+      "n_params": 428354,
+      "best_epoch": 13,
+      "val_km": 115.10157775878906,
+      "test_2022_2024_km": 120.90689086914062,
+      "test_storm_equal_km": 133.49713134765625,
+      "ext_2025_km": 115.63994598388672,
+      "ext_storm_equal_km": 116.75812530517578,
+      "elapsed_s": 967.58
+    },
+    {
+      "arch": "itransformer",
+      "head": "residual",
+      "seed": 123,
+      "n_params": 428354,
+      "best_epoch": 12,
+      "val_km": 117.57434844970703,
+      "test_2022_2024_km": 121.40603637695312,
+      "test_storm_equal_km": 137.42701721191406,
+      "ext_2025_km": 117.966552734375,
+      "ext_storm_equal_km": 118.0394287109375,
+      "elapsed_s": 1015.41
+    },
+    {
+      "arch": "itransformer",
+      "head": "residual",
+      "seed": 2024,
+      "n_params": 428354,
+      "best_epoch": 10,
+      "val_km": 117.70175170898438,
+      "test_2022_2024_km": 123.32959747314453,
+      "test_storm_equal_km": 139.33462524414062,
+      "ext_2025_km": 119.36058044433594,
+      "ext_storm_equal_km": 120.72747039794922,
+      "elapsed_s": 1012.49
+    },
+    {
+      "arch": "compact_st_transformer",
+      "head": "direct",
+      "seed": 42,
+      "n_params": 163010,
+      "best_epoch": 6,
+      "val_km": 120.53641510009766,
+      "test_2022_2024_km": 126.03511047363281,
+      "test_storm_equal_km": 143.11419677734375,
+      "ext_2025_km": 118.37097930908203,
+      "ext_storm_equal_km": 118.5545883178711,
+      "elapsed_s": 284.75
+    },
+    {
+      "arch": "compact_st_transformer",
+      "head": "direct",
+      "seed": 123,
+      "n_params": 163010,
+      "best_epoch": 13,
+      "val_km": 120.38292694091797,
+      "test_2022_2024_km": 122.23689270019531,
+      "test_storm_equal_km": 139.69796752929688,
+      "ext_2025_km": 119.76475524902344,
+      "ext_storm_equal_km": 118.52144622802734,
+      "elapsed_s": 282.59
+    },
+    {
+      "arch": "compact_st_transformer",
+      "head": "direct",
+      "seed": 2024,
+      "n_params": 163010,
+      "best_epoch": 5,
+      "val_km": 118.84425354003906,
+      "test_2022_2024_km": 123.72090911865234,
+      "test_storm_equal_km": 139.6204376220703,
+      "ext_2025_km": 122.09516906738281,
+      "ext_storm_equal_km": 122.68797302246094,
+      "elapsed_s": 280.93
+    },
+    {
+      "arch": "compact_st_transformer",
+      "head": "residual",
+      "seed": 42,
+      "n_params": 163010,
+      "best_epoch": 3,
+      "val_km": 110.73261260986328,
+      "test_2022_2024_km": 117.3121566772461,
+      "test_storm_equal_km": 135.27670288085938,
+      "ext_2025_km": 115.41805267333984,
+      "ext_storm_equal_km": 113.67574310302734,
+      "elapsed_s": 272.76
+    },
+    {
+      "arch": "compact_st_transformer",
+      "head": "residual",
+      "seed": 123,
+      "n_params": 163010,
+      "best_epoch": 1,
+      "val_km": 111.34977722167969,
+      "test_2022_2024_km": 117.28378295898438,
+      "test_storm_equal_km": 135.22653198242188,
+      "ext_2025_km": 116.55656433105469,
+      "ext_storm_equal_km": 119.16986846923828,
+      "elapsed_s": 269.46
+    },
+    {
+      "arch": "compact_st_transformer",
+      "head": "residual",
+      "seed": 2024,
+      "n_params": 163010,
+      "best_epoch": 6,
+      "val_km": 110.29920959472656,
+      "test_2022_2024_km": 115.92682647705078,
+      "test_storm_equal_km": 137.12876892089844,
+      "ext_2025_km": 110.54115295410156,
+      "ext_storm_equal_km": 108.15564727783203,
+      "elapsed_s": 264.8
+    }
+  ]
+}

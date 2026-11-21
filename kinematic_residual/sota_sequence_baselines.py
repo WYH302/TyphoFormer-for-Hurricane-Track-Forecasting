@@ -111,7 +111,7 @@ class PatchTSTEncoder(nn.Module):
             d_model=d_model, nhead=num_heads, dim_feedforward=d_model * 4,
             dropout=dropout, activation="gelu", batch_first=True, norm_first=True
         )
-        self.encoder = nn.TransformerEncoder(enc_layer, num_layers=num_layers)
+        self.encoder = nn.TransformerEncoder(enc_layer, num_layers=num_layers, enable_nested_tensor=False)
         self.norm = nn.LayerNorm(d_model)
         self.out_dim = d_model
 
@@ -134,7 +134,7 @@ class ITransformerEncoder(nn.Module):
             d_model=d_model, nhead=num_heads, dim_feedforward=d_model * 4,
             dropout=dropout, activation="gelu", batch_first=True, norm_first=True
         )
-        self.encoder = nn.TransformerEncoder(enc_layer, num_layers=num_layers)
+        self.encoder = nn.TransformerEncoder(enc_layer, num_layers=num_layers, enable_nested_tensor=False)
         self.pool = nn.Sequential(
             nn.LayerNorm(d_model),
             nn.Linear(d_model, d_model),

@@ -1,5 +1,5 @@
 {
-  "description": "120-run matched multi-architecture SOTA sequence benchmark (LSTM, GRU, TSMixer, PatchTST, iTransformer) comparing Direct Eulerian (A) vs. Lagrangian Kinematic Residual (B) across 6-24 h on 2022-2024 and 2025 HURDAT2 cohorts.",
+  "description": "120-run matched multi-architecture SOTA sequence benchmark (LSTM, GRU, TSMixer, PatchTST, iTransformer) comparing Direct Eulerian (A) vs. Lagrangian Kinematic Residual (B) across 6-24 h on 2022-2024 and 2025 North Atlantic HURDAT2 cohorts.",
   "aggregated": [
     {
       "arch": "lstm",
