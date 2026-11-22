@@ -60,6 +60,7 @@ An open-source empirical study and reproducibility toolkit exploring **co-moving
 | **ModernTCN + KR** (ICLR 2024) | 280.9K | 6.474 | 634 (1.58) | **226.0** / 203.8 | <u>114.3</u> / 117.9 | 227.12 → **225.47 ± 7.36** |
 | **TimeMixer + KR** (ICLR 2024) | 461.4K | 5.835 | 390 (2.56) | 233.5 / **198.8** | 116.3 / 117.3 | — |
 | **Compact ST-Trans (`B64`, Ours)** | 163.1K | 3.728 | **691 (1.45)** | 236.0 / 206.3 | 116.8 / **114.2** | 259.81 → **230.46 ± 16.12** (5/5) |
+| **Compact ST-Trans (`B64`, 16-ch Kin.)** | 161.5K | 3.72 | **691 (1.45)** | <u>230.0</u> / <u>201.5</u> | — | — |
 | **Compact ST-Trans (`D64`, Ours)** | 175.9K | 3.753 | 669 (1.50) | 238.5 / <u>200.2</u> | — | — |
 
 ---
@@ -83,6 +84,7 @@ python kinematic_residual/eastern_pacific_cross_basin.py
 python kinematic_residual/stage2_sota_cv_profile.py
 python kinematic_residual/stage2_cv_and_cases.py
 python kinematic_residual/system_module_roi_ablation.py
+python kinematic_residual/module_hyperparam_roi_audit.py
 ```
 
 ---

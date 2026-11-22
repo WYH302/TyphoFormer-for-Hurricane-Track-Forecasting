@@ -64,7 +64,8 @@ class RunnerSmoke(unittest.TestCase):
                             "target_disp_raw_km": raw, "history_latlon": history, "origin": origin,
                             "future_latlon": future, "storm_id": split.upper(), "window": i})
             (data / "metadata.json").write_text(json.dumps(metadata), encoding="utf-8")
-            common = [sys.executable, str(here / "run_controlled.py"), "--data-dir", str(data),
+            runner_py = (here / "run_controlled.py") if (here / "run_controlled.py").exists() else (here.parent / "run_controlled.py")
+            common = [sys.executable, str(runner_py), "--data-dir", str(data),
                       "--head", "adaptive", "--rmw", "off", "--epochs", "2", "--batch-size", "2",
                       "--d-model", "16", "--num-layers", "1", "--dropout", "0.1", "--device", "cpu", "--threads", "1"]
             def run(extra):
@@ -83,7 +84,8 @@ class RunnerSmoke(unittest.TestCase):
             config = json.loads((root / "full" / "frozen_config.json").read_text(encoding="utf-8"))
             self.assertEqual(config["features"], ["lat", "lon"])
             self.assertEqual(config["excluded_features"], ["rmax"])
-            result = subprocess.run([sys.executable, str(here / "compare_storms.py"),
+            compare_py = runner_py.parent / "compare_storms.py"
+            result = subprocess.run([sys.executable, str(compare_py),
                                       "--group", "full=" + str(root / "full"), "--group", "resumed=" + str(root / "resumed"),
                                       "--replicates", "100", "--output", str(root / "comparison.json")],
                                      capture_output=True, text=True, timeout=30)

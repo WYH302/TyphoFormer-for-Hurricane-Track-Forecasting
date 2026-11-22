@@ -6,24 +6,53 @@ import unittest
 from pathlib import Path
 import numpy as np
 import pandas as pd
+
+_THIS_DIR = Path(__file__).resolve().parent
+if str(_THIS_DIR) not in sys.path:
+    sys.path.insert(0, str(_THIS_DIR))
 import prepare_revision as p
+
+
+def _synthetic_hurdat_storm():
+    dates = pd.date_range('2022-08-01', periods=24, freq='6h')
+    n = len(dates)
+    df = pd.DataFrame({
+        'typhoon_id': ['AL012022'] * n,
+        'storm_year': [2022] * n,
+        'date': [int(t.strftime('%Y%m%d')) for t in dates],
+        'time': [int(t.strftime('%H%M')) for t in dates],
+        '_timestamp_hours': dates.as_unit('ns').astype('int64') // 3600000000000,
+        'record_identifier': [''] * n,
+        'system_status': ['HU'] * n,
+        'latitude': np.linspace(15.0, 26.5, n),
+        'longitude': np.linspace(-60.0, -72.0, n),
+        'max_wind': np.linspace(45.0, 105.0, n),
+        'min_pressure': np.linspace(1002.0, 955.0, n),
+        'rmax': np.full(n, 25.0),
+    })
+    for col in p.LIB.RADIUS_COLS:
+        df[col] = 60.0
+    return df
 
 
 class WindowContract(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        raw=p.LIB.parse_hurdat2(str(p.SOURCE))
-        cls.group=next(g.copy() for _,g in raw.groupby('typhoon_id')
-            if len(g)>40 and np.any(g.storm_year==2022))
-        cls.group=cls.group[cls.group.time.isin(p.LIB.STANDARD_TIMES)].iloc[:24].copy()
-        # Use a known complete synthetic timestamp sequence with actual archived values.
-        dates=pd.date_range('2022-08-01',periods=len(cls.group),freq='6h')
-        cls.group['date']=[int(t.strftime('%Y%m%d')) for t in dates]
-        cls.group['time']=[int(t.strftime('%H%M')) for t in dates]
-        cls.group['_timestamp_hours']=dates.as_unit('ns').astype('int64')//3600000000000
-        cls.group['record_identifier']=''
-        cls.sid=cls.group.typhoon_id.iloc[0]
-        cls.splits={'train':{cls.sid},'test':set()}
+        if p.SOURCE.exists():
+            raw = p.LIB.parse_hurdat2(str(p.SOURCE))
+            cls.group = next(g.copy() for _, g in raw.groupby('typhoon_id')
+                if len(g) > 40 and np.any(g.storm_year == 2022))
+            cls.group = cls.group[cls.group.time.isin(p.LIB.STANDARD_TIMES)].iloc[:24].copy()
+            # Use a known complete synthetic timestamp sequence with actual archived values.
+            dates = pd.date_range('2022-08-01', periods=len(cls.group), freq='6h')
+            cls.group['date'] = [int(t.strftime('%Y%m%d')) for t in dates]
+            cls.group['time'] = [int(t.strftime('%H%M')) for t in dates]
+            cls.group['_timestamp_hours'] = dates.as_unit('ns').astype('int64') // 3600000000000
+            cls.group['record_identifier'] = ''
+        else:
+            cls.group = _synthetic_hurdat_storm()
+        cls.sid = cls.group.typhoon_id.iloc[0]
+        cls.splits = {'train': {cls.sid}, 'test': set()}
 
     def test_asynoptic_insertion_invariance(self):
         base=p.storm_arrays(self.group)
@@ -57,7 +86,9 @@ class WindowContract(unittest.TestCase):
         after=p.make_rows(changed,self.splits)[0]
         np.testing.assert_array_equal(before['input_raw'],after['input_raw'])
         self.assertNotEqual(before['recorded_future_landfall'],after['recorded_future_landfall'])
-        sys.path.insert(0,str(p.REV/'experiments'))
+        for cand in (p.REV / 'scripts', p.REV / 'kinematic_residual', p.REV / 'experiments'):
+            if cand.exists() and str(cand) not in sys.path:
+                sys.path.insert(0, str(cand))
         import torch
         from controlled_heads import ControlledNumericModel
         torch.manual_seed(17);torch.set_num_threads(2)
@@ -84,7 +115,10 @@ class WindowContract(unittest.TestCase):
             with self.assertRaises(ValueError):p.storm_arrays(pd.concat([self.group,extra]))
 
     def test_traceability_real_archive(self):
-        manifest=json.loads((p.HERE/'window_manifest.json').read_text())
+        manifest_path = p.HERE / 'window_manifest.json'
+        if not (manifest_path.exists() and p.SOURCE.exists()):
+            self.skipTest('Raw HURDAT2 archive or local window_manifest.json not present in checkout')
+        manifest=json.loads(manifest_path.read_text())
         raw=p.LIB.parse_hurdat2(str(p.SOURCE))
         item=next(r for r in manifest if r['split']=='test')
         arr=p.storm_arrays(raw[raw.typhoon_id==item['storm_id']])
@@ -92,6 +126,8 @@ class WindowContract(unittest.TestCase):
         self.assertEqual(len(indices),1)
         ix=int(indices[0])
         file=p.HERE/'data/main/test'/f"{item['storm_id']}_{init}.npy"
+        if not file.exists():
+            self.skipTest('Local reconstructed .npy windows not bundled in lightweight checkout')
         saved=np.load(file,allow_pickle=True).item()
         np.testing.assert_array_equal(arr['coords'][ix-11:ix+1],saved['history_latlon'])
         self.assertEqual(item['window_id'],saved['window_id'])

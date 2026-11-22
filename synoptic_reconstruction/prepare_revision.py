@@ -12,11 +12,22 @@ import numpy as np
 import pandas as pd
 
 HERE = Path(__file__).resolve().parent
-REV = HERE.parents[1]
-SPEC = importlib.util.spec_from_file_location('original_prepare', REV/'data/prepare_frozen.py')
+REV = HERE.parent
+_PREPARE_CANDIDATES = [
+    REV / "data" / "prepare_frozen.py",
+    REV / "kinematic_residual" / "prepare_frozen.py",
+    HERE.parents[1] / "data" / "prepare_frozen.py",
+]
+PREPARE_FROZEN = next((p for p in _PREPARE_CANDIDATES if p.exists()), _PREPARE_CANDIDATES[0])
+SPEC = importlib.util.spec_from_file_location('original_prepare', PREPARE_FROZEN)
 LIB = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(LIB)
-SOURCE = REV/'data/hurdat2_frozen2024_plus2025.txt'
+_SOURCE_CANDIDATES = [
+    REV / "data" / "hurdat2_frozen2024_plus2025.txt",
+    REV / "data" / "hurdat2-1851-2025-02272026.txt",
+    HERE.parents[1] / "data" / "hurdat2_frozen2024_plus2025.txt",
+]
+SOURCE = next((p for p in _SOURCE_CANDIDATES if p.exists()), _SOURCE_CANDIDATES[0])
 
 
 def sha(path):
