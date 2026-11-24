@@ -1,0 +1,402 @@
+{
+  "wall_seconds": 201.6,
+  "joint_4in1_mse_verified": {
+    "params_single": 278216,
+    "params_3ens": 834648,
+    "single_22_24_mean": [
+      32.29,
+      79.61,
+      141.85,
+      213.94
+    ],
+    "single_22_24_sd": [
+      0.69,
+      1.37,
+      1.46,
+      2.89
+    ],
+    "single_25_mean": [
+      33.74,
+      77.22,
+      132.56,
+      193.29
+    ],
+    "single_25_sd": [
+      0.47,
+      0.66,
+      1.86,
+      2.7
+    ],
+    "ensemble_22_24_km": [
+      31.69,
+      78.36,
+      140.22,
+      211.89
+    ],
+    "ensemble_25_km": [
+      33.35,
+      76.13,
+      131.09,
+      191.8
+    ]
+  },
+  "joint_4in1_conformal_90pct": {
+    "6h": {
+      "scp_radius_km": 71.6,
+      "scp_cov_pct": 92.4,
+      "scp_hivol_cov_pct": 76.6,
+      "acp_mean_radius_km": 61.5,
+      "acp_steady_radius_km": 50.1,
+      "acp_hivol_radius_km": 95.6,
+      "acp_cov_pct": 91.4,
+      "acp_hivol_cov_pct": 89.9,
+      "acp_ext25_cov_pct": 93.0
+    },
+    "12h": {
+      "scp_radius_km": 175.0,
+      "scp_cov_pct": 92.1,
+      "scp_hivol_cov_pct": 72.8,
+      "acp_mean_radius_km": 159.8,
+      "acp_steady_radius_km": 129.4,
+      "acp_hivol_radius_km": 250.6,
+      "acp_cov_pct": 92.7,
+      "acp_hivol_cov_pct": 89.2,
+      "acp_ext25_cov_pct": 96.5
+    },
+    "18h": {
+      "scp_radius_km": 313.9,
+      "scp_cov_pct": 92.4,
+      "scp_hivol_cov_pct": 74.1,
+      "acp_mean_radius_km": 278.6,
+      "acp_steady_radius_km": 224.8,
+      "acp_hivol_radius_km": 439.2,
+      "acp_cov_pct": 92.2,
+      "acp_hivol_cov_pct": 88.0,
+      "acp_ext25_cov_pct": 96.5
+    },
+    "24h": {
+      "scp_radius_km": 478.3,
+      "scp_cov_pct": 92.7,
+      "scp_hivol_cov_pct": 75.3,
+      "acp_mean_radius_km": 416.3,
+      "acp_steady_radius_km": 337.0,
+      "acp_hivol_radius_km": 653.2,
+      "acp_cov_pct": 92.4,
+      "acp_hivol_cov_pct": 91.1,
+      "acp_ext25_cov_pct": 97.1
+    }
+  },
+  "joint_4in1_conformal_80pct": {
+    "6h": {
+      "scp_radius_km": 48.3,
+      "scp_cov_pct": 83.3,
+      "scp_hivol_cov_pct": 58.9,
+      "acp_mean_radius_km": 49.1,
+      "acp_steady_radius_km": 40.0,
+      "acp_hivol_radius_km": 76.3,
+      "acp_cov_pct": 83.0,
+      "acp_hivol_cov_pct": 78.5,
+      "acp_ext25_cov_pct": 85.5
+    },
+    "12h": {
+      "scp_radius_km": 127.6,
+      "scp_cov_pct": 85.1,
+      "scp_hivol_cov_pct": 57.6,
+      "acp_mean_radius_km": 120.6,
+      "acp_steady_radius_km": 97.7,
+      "acp_hivol_radius_km": 189.1,
+      "acp_cov_pct": 82.2,
+      "acp_hivol_cov_pct": 75.9,
+      "acp_ext25_cov_pct": 90.1
+    },
+    "18h": {
+      "scp_radius_km": 226.9,
+      "scp_cov_pct": 84.6,
+      "scp_hivol_cov_pct": 57.0,
+      "acp_mean_radius_km": 205.7,
+      "acp_steady_radius_km": 166.0,
+      "acp_hivol_radius_km": 324.3,
+      "acp_cov_pct": 81.0,
+      "acp_hivol_cov_pct": 77.8,
+      "acp_ext25_cov_pct": 91.9
+    },
+    "24h": {
+      "scp_radius_km": 346.9,
+      "scp_cov_pct": 84.1,
+      "scp_hivol_cov_pct": 55.7,
+      "acp_mean_radius_km": 309.0,
+      "acp_steady_radius_km": 250.2,
+      "acp_hivol_radius_km": 484.9,
+      "acp_cov_pct": 80.2,
+      "acp_hivol_cov_pct": 79.7,
+      "acp_ext25_cov_pct": 93.0
+    }
+  },
+  "case_high_volatility_rescue": {
+    "test_index": 156,
+    "storm_id": "AL062022_EARL",
+    "storm_name": "AL062022_EARL",
+    "window": 30,
+    "history_48h_latlon": [
+      [
+        43.79999923706055,
+        -52.20000076293945
+      ],
+      [
+        44.20000076293945,
+        -52.0
+      ],
+      [
+        44.29999923706055,
+        -51.900001525878906
+      ],
+      [
+        44.20000076293945,
+        -51.900001525878906
+      ],
+      [
+        44.29999923706055,
+        -52.099998474121094
+      ],
+      [
+        43.900001525878906,
+        -51.900001525878906
+      ],
+      [
+        43.20000076293945,
+        -51.20000076293945
+      ],
+      [
+        42.900001525878906,
+        -48.29999923706055
+      ]
+    ],
+    "origin_latlon": [
+      42.900001525878906,
+      -48.29999923706055
+    ],
+    "truth_6_24h_latlon": [
+      [
+        43.0,
+        -46.79999923706055
+      ],
+      [
+        43.400001525878906,
+        -45.20000076293945
+      ],
+      [
+        44.29999923706055,
+        -43.70000076293945
+      ],
+      [
+        45.0,
+        -42.400001525878906
+      ]
+    ],
+    "pred_6_24h_latlon": [
+      [
+        43.090999603271484,
+        -45.22800064086914
+      ],
+      [
+        43.47700119018555,
+        -42.06399917602539
+      ],
+      [
+        44.029998779296875,
+        -39.099998474121094
+      ],
+      [
+        44.84600067138672,
+        -35.99800109863281
+      ]
+    ],
+    "cv_6_24h_latlon": [
+      [
+        42.599998474121094,
+        -45.41400146484375
+      ],
+      [
+        42.29999923706055,
+        -42.52799987792969
+      ],
+      [
+        42.0,
+        -39.641998291015625
+      ],
+      [
+        41.70000076293945,
+        -36.75699996948242
+      ]
+    ],
+    "errors_km": [
+      128.2,
+      253.4,
+      368.1,
+      504.2
+    ],
+    "scp_90_radii_km": [
+      71.6,
+      175.0,
+      313.9,
+      478.3
+    ],
+    "acp_90_radii_km": [
+      119.2,
+      309.1,
+      547.8,
+      818.2
+    ]
+  },
+  "case_steady_shrinkage": {
+    "test_index": 599,
+    "storm_id": "AL192023_SEAN",
+    "storm_name": "AL192023_SEAN",
+    "window": 3,
+    "history_48h_latlon": [
+      [
+        12.800000190734863,
+        -37.099998474121094
+      ],
+      [
+        13.300000190734863,
+        -37.79999923706055
+      ],
+      [
+        13.699999809265137,
+        -39.0
+      ],
+      [
+        14.0,
+        -40.099998474121094
+      ],
+      [
+        14.300000190734863,
+        -41.20000076293945
+      ],
+      [
+        14.600000381469727,
+        -42.20000076293945
+      ],
+      [
+        14.899999618530273,
+        -42.70000076293945
+      ],
+      [
+        15.300000190734863,
+        -43.29999923706055
+      ]
+    ],
+    "origin_latlon": [
+      15.300000190734863,
+      -43.29999923706055
+    ],
+    "truth_6_24h_latlon": [
+      [
+        15.800000190734863,
+        -43.900001525878906
+      ],
+      [
+        16.299999237060547,
+        -44.5
+      ],
+      [
+        16.799999237060547,
+        -45.099998474121094
+      ],
+      [
+        17.299999237060547,
+        -45.79999923706055
+      ]
+    ],
+    "pred_6_24h_latlon": [
+      [
+        15.776000022888184,
+        -43.89899826049805
+      ],
+      [
+        16.280000686645508,
+        -44.481998443603516
+      ],
+      [
+        16.795000076293945,
+        -45.00400161743164
+      ],
+      [
+        17.423999786376953,
+        -45.66600036621094
+      ]
+    ],
+    "cv_6_24h_latlon": [
+      [
+        15.699999809265137,
+        -43.9010009765625
+      ],
+      [
+        16.100000381469727,
+        -44.50199890136719
+      ],
+      [
+        16.5,
+        -45.10300064086914
+      ],
+      [
+        16.899999618530273,
+        -45.70500183105469
+      ]
+    ],
+    "errors_km": [
+      2.7,
+      2.9,
+      10.2,
+      19.8
+    ],
+    "scp_90_radii_km": [
+      71.6,
+      175.0,
+      313.9,
+      478.3
+    ],
+    "acp_90_radii_km": [
+      31.6,
+      78.5,
+      133.1,
+      205.3
+    ]
+  },
+  "efficiency_profile": {
+    "ModernTCN+KR 4-in-1 Joint (16ch, L=8)": {
+      "params": 278216,
+      "mflops": 4.273,
+      "weights_mb_fp32": 1.061,
+      "cpu_ms_per_sample": 1.42,
+      "cpu_fps": 704.0
+    },
+    "ModernTCN+KR 24h (16ch, L=8)": {
+      "params": 277826,
+      "mflops": 4.272,
+      "weights_mb_fp32": 1.06,
+      "cpu_ms_per_sample": 1.365,
+      "cpu_fps": 732.7
+    },
+    "ST-B64+KR 24h (16ch, L=8)": {
+      "params": 53858,
+      "mflops": 0.823,
+      "weights_mb_fp32": 0.205,
+      "cpu_ms_per_sample": 0.567,
+      "cpu_fps": 1763.5
+    },
+    "ModernTCN+KR 24h Ref (40ch, L=12)": {
+      "params": 280898,
+      "mflops": 6.474,
+      "weights_mb_fp32": 1.072,
+      "cpu_ms_per_sample": 1.388,
+      "cpu_fps": 720.7
+    },
+    "Kinematic_Adaptive_Conformal_Overhead": {
+      "params": 6,
+      "cpu_us_per_sample": 2.343,
+      "cpu_ms_per_sample": 0.002343
+    }
+  }
+}

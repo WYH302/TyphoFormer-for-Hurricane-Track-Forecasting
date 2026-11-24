@@ -1,0 +1,546 @@
+{
+  "part1_atlantic_24h_surgery": {
+    "00_ridge_kr_16ch_L8_anchor_only": {
+      "val_km": 226.34,
+      "test_22_24_km": 225.19,
+      "ext_25_km": 200.24
+    },
+    "01_ref_moderntcn_40ch_L12_cv1": {
+      "params": 280898,
+      "val_mean": 232.13,
+      "single_22_24_mean": 225.81,
+      "single_22_24_sd": 1.72,
+      "single_25_mean": 199.86,
+      "single_25_sd": 3.13,
+      "ensemble_22_24_km": 222.07,
+      "ensemble_25_km": 193.97
+    },
+    "02_moderntcn_16ch_L12_cv1": {
+      "params": 277826,
+      "val_mean": 222.15,
+      "single_22_24_mean": 215.23,
+      "single_22_24_sd": 1.43,
+      "single_25_mean": 203.89,
+      "single_25_sd": 3.94,
+      "ensemble_22_24_km": 211.68,
+      "ensemble_25_km": 200.78
+    },
+    "03_moderntcn_16ch_L8_cv1": {
+      "params": 277826,
+      "val_mean": 220.51,
+      "single_22_24_mean": 214.06,
+      "single_22_24_sd": 2.56,
+      "single_25_mean": 200.06,
+      "single_25_sd": 7.25,
+      "ensemble_22_24_km": 210.16,
+      "ensemble_25_km": 195.48
+    },
+    "04_moderntcn_16ch_L4_cv1": {
+      "params": 277826,
+      "val_mean": 219.84,
+      "single_22_24_mean": 215.61,
+      "single_22_24_sd": 1.38,
+      "single_25_mean": 201.43,
+      "single_25_sd": 1.81,
+      "ensemble_22_24_km": 213.44,
+      "ensemble_25_km": 199.42
+    },
+    "05_moderntcn_16ch_L8_smoothv075": {
+      "params": 277826,
+      "val_mean": 221.27,
+      "single_22_24_mean": 214.05,
+      "single_22_24_sd": 4.22,
+      "single_25_mean": 203.28,
+      "single_25_sd": 2.72,
+      "ensemble_22_24_km": 210.76,
+      "ensemble_25_km": 200.23
+    },
+    "06_moderntcn_16ch_L8_ridge_anchor": {
+      "params": 277826,
+      "val_mean": 221.79,
+      "single_22_24_mean": 215.07,
+      "single_22_24_sd": 2.62,
+      "single_25_mean": 198.56,
+      "single_25_sd": 5.17,
+      "ensemble_22_24_km": 212.61,
+      "ensemble_25_km": 195.72
+    },
+    "07_moderntcn_16ch_L8_cv1_ema": {
+      "params": 277826,
+      "val_mean": 222.36,
+      "single_22_24_mean": 211.47,
+      "single_22_24_sd": 1.17,
+      "single_25_mean": 191.86,
+      "single_25_sd": 0.13,
+      "ensemble_22_24_km": 210.04,
+      "ensemble_25_km": 190.78
+    },
+    "08_moderntcn_16ch_L8_ridge_ema": {
+      "params": 277826,
+      "val_mean": 220.47,
+      "single_22_24_mean": 215.2,
+      "single_22_24_sd": 1.38,
+      "single_25_mean": 193.97,
+      "single_25_sd": 1.87,
+      "ensemble_22_24_km": 214.43,
+      "ensemble_25_km": 192.97
+    },
+    "09_moderntcn_16ch_L8_haversine": {
+      "params": 277826,
+      "val_mean": 222.58,
+      "single_22_24_mean": 211.87,
+      "single_22_24_sd": 0.75,
+      "single_25_mean": 200.06,
+      "single_25_sd": 2.75,
+      "ensemble_22_24_km": 209.61,
+      "ensemble_25_km": 197.67
+    },
+    "10_st_b64_16ch_L8_ridge_ema": {
+      "params": 53000,
+      "val_mean": 221.92,
+      "single_22_24_mean": 217.61,
+      "single_22_24_sd": 0.85,
+      "single_25_mean": 194.66,
+      "single_25_sd": 6.02,
+      "ensemble_22_24_km": 216.09,
+      "ensemble_25_km": 193.21
+    },
+    "11_moderntcn_16ch_L8_ridge_ema_hav": {
+      "params": 277826,
+      "val_mean": 220.9,
+      "single_22_24_mean": 216.68,
+      "single_22_24_sd": 0.83,
+      "single_25_mean": 191.35,
+      "single_25_sd": 0.8,
+      "ensemble_22_24_km": 215.91,
+      "ensemble_25_km": 190.57
+    },
+    "12_moderntcn_16ch_L8_smooth_ema_hav": {
+      "params": 277826,
+      "val_mean": 225.83,
+      "single_22_24_mean": 213.26,
+      "single_22_24_sd": 1.01,
+      "single_25_mean": 194.78,
+      "single_25_sd": 1.57,
+      "ensemble_22_24_km": 212.07,
+      "ensemble_25_km": 193.83
+    }
+  },
+  "part2_atlantic_4in1_joint": {
+    "joint_4in1_mse": {
+      "params_total_for_all_4_horizons": 278216,
+      "single_22_24_km": [
+        32.09,
+        78.84,
+        140.27,
+        211.28
+      ],
+      "single_25_km": [
+        33.74,
+        77.22,
+        132.56,
+        193.29
+      ],
+      "ensemble_22_24_km": [
+        31.65,
+        77.93,
+        138.98,
+        209.73
+      ],
+      "ensemble_25_km": [
+        33.55,
+        75.93,
+        130.35,
+        189.77
+      ],
+      "single_22_24_sd": [
+        0.69,
+        1.37,
+        1.46,
+        2.89
+      ],
+      "single_25_sd": [
+        0.47,
+        0.66,
+        1.86,
+        2.7
+      ],
+      "conformal_90pct_by_horizon": {
+        "6h": {
+          "scp_radius_km": 71.6,
+          "scp_cov_pct": 92.4,
+          "scp_hivol_cov_pct": 76.6,
+          "acp_mean_radius_km": 61.5,
+          "acp_steady_radius_km": 50.1,
+          "acp_hivol_radius_km": 95.6,
+          "acp_cov_pct": 91.4,
+          "acp_hivol_cov_pct": 89.9,
+          "acp_ext25_cov_pct": 93.0
+        },
+        "12h": {
+          "scp_radius_km": 175.0,
+          "scp_cov_pct": 92.1,
+          "scp_hivol_cov_pct": 72.8,
+          "acp_mean_radius_km": 159.8,
+          "acp_steady_radius_km": 129.4,
+          "acp_hivol_radius_km": 250.6,
+          "acp_cov_pct": 92.7,
+          "acp_hivol_cov_pct": 89.2,
+          "acp_ext25_cov_pct": 96.5
+        },
+        "18h": {
+          "scp_radius_km": 313.9,
+          "scp_cov_pct": 92.4,
+          "scp_hivol_cov_pct": 74.1,
+          "acp_mean_radius_km": 278.6,
+          "acp_steady_radius_km": 224.8,
+          "acp_hivol_radius_km": 439.2,
+          "acp_cov_pct": 92.2,
+          "acp_hivol_cov_pct": 88.0,
+          "acp_ext25_cov_pct": 96.5
+        },
+        "24h": {
+          "scp_radius_km": 478.3,
+          "scp_cov_pct": 92.7,
+          "scp_hivol_cov_pct": 75.3,
+          "acp_mean_radius_km": 416.3,
+          "acp_steady_radius_km": 337.0,
+          "acp_hivol_radius_km": 653.2,
+          "acp_cov_pct": 92.4,
+          "acp_hivol_cov_pct": 91.1,
+          "acp_ext25_cov_pct": 97.1
+        }
+      }
+    },
+    "joint_4in1_mse_smooth": {
+      "params_total_for_all_4_horizons": 278216,
+      "single_22_24_km": [
+        32.1,
+        79.37,
+        140.19,
+        211.47
+      ],
+      "ensemble_22_24_km": [
+        31.48,
+        78.35,
+        139.21,
+        210.29
+      ],
+      "ensemble_25_km": [
+        33.36,
+        76.5,
+        128.56,
+        189.88
+      ]
+    },
+    "joint_4in1_haversine": {
+      "params_total_for_all_4_horizons": 278216,
+      "single_22_24_km": [
+        32.04,
+        78.93,
+        140.05,
+        212.18
+      ],
+      "ensemble_22_24_km": [
+        31.69,
+        78.39,
+        139.4,
+        211.17
+      ],
+      "ensemble_25_km": [
+        32.96,
+        77.61,
+        130.66,
+        192.29
+      ]
+    }
+  },
+  "part3_atlantic_conformal_cones": {
+    "val_selected_winner": "03_moderntcn_16ch_L8_cv1",
+    "tier1_winner_conformal": {
+      "90pct": {
+        "split_conformal": {
+          "radius_km": 440.6,
+          "test_22_24_cov_pct": 91.1,
+          "test_22_24_hi_vol_cov_pct": 72.2,
+          "ext_25_cov_pct": 93.6
+        },
+        "kinematic_adaptive_conformal": {
+          "test_22_24_mean_radius_km": 414.8,
+          "test_22_24_steady_radius_km": 337.3,
+          "test_22_24_hivol_radius_km": 646.0,
+          "test_22_24_cov_pct": 92.9,
+          "test_22_24_hi_vol_cov_pct": 94.3,
+          "ext_25_mean_radius_km": 473.3,
+          "ext_25_cov_pct": 97.1
+        }
+      },
+      "80pct": {
+        "split_conformal": {
+          "radius_km": 355.0,
+          "test_22_24_cov_pct": 84.1,
+          "test_22_24_hi_vol_cov_pct": 56.3,
+          "ext_25_cov_pct": 86.6
+        },
+        "kinematic_adaptive_conformal": {
+          "test_22_24_mean_radius_km": 312.1,
+          "test_22_24_steady_radius_km": 253.9,
+          "test_22_24_hivol_radius_km": 486.1,
+          "test_22_24_cov_pct": 80.0,
+          "test_22_24_hi_vol_cov_pct": 82.3,
+          "ext_25_mean_radius_km": 356.2,
+          "ext_25_cov_pct": 92.4
+        }
+      }
+    },
+    "cv_baseline_conformal": {
+      "90pct": {
+        "split_conformal": {
+          "radius_km": 536.0,
+          "test_22_24_cov_pct": 90.8,
+          "test_22_24_hi_vol_cov_pct": 69.0,
+          "ext_25_cov_pct": 92.4
+        },
+        "kinematic_adaptive_conformal": {
+          "test_22_24_mean_radius_km": 485.0,
+          "test_22_24_steady_radius_km": 382.4,
+          "test_22_24_hivol_radius_km": 791.5,
+          "test_22_24_cov_pct": 91.7,
+          "test_22_24_hi_vol_cov_pct": 89.2,
+          "ext_25_mean_radius_km": 568.4,
+          "ext_25_cov_pct": 94.8
+        }
+      },
+      "80pct": {
+        "split_conformal": {
+          "radius_km": 372.3,
+          "test_22_24_cov_pct": 80.0,
+          "test_22_24_hi_vol_cov_pct": 48.7,
+          "ext_25_cov_pct": 82.6
+        },
+        "kinematic_adaptive_conformal": {
+          "test_22_24_mean_radius_km": 361.0,
+          "test_22_24_steady_radius_km": 284.6,
+          "test_22_24_hivol_radius_km": 589.1,
+          "test_22_24_cov_pct": 79.8,
+          "test_22_24_hi_vol_cov_pct": 74.7,
+          "ext_25_mean_radius_km": 423.0,
+          "ext_25_cov_pct": 88.4
+        }
+      }
+    }
+  },
+  "part4_pacific_cross_basin": {
+    "ep_ref_moderntcn_39ch_L12_cv1": {
+      "single_22_24_mean": 114.28,
+      "single_22_24_sd": 1.4,
+      "single_25_mean": 117.88,
+      "single_25_sd": 1.23,
+      "ensemble_22_24_km": 113.11,
+      "ensemble_25_km": 116.73,
+      "conformal": {
+        "90pct": {
+          "split_conformal": {
+            "radius_km": 196.6,
+            "test_22_24_cov_pct": 87.8,
+            "test_22_24_hi_vol_cov_pct": 93.4,
+            "ext_25_cov_pct": 90.1
+          },
+          "kinematic_adaptive_conformal": {
+            "test_22_24_mean_radius_km": 215.7,
+            "test_22_24_steady_radius_km": 190.8,
+            "test_22_24_hivol_radius_km": 290.5,
+            "test_22_24_cov_pct": 87.3,
+            "test_22_24_hi_vol_cov_pct": 96.2,
+            "ext_25_mean_radius_km": 208.5,
+            "ext_25_cov_pct": 88.1
+          }
+        },
+        "80pct": {
+          "split_conformal": {
+            "radius_km": 154.1,
+            "test_22_24_cov_pct": 78.3,
+            "test_22_24_hi_vol_cov_pct": 85.2,
+            "ext_25_cov_pct": 74.3
+          },
+          "kinematic_adaptive_conformal": {
+            "test_22_24_mean_radius_km": 168.3,
+            "test_22_24_steady_radius_km": 148.8,
+            "test_22_24_hivol_radius_km": 226.7,
+            "test_22_24_cov_pct": 79.2,
+            "test_22_24_hi_vol_cov_pct": 95.1,
+            "ext_25_mean_radius_km": 162.7,
+            "ext_25_cov_pct": 75.7
+          }
+        }
+      }
+    },
+    "ep_moderntcn_16ch_L8_cv1_ema": {
+      "single_22_24_mean": 113.67,
+      "single_22_24_sd": 0.49,
+      "single_25_mean": 112.96,
+      "single_25_sd": 0.91,
+      "ensemble_22_24_km": 113.25,
+      "ensemble_25_km": 112.54,
+      "conformal": {
+        "90pct": {
+          "split_conformal": {
+            "radius_km": 201.7,
+            "test_22_24_cov_pct": 88.3,
+            "test_22_24_hi_vol_cov_pct": 78.7,
+            "ext_25_cov_pct": 91.6
+          },
+          "kinematic_adaptive_conformal": {
+            "test_22_24_mean_radius_km": 199.5,
+            "test_22_24_steady_radius_km": 178.1,
+            "test_22_24_hivol_radius_km": 263.5,
+            "test_22_24_cov_pct": 85.8,
+            "test_22_24_hi_vol_cov_pct": 89.1,
+            "ext_25_mean_radius_km": 209.7,
+            "ext_25_cov_pct": 87.6
+          }
+        },
+        "80pct": {
+          "split_conformal": {
+            "radius_km": 161.8,
+            "test_22_24_cov_pct": 79.9,
+            "test_22_24_hi_vol_cov_pct": 71.0,
+            "ext_25_cov_pct": 81.7
+          },
+          "kinematic_adaptive_conformal": {
+            "test_22_24_mean_radius_km": 158.1,
+            "test_22_24_steady_radius_km": 141.2,
+            "test_22_24_hivol_radius_km": 208.9,
+            "test_22_24_cov_pct": 78.3,
+            "test_22_24_hi_vol_cov_pct": 80.3,
+            "ext_25_mean_radius_km": 166.3,
+            "ext_25_cov_pct": 80.7
+          }
+        }
+      }
+    },
+    "ep_moderntcn_16ch_L8_ridge_ema": {
+      "single_22_24_mean": 114.88,
+      "single_22_24_sd": 1.3,
+      "single_25_mean": 112.27,
+      "single_25_sd": 1.86,
+      "ensemble_22_24_km": 113.47,
+      "ensemble_25_km": 111.01,
+      "conformal": {
+        "90pct": {
+          "split_conformal": {
+            "radius_km": 200.5,
+            "test_22_24_cov_pct": 88.4,
+            "test_22_24_hi_vol_cov_pct": 79.8,
+            "ext_25_cov_pct": 91.6
+          },
+          "kinematic_adaptive_conformal": {
+            "test_22_24_mean_radius_km": 201.4,
+            "test_22_24_steady_radius_km": 180.9,
+            "test_22_24_hivol_radius_km": 263.1,
+            "test_22_24_cov_pct": 86.9,
+            "test_22_24_hi_vol_cov_pct": 89.1,
+            "ext_25_mean_radius_km": 210.9,
+            "ext_25_cov_pct": 90.1
+          }
+        },
+        "80pct": {
+          "split_conformal": {
+            "radius_km": 157.6,
+            "test_22_24_cov_pct": 79.4,
+            "test_22_24_hi_vol_cov_pct": 69.4,
+            "ext_25_cov_pct": 81.7
+          },
+          "kinematic_adaptive_conformal": {
+            "test_22_24_mean_radius_km": 156.2,
+            "test_22_24_steady_radius_km": 140.3,
+            "test_22_24_hivol_radius_km": 204.1,
+            "test_22_24_cov_pct": 77.7,
+            "test_22_24_hi_vol_cov_pct": 79.8,
+            "ext_25_mean_radius_km": 163.5,
+            "ext_25_cov_pct": 79.7
+          }
+        }
+      }
+    },
+    "ep_moderntcn_16ch_L8_ridge_ema_hav": {
+      "single_22_24_mean": 114.33,
+      "single_22_24_sd": 0.27,
+      "single_25_mean": 114.44,
+      "single_25_sd": 1.66,
+      "ensemble_22_24_km": 113.62,
+      "ensemble_25_km": 113.72,
+      "conformal": {
+        "90pct": {
+          "split_conformal": {
+            "radius_km": 201.7,
+            "test_22_24_cov_pct": 88.7,
+            "test_22_24_hi_vol_cov_pct": 79.2,
+            "ext_25_cov_pct": 92.1
+          },
+          "kinematic_adaptive_conformal": {
+            "test_22_24_mean_radius_km": 197.7,
+            "test_22_24_steady_radius_km": 177.8,
+            "test_22_24_hivol_radius_km": 257.4,
+            "test_22_24_cov_pct": 86.7,
+            "test_22_24_hi_vol_cov_pct": 89.6,
+            "ext_25_mean_radius_km": 207.2,
+            "ext_25_cov_pct": 88.1
+          }
+        },
+        "80pct": {
+          "split_conformal": {
+            "radius_km": 160.1,
+            "test_22_24_cov_pct": 79.8,
+            "test_22_24_hi_vol_cov_pct": 67.8,
+            "ext_25_cov_pct": 79.7
+          },
+          "kinematic_adaptive_conformal": {
+            "test_22_24_mean_radius_km": 155.8,
+            "test_22_24_steady_radius_km": 140.1,
+            "test_22_24_hivol_radius_km": 202.8,
+            "test_22_24_cov_pct": 78.7,
+            "test_22_24_hi_vol_cov_pct": 80.9,
+            "ext_25_mean_radius_km": 163.2,
+            "ext_25_cov_pct": 79.2
+          }
+        }
+      }
+    }
+  },
+  "efficiency_profile": {
+    "ModernTCN+KR 4-in-1 Joint (16ch, L=8)": {
+      "params": 278216,
+      "mflops": 4.273,
+      "weights_mb_fp32": 1.061,
+      "cpu_ms_per_sample": 1.42,
+      "cpu_fps": 704.0
+    },
+    "ModernTCN+KR 24h (16ch, L=8)": {
+      "params": 277826,
+      "mflops": 4.272,
+      "weights_mb_fp32": 1.06,
+      "cpu_ms_per_sample": 1.365,
+      "cpu_fps": 732.7
+    },
+    "ST-B64+KR 24h (16ch, L=8)": {
+      "params": 53858,
+      "mflops": 0.823,
+      "weights_mb_fp32": 0.205,
+      "cpu_ms_per_sample": 0.567,
+      "cpu_fps": 1763.5
+    },
+    "ModernTCN+KR 24h Ref (40ch, L=12)": {
+      "params": 280898,
+      "mflops": 6.474,
+      "weights_mb_fp32": 1.072,
+      "cpu_ms_per_sample": 1.388,
+      "cpu_fps": 720.7
+    },
+    "Kinematic_Adaptive_Conformal_Overhead": {
+      "params": 6,
+      "cpu_us_per_sample": 2.343,
+      "cpu_ms_per_sample": 0.002343
+    }
+  }
+}
