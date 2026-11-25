@@ -14,6 +14,10 @@ An open-source empirical study and reproducibility toolkit for **KinResTC**, a u
 本项目整理并开源了统一物理对齐框架 **KinResTC** 在**北大西洋（`AL`）与东/中北太平洋（`EP`/`CP`）双海域**短临（6–24 小时）热带气旋路径预测中的全套复现代码与实测数据，有机整合了**天气尺度优先解耦层（`SFCD`，`C1–C8` 契约）**、**随动拉格朗日残差引擎（`CLRE`，16 通道 4-in-1 非迭代多时效联合解码）**与**零训练成本波动自适应共形校准层（`VACC`，2.34 µs 动态预警锥）**。
 
 <p align="center">
+  <img src="assets/fig_teaser_pareto_contrast.png" alt="KinResTC Paradigm Contrast and 10-Family Accuracy-Compute Pareto Frontier" width="98%">
+</p>
+
+<p align="center">
   <img src="assets/Figure_1_Framework_Overview.png" alt="Framework Overview: Physics-Guided Lagrangian Kinematic Residual Learning and Synoptic-First Reconstruction" width="98%">
 </p>
 
