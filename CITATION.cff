@@ -7,26 +7,26 @@ license: MIT
 authors:
   - family-names: "Wu"
     given-names: "Yonghao"
-    affiliation: "School of Electronic Science and Engineering (School of Microelectronics), South China Normal University"
+    affiliation: "School of Electronic Science and Engineering (School of Microelectronics), South China Normal University, Foshan, Guangdong 528225, China"
   - family-names: "Wu"
     given-names: "Jiayang"
-    affiliation: "Westlake University"
+    affiliation: "Westlake University, Hangzhou, Zhejiang, China"
   - family-names: "He"
     given-names: "Sirui"
-    affiliation: "School of Computer Science, Xiamen University Malaysia"
+    affiliation: "School of Computer Science, Xiamen University Malaysia, Sepang, Selangor 43900, Malaysia"
   - family-names: "Liu"
     given-names: "Chang"
-    affiliation: "Saint-Petersburg Institute for Shipbuilding & Marine Technology of Guangdong Ocean University"
+    affiliation: "Saint-Petersburg Institute for Shipbuilding and Marine Technology, Guangdong Ocean University, Zhanjiang, Guangdong 524088, China"
   - family-names: "Filaretov"
     given-names: "Vladimir"
-    affiliation: "Robotics Laboratory, Institute of Automation and Control Processes, Far Eastern Branch of the Russian Academy of Sciences"
+    affiliation: "Robotics Laboratory, Institute of Automation and Control Processes, Far Eastern Branch of the Russian Academy of Sciences, Vladivostok 690041, Russia"
   - family-names: "Yukhimets"
     given-names: "Dmitry"
-    affiliation: "Robotics Laboratory, Institute of Automation and Control Processes, Far Eastern Branch of the Russian Academy of Sciences"
+    affiliation: "Robotics Laboratory, Institute of Automation and Control Processes, Far Eastern Branch of the Russian Academy of Sciences, Vladivostok 690041, Russia"
 keywords:
   - tropical cyclone track forecasting
   - kinematic residual learning
-  - physics-guided machine learning
+  - physics-guided artificial intelligence
   - HURDAT2 best-track archive
   - coastal landfall hazard
-  - sequence modeling
+  - adaptive conformal prediction
